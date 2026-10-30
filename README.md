@@ -3,8 +3,8 @@
 Frugal-IoT V0.2 — a simple, multi-purpose sensor board with onboard charging and an external antenna — plus
 an SX1262 LoRa radio, so boards can mesh with each other where there's no WiFi.
 
-**Status:** requirements for review (30 Oct 2026). See `DECISIONS.md` for the requirements, proposed
-decisions (ESP32-S3-WROOM-1U + Ai-Thinker Ra-01SH) and open questions. No schematic or layout yet.
+**Status:** requirements agreed (30 Oct 2026). See `DECISIONS.md` for the requirements,
+decisions (ESP32-S3-WROOM-1U + Ai-Thinker Ra-01SH) and the one open question (power). No schematic or layout yet.
 
 Forked from [frugal-iot-hw-sensor](https://github.com/mitra42/frugal-iot-hw-sensor) (V0.2).
 
