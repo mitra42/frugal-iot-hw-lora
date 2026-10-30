@@ -1,172 +1,111 @@
-# Frugal-IoT V0.2 — decision log
+# Frugal-IoT V0.3 (LoRa) — requirements and decision log
 
-Status: **laid out and routed (15 Oct 2026, revision 2)** — DRC: 0 unconnected, 0 clearance, schematic parity 0; JLCPCB files in `fabrication/`; for review before ordering. Successor to Frugal IoT v0.1 (`../frugal-iot-v0.1/`),
-redesigned for JLCPCB assembly (PCBA) instead of hand soldering. Cost matters more here than on the
-irrigation board (`../irrigation-layout-oct-2026/`), whose power design it borrows.
+Status: **requirements, for review (30 Oct 2026)** — nothing drawn yet. The KiCad project (`frugal_iot_v02/`) and
+`claude-tools/` are V0.2's, copied as the starting point; V0.2's own files and decision log are in
+`v0.2-baseline/`. Decisions are numbered L1, L2… so they can't be confused with V0.2's D-numbers. Everything
+in V0.2 (`v0.2-baseline/DECISIONS-V0.2.md`) carries over unless a decision here changes it.
 
-## Decided
+Prices and stock are from JLCPCB's parts API on 30 Oct 2026 (Extended parts: $3.07 feeder fee per order).
 
-**D1 — Module: ESP32-C3-WROOM-02U-N4** (C2926676, $2.75 @10 / $2.25 @100, Oct 2026). U.FL antenna —
-on-board PCB antennas don't reach far enough (Mitra). Castellated edge pads, so no X-ray inspection
-(JLCPCB charges X-ray per leadless part: $1.64 @1–10, $0.49 @51–200). Alternative: C3-MINI-1U-N4
-(C2911374, $2.80). C6 not needed — the C3 has enough pins (D3).
+## Requirements
 
-**D2 — Same board height as v0.1 (37 mm), length as short as the parts allow.** Single-sided SMD assembly.
+**R1 — V0.2 plus an SX1262 LoRa radio.** Same purpose, same PCBA route (JLCPCB, Economic, top side), same
+power design (USB-C, TP4056, XB5353A, ME6211, switched 3V3_SW sensor rail), same connector scheme
+(J2/J12 sensors, J3/J13 serial + spares, J4 cell, J6 5 V in), same silkscreen labelling on both sides.
 
-**D3 — C3 pin map** (same USB/UART use as the C3-Pico):
+**R2 — Cost still matters**: cheapest module that does the job, but not at the cost of losing V0.2 features.
+Mitra is flexible on how many sensor pins remain.
+
+**R3 — External antennas only** (U.FL): one for WiFi, one for LoRa.
+
+**R4 — Works with Frugal-IoT's existing LoRa stack** (LoRaMesher over RadioLib), ideally without library changes.
+
+**R5 — One board for every region Frugal-IoT is used in**: AU915 (Australia), AS923 (Indonesia), IN865
+(India), EU868 (Kenya). The band is chosen in firmware (`SYSTEM_LORAMESHER_FREQUENCY`).
+
+**R6 — Height stays 37 mm** (fits a 40 mm pipe); length grows as needed.
+
+## Proposed (for Mitra to confirm)
+
+**L1 — Module: ESP32-S3-WROOM-1U-N4** (C2980296, $4.06 @10 / $3.42 @100, 2,000 in stock). Why:
+- The C3 has no free pins: the radio needs 7 (SCK, MOSI, MISO, NSS, RESET, BUSY, DIO1) and V0.2 uses all 15
+  of the C3's. Freeing 7 would mean dropping Modbus, both spares and the LED, and using the BOOT pin.
+- ESP32-C6-MINI-1U-H4 (C20627095, $3.79 / $3.30, 2,200 in stock) has exactly the 7 extra pins and is 12¢
+  cheaper at 100, but: LoRaMesher hasn't been run on a RISC-V ESP32 in Frugal-IoT yet, the module has ground
+  pads underneath (JLCPCB may charge X-ray), and it leaves no spare pins. The C6-WROOM-1U is out of stock.
+- The S3 + SX1262 pairing is the Heltec WiFi LoRa 32 V3/V4, which Frugal-IoT already supports, so the
+  firmware path is proven. ~36 GPIOs leave spares. Castellated edge pads like the C3 module.
+- Costs: module +$1.22 per board @10, +$1.18 @100 over the C3. Bigger (19.2 × 18 mm vs 18 × 14.3 mm).
+  Deep-sleep current is similar (single-digit µA); active current is higher than the C3.
+- S2 modules are out of stock and have no Bluetooth.
+
+**L2 — Radio: Ai-Thinker Ra-01SH** (C2764087, $3.95 @10 / $2.96 @100, 240 in stock). SX1262, 803–930 MHz
+(covers R5), U.FL on the module, 22 dBm. It drives its own antenna switch from the SX1262's DIO2, so it needs
+only the 7 pins above. Plain crystal, no TCXO: frequency drifts a little with temperature, which matters
+most at high spreading factors and narrow bandwidths (Frugal-IoT uses SF7 / 125 kHz today, so it's fine).
+- Alternative: Ebyte E22-900M22S (C411293, $6.28 / $5.12, 185 in stock): TCXO (more stable outdoors),
+  stamp holes + U.FL, but 2 more pins for TXEN/RXEN and ~$2.30 more per board.
+- Not proposed for a first spin: the bare SX1262 (C191341, $1.89 @100) — needs our own matching network, RF
+  switch and crystal/TCXO, RF layout, and has no module certification.
+- Stock of both modules is thin: fine for 10 boards; pre-order through JLCPCB for 100s.
+
+**L3 — Proposed S3 pin map** (radio on the same GPIOs as the Heltec V3/V4, so their firmware setup carries over;
+analog inputs on ADC1, which works while WiFi is on; strapping pins 0, 3, 45, 46 avoided):
 
 | GPIO | use |
 |---|---|
-| 18, 19 | USB D−/D+ (native USB, no USB-UART chip) |
-| 20, 21 | UART0 RX/TX → J3 (Modbus or other serial). Note: ROM boot log appears on TX at reset |
-| 9 | BOOT button (input after boot) |
-| 6, 7 | I2C SDA/SCL → J2 |
-| 0, 1 | Sensor 1, sensor 2 (ADC1) → J2 |
-| 3 | Battery sense (ADC1) |
-| 5 | 3V3_SW enable |
-| 8 | Status LED (strapping pin, LED to 3V3 keeps it high) |
-| 2 | → J3 (ADC1; strapping — on-board pull-up, sensor must not pull low at boot) |
-| 4 | → J3 (ADC1) |
-| 10 | Flying-wire pad; becomes RS485 DE/RE if Modbus is fitted |
+| 0 | BOOT button |
+| 1, 2 | Sensor 1, sensor 2 (ADC1) → J2 pins 6, 9 |
+| 4, 5 | Spares (ADC1) → J13 pins 6, 9 |
+| 6 | Battery sense (ADC1) |
+| 7 | Spare (ADC1) → J5 pad (was GPIO10) |
+| 8, 9, 10, 11 | LoRa NSS, SCK, MOSI, MISO |
+| 12, 13, 14 | LoRa RESET, BUSY, DIO1 |
+| 15 | nRAIL_EN (3V3_SW, active low) |
+| 16 | RS485 DE/RE |
+| 17, 18 | I2C SDA, SCL → J2 pins 2, 3 |
+| 19, 20 | USB D−/D+ |
+| 21 | Status LED (active low) |
+| 43, 44 | UART0 TX/RX → RS485 or J3 pins 2–3 |
+| 38–42, 47, 48 | Free — candidates for a further connector (L8) |
 
-**D4 — J2 (main sensor connector, fitted), pin order as v0.1:**
-1 GND · 2 SDA (GPIO6) · 3 SCL (GPIO7) · 4 3V3_SW · 5 GND · 6 S1 (GPIO0) · 7 3V3_SW · 8 GND · 9 S2 (GPIO1) · 10 3V3_SW
+**L4 — Radio powered from the always-on 3V3, not 3V3_SW**: the SX1262 sleeps at under 2 µA, and the mesh
+needs it to wake on its own schedule. Its 120 mA transmit peak is within the ME6211's 500 mA. Local
+decoupling at the module; RESET pulled up so the radio stays out of reset while the ESP32 sleeps.
 
-**D5 — J3 (spares, footprint only, unfitted), same layout as J2:**
-1 GND · 2 RX (GPIO20) · 3 TX (GPIO21) · 4 3V3_SW · 5 GND · 6 GPIO2 · 7 3V3_SW · 8 GND · 9 GPIO4 · 10 3V3_SW.
-A plug wired for a J2 position fits the same J3 position. TX is the C3's output. With the Modbus option
-fitted (D13), pins 2–3 become RS485 A/B via solder bridges.
+**L5 — Two U.FL antennas at opposite ends of the board** (WiFi on the ESP32 module, LoRa on the Ra-01SH) to
+keep them apart; no RF tracks on our board.
 
-**D6 — Terminals stay through-hole XY308-2.54.** SMD terminal blocks exist at JLCPCB (WAGO 2059,
-3 mm, $0.22/pole; JILN JL212V-SMT, 3.5 mm, 10P $1.69, low stock) but cost more than XY308 + hand
-soldering (~$0.023/joint).
+**L6 — Firmware: board variant plus build flags, no library change expected.** `loramesher.cpp` already
+accepts any board that defines `LORA_CS`, `LORA_RST`, `LORA_IRQ`, `LORA_IO1`, `LORA_MOSI`, `LORA_MISO` and
+`LORA_RADIO_TYPE`; a `pins_arduino.h` variant (as V0.2's) plus `-D SYSTEM_LORAMESHER_WANT` and
+`-D LORA_RADIO_TYPE=loramesher::RadioType::kSx1262` in a new PlatformIO env should be enough. No
+`LORA_TCXO_VOLTAGE` for the Ra-01SH (crystal); 1.8 V for the E22. To check: the Heltec entry maps
+`LORA_IRQ`/`LORA_IO1` the opposite way to the SX1262's DIO1/BUSY names ("bizarre swap" comment) — confirm
+which LoRaMesher expects before fixing the variant.
 
-**D7 — Power:** USB-C (16-pin, data needed for programming) 5 V → TP4056 (Preferred, no feeder fee)
-→ cell → load sharing (P-FET + Schottky, as irrigation) → **ME6211C33** LDO (C82942, $0.06, 500 mA,
-~60 µA quiescent — accepted; same as the C3-Pico) → 3V3 → AO3401 high-side switch → 3V3_SW (off at
-reset, small bulk cap for inrush). No 12 V, no 5V_SW, no 5 V on connectors.
+**L7 — Board grows to about 80 × 37 mm** (from 64 × 37) for the radio module (~17 × 16 mm) and the larger
+ESP32 module. To be confirmed at placement.
 
-**D8 — Charge current jumper:** 4.7 kΩ PROG (~250 mA) default; solder bridge adds a parallel 4.7 kΩ
-(~500 mA).
+**L8 — Cost:** about +$5.60 per board @10 and +$4.20 @100 over V0.2 (module +$1.22 / +$1.18, radio +$3.95 /
++$2.96, one more feeder fee, slightly larger board), i.e. ≈ $17 / $11.40. Plus a second antenna per board,
+bought separately. Leaving Modbus off still saves about $1. A proper estimate follows the schematic.
 
-**D9 — No USB ESD protection chip** (as the C3-Pico; Mitra has never lost one through USB).
+## Open questions
 
-**D10 — USB only for charging**, plus two through-holes beside the USB-C at 2.54 mm for external
-wiring or a hand-soldered XY308-2P later.
+**Q1 — S3 or C6?** (L1). S3 proposed; C6 if the 12¢ matters more than firmware risk and spare pins.
 
-**D11 — Battery: unfitted JST-PH through-hole footprint** ($0) — solder leads or fit a connector by
-hand. Fitted alternatives cost $0.35–0.40/board at 10 (mostly the feeder fee).
+**Q2 — Ra-01SH or E22-900M22S?** (L2). Ra-01SH proposed on cost.
 
-**D12 — Battery protection: XB5353A** (C80628, $0.09) — one chip with integrated MOSFETs, replacing
-DW01A + FS8205A (one feeder fee instead of two). Current limits to be checked in its datasheet.
+**Q3 — Power budget with LoRa.** If a node routes for others, the radio and ESP32 spend much more time awake
+than a WiFi sensor in deep sleep. LoRaMesher now has a duty-cycle / minimum-sleep setting (Frugal-IoT sets
+`LORA_DUTY_CYCLE` 1.0 today, i.e. always on). How long a node must run on a cell, and whether some nodes are
+leaf-only and can sleep, decides the cell and solar sizing — and whether the charger should default to
+500 mA (D8).
 
-**D13 — Modbus: transceiver laid out on the board, fitted per order (option B)** — superseded by D29 (now fitted by default). SP3485EN (Basic) +
-PSM712 (Basic) + 120 Ω termination on a solder jumper + bias resistors; DE/RE on GPIO10. Solder bridges
-select RS485 A/B or raw RX/TX on J3 pins 2–3. Default order leaves the transceiver parts off the JLCPCB
-BOM, so the board is then TTL serial on J3 (external RS485 module, as with the C3-Pico). Cost when fitted
-≈ $0.65/board @10, $0.45 @100. Most RS485 sensors need their own 5–24 V supply — this board has only
-3V3_SW, so that supply is external.
+**Q4 — Modbus fitted by default?** (V0.2 D29: yes.)
 
-**D14 — J5 replaced by a 3-pad unfitted footprint: GND · GPIO10 · 3V3_SW** (same triplet order as J2/J3).
-GPIO10 is the RS485 DE/RE line when the Modbus option is fitted, so this position is only spare without it.
-v0.1's J5 signals: LED → on-board (D15); Modbus TX/RX → J3; SPI and DAC dropped (no pins; C3 has no DAC).
+**Q5 — Use the free S3 pins?** (L3) e.g. a third 5-way block, or leave as unfitted pads.
 
-**D15 — Status LED on GPIO8 on-board, plus two pads (3V3, LED cathode after the series resistor) for an
-off-board LED in the enclosure** (Mitra: often off-board). Leave the on-board LED unfitted if only the
-external one is used.
-
-**D16 — No J6 (GND pads) or J7 (3V3_SW pads)** — nothing to connect to them (Mitra).
-
-**D17 — 3V3_SW switched by GPIO5 directly (active low):** nRAIL_EN drives the AO3401 gate, R10 100k pulls it
-up so the rail is off through reset and boot. Because the P-FET's source is +3V3, a 3.3 V GPIO turns it fully
-off — no N-FET needed (one part fewer than the irrigation board). Firmware: GPIO5 LOW = sensors on.
-
-**D18 — J2 and J3 are each two XY308-2.54-5P blocks side by side** (JLCPCB has no 10-way XY308; two of one
-part number = one feeder fee). References J2 + J12 (pins 1–5, 6–10) and J3 + J13 — KiCad references can't
-end in a letter. Silkscreen to number the positions 1–10.
-
-**D19 — XB5353A checked against its datasheet:** VDD (3) = cell +, GND (2) = cell −, VM (4, 5) = pack − =
-board GND, VT (1) open; one 100 nF at VDD. Thresholds 4.30 V / 2.4 V, discharge over-current 3 A, 54 mΩ.
-
-**D20 — TP4056 TEMP tied to GND** (no cell thermistor input), to save parts.
-
-**D21 — (superseded by D29)** RS485 parts were DNP by default.
-
-**D22 — Cost (JLCPCB Economic, live prices 15 Oct 2026):** ≈ $8.85/board for 10, ≈ $5.40 for 100, with a
-bare-PCB placeholder (irrigation board's quote) until layout. Modbus option adds ≈ $0.67 / $0.49 per board.
-See COST-ESTIMATE.txt.
-
-## Layout (15 Oct 2026)
-
-**D23 — Board 64 × 37 mm** (was 60; widened in D30 to make room for reference labels). J2 + J12 on the left edge and J3 + J13 on the right, wire entries outward, pin 1 of
-J2 at the top and pin 1 of J3 at the bottom (each block read facing its wire entry). Module along the top
-middle, USB-C, J6 and J4 on the bottom edge, J5 top right. 4 × M2 holes 2.5 mm in from each corner, in the
-strips beside the terminal blocks (as v0.1). Well inside the 100 × 100 mm price break.
-
-**D24 — Silkscreen:** "Frugal-IoT V0.2" (now 2.5 mm on the back, D32), and "1" / "10" at the ends of each 10-way pair.
-
-**D25 — Net classes:** Power 0.5 mm (GND, VBAT, VSYS, CELL_NEG), PowerFine 0.3 mm (VBUS, +3V3, +3V3_SW — must
-enter the USB-C's 0.5 mm-pitch pads), USB pair 0.25 / 0.15 mm, signals 0.25 mm. Max currents ~0.5 A.
-
-**D26 — Routing as the irrigation board:** GND left to the pours on both layers (fan-out vias, stitching,
-island vias), the rest by Freerouting 2.1.0 (pass 9 of 30 kept). Verified independently (all nets whole)
-and by KiCad DRC. Module thermal-pad vias widened from 0.2 to 0.3 mm drill (JLCPCB standard), which makes
-KiCad flag U4 as differing from its library copy — expected.
-
-**D27 — GND pads cut off from the pour by routing are rejoined** with a short track or a via beside the pad
-(`island_pads.py` + `rescue.py`; `via_near.py` if boxed in). Six pads on the current routing.
-
-**D28 — Accepted DRC notes (49):** J2/J12 and J3/J13 are two blocks that butt together, so their courtyards,
-silkscreen and pad clearances overlap (40 notes); connector silkscreen at the board edge where the parts are
-flush with it (8); U4 library difference (1, D26). No copper, clearance, hole or connection errors.
-
-## Revision 2 (15 Oct 2026, after Mitra's review)
-
-**D29 — RS485 / Modbus fitted by default** (U5 SP3485EN, C13, R20–R23, D5 PSM712) **and J3 (pins 1–5) fitted**
-so A/B have a terminal. JP2/JP3 re-wired so the factory bridge (pads 1–2) gives RS485: J3 pin 2 = A, pin 3 = B;
-cut 1–2 and bridge 2–3 for UART0 RX/TX on J3 (U5 must then be left off, as its RO pin drives RX). J13 (pins 6–10)
-stays unfitted. **A board without Modbus can leave out U5, C13, R20–R23, D5 and J3 and save ≈ $1.27 per board at
-10, ≈ $0.97 at 100** (COST-ESTIMATE.txt); no other change needed (JP2/JP3 then select nothing useful until bridged
-2–3 for UART). Total then ≈ $9.93 / $6.36 per board (10 / 100); see D31 for the current figure.
-
-**D30 — Every part labelled next to itself** (Mitra: unlabelled resistor pairs below U5, right of JP4, left of U4;
-C6 label unclear). Parts now packed with 0.7 mm between courtyards (was 0.5) on a 64 mm board, and `silk.py`
-places each 0.8 mm reference hugging its own part: clear of all pads, silk, other labels and big parts, and at
-least 0.6 mm nearer its own part than any other (0.3 mm, then 0.05 mm only where nothing else fits). All 63
-references placed on the silkscreen; mounting-hole labels hidden.
-
-## Revision 3 (22 Oct 2026, after Mitra's review)
-
-**D31 — Now fitted:** J13 (J3 positions 6–10: GPIO2, GPIO4 with GND/3V3_SW), R18 (4.7k pull-up on SENS1, J2
-pin 6 — e.g. a DS18B20) and C12 (100 nF filter on SENS2, J2 pin 9 — analog). R19 and C11 stay unfitted
-options. 53 placed parts; ≈ $10.49 per board for 10, ≈ $6.85 for 100 (bare PCB still a placeholder).
-
-**D32 — Polarity marked on the hand-soldered power connectors:** "+" / "−" (1.4 mm) above J6's pads (pin 1 =
-+5 V, pin 2 = GND; for an external 5 V supply such as a solar panel) and either side of J4's pads (pin 2 = cell +,
-pin 1 = cell −). To make room the board title moved to the back silkscreen, 2.5 mm, where nothing else is
-printed. (J1 is the USB-C; the hand-soldered pair is J4 and J6.)
-
-**D33 — Every connector pin named on the back silkscreen** (Mitra: wire up without the docs), beside its pad:
-G = GND, V = 3V3_SW, SDA / SCL, A / B (RS485 on J3 pins 2–3), a bare number = that GPIO (J2: 0, 1; J13: 2, 4;
-J5: 10), "+" / "−" with SOLAR (J6) and CELL (J4), and a diode symbol (anode → cathode) at J7. Labels are 1.0 mm,
-read correctly with the board turned over. If JP2/JP3 are re-bridged for UART, J3 pins 2–3 become RX / TX.
-`claude-tools/layout/backlabels.py` (re-runnable). No new DRC notes.
-
-## Revision 4 (28 Oct 2026, before the first JLCPCB order)
-
-**D34 — J4 and J6 fitted for this run** (Mitra): J4 = JST-PH 2-way right-angle (S2B-PH-K-S, C173752) for the
-cell; J6 = XY308-2.54-2P screw terminal (C557685) for external 5 V, e.g. a solar panel. Both Extended and
-through-hole, so JLCPCB hand-solders them: about $0.97 per board at 10 (mostly two $3.07 feeder fees), $0.36
-at 100. Layout unchanged (footprints were already placed and marked with polarity, D32). 55 placed parts, 26
-part numbers; ≈ $11.51 per board for 10, ≈ $7.16 for 100 (prices re-read 28 Oct; bare PCB still a
-placeholder). Not all JST-PH cells are wired the same way: check the lead polarity against the "+" / "−" marks.
-J5, J7, R19 and C11 remain unfitted.
-
-**D35 — CPL corrected to match JLCPCB's part models** (Mitra's first pass through the assembly preview):
-JLCPCB's models are rotated differently from KiCad's footprints, so `jlc_files.py` now adds 180° to SOT-23
-(Q1, Q2, D5) and J4, −90° to SOT-23-5 U3 and SOIC-8 (U1, U5), and 180° to U2
-(JLCPCB's XB5353A model is drawn differently from its ME6211, though both are SOT-23-5). The THT connectors' KiCad origin is
-pin 1 but JLCPCB centres its model on the given point, which put J2/J12 two pins too high, J3/J13 two pins
-too low, J6 half a pin left and J4 1 mm left; the CPL now gives the centre of each pin row. Expected
-orientation (pin 1, or cathode): U1 bottom-right, U5 top-left, U2/U3 bottom-left, Q1 bottom-right, Q2/D5
-top-right, U4 top-left; D3 band at the top; LED cathodes: D1 right, D2 bottom, D4 right.
+**Q6 — Gateway role.** Does any node need to be a LoRa-to-WiFi gateway (needs WiFi and LoRa awake together)?
+Same hardware either way; it only affects power (Q3).
