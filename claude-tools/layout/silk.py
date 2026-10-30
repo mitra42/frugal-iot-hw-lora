@@ -4,7 +4,7 @@ Candidates hug the part's courtyard on each side (and sit inside big parts' outl
 pads, silk graphics, other labels, big parts' outlines, holes and the edge, and must be nearer its own
 courtyard than any other. Refs with no legal spot go to F.Fab and are listed (fix those by moving parts)."""
 import pcbnew, math, json
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 e = b.GetBoardEdgesBoundingBox(); EX0, EY0, EX1, EY1 = e.GetX() + mm(0.3), e.GetY() + mm(0.3), e.GetRight() - mm(0.3), e.GetBottom() - mm(0.3)
 M = mm(0.12)

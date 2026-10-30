@@ -1,7 +1,7 @@
 """KiCad python, one job: GND fan-out vias for SMD GND pads + thermal vias in exposed pads, then export DSN.
-Reads/writes ../frugal_iot_v02/frugal_iot_v02.kicad_pcb; writes out/board.dsn and out/prep.json."""
+Reads/writes ../frugal_iot_v03/frugal_iot_v03.kicad_pcb; writes out/board.dsn and out/prep.json."""
 import json, math, pcbnew
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB)
 mm = pcbnew.FromMM; tomm = lambda v: v / 1e6
 gnd = b.FindNet('GND')

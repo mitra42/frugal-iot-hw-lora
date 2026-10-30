@@ -1,0 +1,85 @@
+Columns (part table):
+  Type    Basic   = JLCPCB Basic part, permanently on a machine feeder: no feeder fee (Economic).
+          PrefExt = 'Preferred Extended': Extended, but exempt from the feeder fee on Economic PCBA.
+          Ext     = Extended: $3.07 feeder-loading fee once per part number per order (Economic).
+  /brd    quantity per board.
+  buy@N   quantity JLCPCB buys for N boards = max(/brd x N + JLCPCB's attrition allowance for that part,
+          JLCPCB's minimum order for that part). E.g. a 0603 resistor at 10 boards: 1 x 10 + 10 = 20.
+  $@N     buy@N x unit price at that quantity's price tier.
+
+Refs                       Value                  LCSC       Type    /brd buy@10    $@10 buy@100   $@100
+C1,C2,C4,C5,C8,C14         10uF                   C19702     Basic      6     70    1.48     610    8.66
+C3,C6,C9,C12,C13,C15       100nF                  C14663     Basic      6     70    0.60     610    4.09
+C7,C10,C16                 1uF                    C15849     Basic      3     40    0.56     310    4.31
+D1                         KT-0603R               C2286      Basic      1     20    0.15     110    0.85
+D2,D4                      KT-0805G               C2297      Basic      2     30    0.49     210    3.44
+D3                         SS34                   C8678      Basic      1     18    0.63     108    3.79
+D5                         PSM712-LF-T7           C32677     Basic      1     11    3.79     101   27.59
+J1                         TYPE-C-31-M-12         C165948    Ext        1     10    1.87     100   14.79
+J2,J3,J12,J13              XY308-2.54-5P          C915914    Ext        4     40   18.22     400  159.96
+J4                         S2B-PH-K-S             C173752    Ext        1     10    0.40     100    3.97
+J6                         XY308-2.54-2P          C557685    Ext        1     10    2.48     100   19.56
+Q1,Q2                      AO3401A                C15127     Basic      2     24    2.31     204   14.12
+R1,R2                      5.1k                   C23186     Basic      2     30    0.04     210    0.32
+R3,R4,R14-R16              4.7k                   C23162     Basic      5     60    0.17     510    1.43
+R5,R6,R13                  1k                     C21190     Basic      3     40    0.07     310    0.53
+R7,R10                     100k                   C25803     Basic      2     30    0.09     210    0.61
+R8,R9                      1M                     C22935     Basic      2     30    0.05     210    0.38
+R11,R12,R18,R22,R23        10k                    C25804     Basic      5     60    0.13     510    1.12
+R19,R20                    680R                   C23228     Basic      2     30    0.06     210    0.44
+R21                        120R                   C22787     Basic      1     20    0.04     110    0.21
+SW1,SW2                    TS-1187A-B-A-B         C318884    Basic      2     28    0.58     208    3.33
+U1                         TP4056                 C16581     PrefExt    1     10    1.86     100   14.70
+U2                         XB5353A                C80628     Ext        1     12    1.06     102    7.13
+U3,U7                      RT9080-33GJ5           C841192    Ext        2     22    2.64     202   17.45
+U4                         ESP32-S3-WROOM-1U-N4   C2980296   Ext        1     10   40.64     100  342.35
+U5                         SP3485EN-L/TR          C8963      Basic      1     10    2.64     100   17.64
+U6                         Ra-01SH                C2764087   Ext        1     10   39.53     100  295.97
+
+Per board: 201 SMT joints, 24 through-hole joints, 27 part numbers (8 Extended with fee).
+
+                                             10 Economic 100 Economic, panelised
+Setup + stencil + confirm                         $10.16                  $18.37
+SMT joints                                         $3.22                  $32.16
+Through-hole joints (manual)                       $7.52                  $42.94
+Feeder loading                                    $24.56                  $24.56
+X-ray (module)                                     $0.00                   $0.00
+Fixture + packing                                  $0.00                   $0.00
+Components                                       $122.60                 $968.73
+Bare PCB (placeholder, see notes)                   $5.00                  $69.90
+TOTAL (excl. shipping)                           $173.05                $1156.66
+Per board                                         $17.31                  $11.57
+
+Same, per board:
+Setup + stencil + confirm                          $1.02                   $0.18
+SMT joints                                         $0.32                   $0.32
+Through-hole joints (manual)                       $0.75                   $0.43
+Feeder loading                                     $2.46                   $0.25
+X-ray (module)                                     $0.00                   $0.00
+Fixture + packing                                  $0.00                   $0.00
+Components                                        $12.26                   $9.69
+Bare PCB (placeholder, see notes)                   $0.50                   $0.70
+Per board                                         $17.31                  $11.57
+
+Notes:
+  * Bare PCB is a placeholder until layout: the irrigation board's JLCPCB quote (100 x 80 mm), an upper bound
+    for this 37 mm-high board. Replace with the real quote after layout.
+  * Shipping, tax and import duty not included.
+  * JLCPCB's FAQ says Economic PCBA above 30 pieces needs panelising; the panel fee ($8.21) is included
+    in the 100-board column.
+  * No X-ray assumed: the ESP32-S3-WROOM-1U and Ra-01SH have castellated edge pads (X-ray applies to
+    leadless/BGA parts). The S3 module also has a ground pad underneath; check the JLCPCB quote.
+  * Not fitted (DNP) parts cost nothing: J5 (spare-GPIO holes), J7 and the sensor options R17, C11.
+  * J4 (cell JST-PH) and J6 (5 V terminal) are fitted, as V0.2 (D34).
+  * A LoRa antenna (U.FL) per board is extra, bought separately, as is the WiFi antenna.
+  * JLCPCB's price page (22 Oct 2026) also lists 'pre-reflow soldering' at $0.016 per joint with no
+    explanation; not included here. Check the quote for it.
+  * RS485 / Modbus is fitted; leaving it off saves the amount shown at the end (no feeder fees: all Basic
+    parts, and J3 is the same part number as J2/J12).
+
+Extended (fee-bearing on Economic): C165948 C915914 C173752 C557685 C80628 C841192 C2980296 C2764087
+
+RS485 / Modbus (D29): included above. A board without Modbus can leave these off and save:
+  parts: C13 100nF, D5 PSM712, J3 J3 RS485 1-5, R18 10k, R19,R20 680R, R21 120R, U5 SP3485EN
+   10 boards: components $11.89 + assembly joints $1.16 + feeder fees $0.00 = $13.04  ($1.30 per board)
+  100 boards: components $87.06 + assembly joints $11.56 + feeder fees $0.00 = $98.62  ($0.99 per board)

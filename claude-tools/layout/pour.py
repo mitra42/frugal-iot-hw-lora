@@ -1,6 +1,6 @@
 """KiCad python: GND pours on both layers over the whole board, fill, save. Then report track/via counts."""
 import pcbnew, json
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB)
 mm = pcbnew.FromMM
 gnd = b.FindNet('GND')

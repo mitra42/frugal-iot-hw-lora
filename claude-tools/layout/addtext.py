@@ -1,8 +1,8 @@
 """KiCad python: place a board title on F.SilkS at the largest size (2.0 -> 1.0 mm) that fits clear of pads,
 silk graphics, other silk text and the edge. Prints where it went."""
 import pcbnew, math, sys
-TEXT = sys.argv[1] if len(sys.argv) > 1 else 'Frugal-IoT V0.2'
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+TEXT = sys.argv[1] if len(sys.argv) > 1 else 'Frugal-IoT V0.3 LoRa'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 e = b.GetBoardEdgesBoundingBox(); EX0, EY0, EX1, EY1 = e.GetX() + mm(1), e.GetY() + mm(1), e.GetRight() - mm(1), e.GetBottom() - mm(1)
 M = mm(0.3)

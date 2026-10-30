@@ -1,6 +1,6 @@
 """KiCad python: silkscreen '1' and '10' at the ends of the J2+J12 and J3+J13 terminal pairs (D18)."""
 import pcbnew
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 pos = {}
 for f in b.GetFootprints():

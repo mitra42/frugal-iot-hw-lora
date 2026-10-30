@@ -1,7 +1,7 @@
 """KiCad python, one job: delete DRC-named dangling tracks + router-made GND tracks on B.Cu, and put a GND via
 into every filled GND island (either layer) that has no via/THT GND pad, with clearance from other-net copper."""
 import pcbnew, json, math
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 drc = json.load(open('out/drc.json'))
 dead_ids = {i['uuid'] for v in drc['violations'] if v['type'] == 'track_dangling' for i in v['items']}

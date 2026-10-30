@@ -14,12 +14,12 @@ STD = dict(name='Standard', setup=25.56, stencil=8.21, panel=0.0, smt_joint=0.00
            hand_labour=3.58, feeder_ext=0.0, feeder_all=1.53, min_smt_per_board=0.48, confirm=0.45,
            packing=0.50, fixture=None)   # fixture by quantity, see fixture_fee()
 XRAY = [(10, 1.64), (50, 0.82), (200, 0.49), (500, 0.33), (1000, 0.25), (3000, 0.16), (99999, 0.082)]
-XRAY_REFS = ()  # ESP32-C3-WROOM-02U has castellated edge pads: no X-ray (D1)
+XRAY_REFS = ()  # ESP32-S3-WROOM-1U and Ra-01SH have castellated edge pads: no X-ray assumed (L1)
 COLUMNS = [(10, ECON), (100, ECON_PANEL)]
 # Bare PCB: no quote until the layout fixes the outline. Placeholder = irrigation board's quote (100x80 mm,
-# 15 Oct 2026, A$ at 1.435): an upper bound, since V0.2 is 37 mm x (<100) mm.
+# 15 Oct 2026, A$ at 1.435): an upper bound, since V0.3 is 37 mm x (~80) mm.
 PCB_QUOTE = {10: 7.18 / 1.435, 100: 100.31 / 1.435}
-MODBUS_REFS = {'U5', 'C13', 'R20', 'R21', 'R22', 'R23', 'D5', 'J3'}   # RS485, fitted by default (D29)
+MODBUS_REFS = {'U5', 'C13', 'R18', 'R19', 'R20', 'R21', 'D5', 'J3'}   # RS485, fitted by default (D29)
 
 def fixture_fee(n):
     for lim, f in [(29, 16.42), (99, 24.63), (199, 41.04), (349, 82.09), (499, 123.13), (10**6, 164.18)]:
@@ -91,8 +91,9 @@ NOTES = """Notes:
   * Shipping, tax and import duty not included.
   * JLCPCB's FAQ says Economic PCBA above 30 pieces needs panelising; the panel fee ($8.21) is included
     in the 100-board column.
-  * No X-ray: the ESP32-C3-WROOM-02U has castellated edge pads (X-ray applies to leadless/BGA parts).
-  * Not fitted (DNP) parts cost nothing: J5, J7 and the sensor options R19, C11.\n  * J4 (cell JST-PH) and J6 (5 V terminal) are fitted (D34): both Extended, hand-soldered. Together they add\n    about $0.97 per board at 10 (mostly two $3.07 feeder fees) and $0.36 at 100.\n  * JLCPCB's price page (22 Oct 2026) also lists 'pre-reflow soldering' at $0.016 per joint with no\n    explanation; not included here. Check the quote for it.\n  * RS485 / Modbus is fitted; leaving it off saves the amount shown at the end (no feeder fees: all Basic\n    parts, and J3 is the same part number as J2/J12).
+  * No X-ray assumed: the ESP32-S3-WROOM-1U and Ra-01SH have castellated edge pads (X-ray applies to
+    leadless/BGA parts). The S3 module also has a ground pad underneath; check the JLCPCB quote.
+  * Not fitted (DNP) parts cost nothing: J5 (spare-GPIO holes), J7 and the sensor options R17, C11.\n  * J4 (cell JST-PH) and J6 (5 V terminal) are fitted, as V0.2 (D34).\n  * A LoRa antenna (U.FL) per board is extra, bought separately, as is the WiFi antenna.\n  * JLCPCB's price page (22 Oct 2026) also lists 'pre-reflow soldering' at $0.016 per joint with no\n    explanation; not included here. Check the quote for it.\n  * RS485 / Modbus is fitted; leaving it off saves the amount shown at the end (no feeder fees: all Basic\n    parts, and J3 is the same part number as J2/J12).
 """
 
 def modbus():

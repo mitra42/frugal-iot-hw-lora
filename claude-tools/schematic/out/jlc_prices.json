@@ -2,7 +2,7 @@
  "C14663": {
   "componentId": 15331,
   "componentLibraryType": "base",
-  "stockCount": 41008852,
+  "stockCount": 37434284,
   "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
   "erpComponentName": "100nF \u00b110% 50V",
   "componentSource": "shop",
@@ -11,69 +11,69 @@
    {
     "startNumber": 1,
     "endNumber": 499,
-    "productPrice": 0.0081
+    "productPrice": 0.0086
    },
    {
     "startNumber": 500,
     "endNumber": 1499,
-    "productPrice": 0.0063
+    "productPrice": 0.0067
    },
    {
     "startNumber": 1500,
     "endNumber": 3999,
-    "productPrice": 0.0053
+    "productPrice": 0.0057
    },
    {
     "startNumber": 4000,
     "endNumber": 23999,
-    "productPrice": 0.0047
+    "productPrice": 0.005
    },
    {
     "startNumber": 24000,
     "endNumber": 47999,
-    "productPrice": 0.0042
+    "productPrice": 0.0045
    },
    {
     "startNumber": 48000,
     "endNumber": -1,
-    "productPrice": 0.0039
+    "productPrice": 0.0042
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 4000,
     "endNumber": 23999,
-    "productPrice": 0.0045
+    "productPrice": 0.0048
    },
    {
     "startNumber": 1,
     "endNumber": 499,
-    "productPrice": 0.0078
+    "productPrice": 0.0083
    },
    {
     "startNumber": 24000,
     "endNumber": 47999,
-    "productPrice": 0.004
+    "productPrice": 0.0043
    },
    {
     "startNumber": 1500,
     "endNumber": 3999,
-    "productPrice": 0.0051
+    "productPrice": 0.0055
    },
    {
     "startNumber": 500,
     "endNumber": 1499,
-    "productPrice": 0.0061
+    "productPrice": 0.0065
    },
    {
     "startNumber": 48000,
     "endNumber": -1,
-    "productPrice": 0.0038
+    "productPrice": 0.004
    }
   ],
   "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
   "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
-  "canPresaleNumber": 29853600,
+  "canPresaleNumber": 26276594,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "YAGEO-CC0603KRX7R9BB104/C14663",
@@ -90,24 +90,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 4000,
-  "shopCostPrice": 0.0207,
-  "preMinPurchaseNum": 1433,
+  "shopCostPrice": 0.02051,
+  "preMinPurchaseNum": 1347,
   "minPurchaseNum": 1,
-  "initialPrice": 0.0081,
+  "initialPrice": 0.0086,
   "componentCode": "C14663",
   "componentBrandEn": "YAGEO",
   "componentModelEn": "CC0603KRX7R9BB104",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8667086722678525952",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8667086722649165824-C14663-front.jpg?x-oss-date=20261030T120250Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b4be221b846b100374fa700aa9b0f5b9b77abf30f2e34a654ae468ec06fb218c",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
-  "dataManualFileAccessId": "8667086713681608704",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8667086713656442880-C14663.pdf?response-content-disposition=attachment%3B%20filename%3DC14663.pdf%3B%20filename%2A%3DUTF-8%27%27C14663.pdf&x-oss-date=20261030T120250Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=63fc1a646eba393ac8f70bbac1c6fa0f4707ef589de338c8ec270ab90167b081",
   "dataManualOfficialLink": "",
   "componentName": "YAGEO CC0603KRX7R9BB104",
   "minImage": "",
-  "minImageAccessId": "8667086724243136512",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8667086724217970688-C14663-front.jpg?x-oss-date=20261030T120250Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e2533701abbb6bbb97bc08f1e2eeb71024e7f666001e69d686bdc55c2853a3e2",
   "imageList": [
    {
     "productImage": null,
@@ -179,7 +179,7 @@
  "C15127": {
   "componentId": 15801,
   "componentLibraryType": "base",
-  "stockCount": 677386,
+  "stockCount": 1025990,
   "componentTypeEn": "MOSFETs",
   "erpComponentName": "AO3401A",
   "componentSource": "shop",
@@ -188,12 +188,12 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.096
+    "productPrice": 0.0961
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.0783
+    "productPrice": 0.0784
    },
    {
     "startNumber": 150,
@@ -220,12 +220,12 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.0925
+    "productPrice": 0.0926
    },
    {
     "startNumber": 500,
     "endNumber": 2999,
-    "productPrice": 0.0595
+    "productPrice": 0.0596
    },
    {
     "startNumber": 50,
@@ -245,12 +245,12 @@
    {
     "startNumber": 150,
     "endNumber": 499,
-    "productPrice": 0.0666
+    "productPrice": 0.0667
    }
   ],
   "firstSortAccessId": "af6f8457ec9d400e9ccbfa9dd9889152",
   "secondSortAccessId": "c379c2fda52a490e92606b90e6c81760",
-  "canPresaleNumber": 544098,
+  "canPresaleNumber": 895089,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Alpha_OmegaSemicon-AO3401A/C15127",
@@ -267,24 +267,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 3000,
-  "shopCostPrice": 0.25402,
+  "shopCostPrice": 0.25125,
   "preMinPurchaseNum": 116,
   "minPurchaseNum": 1,
-  "initialPrice": 0.096,
+  "initialPrice": 0.0961,
   "componentCode": "C15127",
   "componentBrandEn": "Alpha & Omega Semicon",
   "componentModelEn": "AO3401A",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8770913661323878400",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770913661298712576-C15127-front.jpg?x-oss-date=20261030T120251Z&x-oss-expires=1799&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3193cd3c63f221d01a7a551cf4e4f9df1fb816fb0e6a914b8e5528345cbff9e6",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf",
-  "dataManualFileAccessId": "8776572966224044032",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8776572966194683904-C15127.pdf?response-content-disposition=attachment%3B%20filename%3DC15127.pdf%3B%20filename%2A%3DUTF-8%27%27C15127.pdf&x-oss-date=20261030T120251Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=0d3fac21da3b3b1f1eb4e83bafa2909bbff42ffb86edd1dd05e64ac082434587",
   "dataManualOfficialLink": "",
   "componentName": "AOS AO3401A",
   "minImage": "",
-  "minImageAccessId": "8770913662397485056",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770913662368124928-C15127-front.jpg?x-oss-date=20261030T120251Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fdc5e40d3bb3142726fa982e0684d6058258f87d5ba6f17c1c31ef6682a7659d",
   "imageList": [
    {
     "productImage": null,
@@ -388,7 +388,7 @@
  "C15849": {
   "componentId": 16531,
   "componentLibraryType": "base",
-  "stockCount": 12998400,
+  "stockCount": 12334813,
   "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
   "erpComponentName": "1uF \u00b110% 50V",
   "componentSource": "shop",
@@ -397,69 +397,69 @@
    {
     "startNumber": 1,
     "endNumber": 499,
-    "productPrice": 0.0146
+    "productPrice": 0.0139
    },
    {
     "startNumber": 500,
     "endNumber": 1499,
-    "productPrice": 0.0113
+    "productPrice": 0.0107
    },
    {
     "startNumber": 1500,
     "endNumber": 3999,
-    "productPrice": 0.0098
+    "productPrice": 0.0093
    },
    {
     "startNumber": 4000,
     "endNumber": 23999,
-    "productPrice": 0.0086
+    "productPrice": 0.0082
    },
    {
     "startNumber": 24000,
     "endNumber": 47999,
-    "productPrice": 0.0082
+    "productPrice": 0.0078
    },
    {
     "startNumber": 48000,
     "endNumber": -1,
-    "productPrice": 0.0079
+    "productPrice": 0.0075
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 24000,
     "endNumber": 47999,
-    "productPrice": 0.0079
+    "productPrice": 0.0075
    },
    {
     "startNumber": 500,
     "endNumber": 1499,
-    "productPrice": 0.0108
+    "productPrice": 0.0103
    },
    {
     "startNumber": 48000,
     "endNumber": -1,
-    "productPrice": 0.0076
+    "productPrice": 0.0072
    },
    {
     "startNumber": 4000,
     "endNumber": 23999,
-    "productPrice": 0.0083
+    "productPrice": 0.0079
    },
    {
     "startNumber": 1500,
     "endNumber": 3999,
-    "productPrice": 0.0094
+    "productPrice": 0.0089
    },
    {
     "startNumber": 1,
     "endNumber": 499,
-    "productPrice": 0.0141
+    "productPrice": 0.0134
    }
   ],
   "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
   "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
-  "canPresaleNumber": 9764923,
+  "canPresaleNumber": 9091329,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "16531-CL10A105KB8NNNC/C15849",
@@ -476,24 +476,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 4000,
-  "shopCostPrice": 0.03792,
-  "preMinPurchaseNum": 799,
+  "shopCostPrice": 0.03595,
+  "preMinPurchaseNum": 844,
   "minPurchaseNum": 1,
-  "initialPrice": 0.0146,
+  "initialPrice": 0.0139,
   "componentCode": "C15849",
   "componentBrandEn": "Samsung Electro-Mechanics",
   "componentModelEn": "CL10A105KB8NNNC",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8556213907602755584",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8556213907598561280-C15849-front.jpg?x-oss-date=20261030T120252Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=85a1e9f1f9a420a96dacd47f3c6f5bfd3509ce19fe368f341487e14510690865",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf",
-  "dataManualFileAccessId": "8556213788459761664",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8556213788455567360-C15849.pdf?response-content-disposition=attachment%3B%20filename%3DC15849.pdf%3B%20filename%2A%3DUTF-8%27%27C15849.pdf&x-oss-date=20261030T120252Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4f1757480bf1c2a7b7e5fefa481769df1b58cb79fc23a523ff99bf7e757f90a1",
   "dataManualOfficialLink": "",
   "componentName": "Samsung Electro-Mechanics CL10A105KB8NNNC",
   "minImage": "",
-  "minImageAccessId": "8556213908597346304",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8556213908593152000-C15849-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120252Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a3fc60e0ec15337f7190c4f829c845cdf0d6029312585923abdcc87def41f08c",
   "imageList": [
    {
     "productImage": null,
@@ -565,7 +565,7 @@
  "C16581": {
   "componentId": 17264,
   "componentLibraryType": "expand",
-  "stockCount": 87433,
+  "stockCount": 85196,
   "componentTypeEn": "Battery Management",
   "erpComponentName": "1A\u7ebf\u6027\u9502\u79bb\u5b50\u7535\u6c60\u5145\u7535\u5668",
   "componentSource": "shop",
@@ -574,44 +574,44 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.1856
+    "productPrice": 0.1857
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1469
+    "productPrice": 0.147
    },
    {
     "startNumber": 150,
     "endNumber": 499,
-    "productPrice": 0.1281
+    "productPrice": 0.1282
    },
    {
     "startNumber": 500,
     "endNumber": 2499,
-    "productPrice": 0.1112
+    "productPrice": 0.1113
    },
    {
     "startNumber": 2500,
     "endNumber": 3999,
-    "productPrice": 0.0914
+    "productPrice": 0.0915
    },
    {
     "startNumber": 4000,
     "endNumber": -1,
-    "productPrice": 0.0886
+    "productPrice": 0.0887
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.1788
+    "productPrice": 0.1789
    },
    {
     "startNumber": 150,
     "endNumber": 499,
-    "productPrice": 0.1234
+    "productPrice": 0.1235
    },
    {
     "startNumber": 500,
@@ -621,7 +621,7 @@
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1416
+    "productPrice": 0.1417
    },
    {
     "startNumber": 2500,
@@ -631,12 +631,12 @@
    {
     "startNumber": 4000,
     "endNumber": -1,
-    "productPrice": 0.0854
+    "productPrice": 0.0855
    }
   ],
   "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
   "secondSortAccessId": "cca499faefe0487cab22251edb29c551",
-  "canPresaleNumber": 74146,
+  "canPresaleNumber": 72238,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "17264-TP4056_42ESOP8/C16581",
@@ -656,21 +656,21 @@
   "shopCostPrice": 0.47031,
   "preMinPurchaseNum": 49,
   "minPurchaseNum": 1,
-  "initialPrice": 0.1856,
+  "initialPrice": 0.1857,
   "componentCode": "C16581",
   "componentBrandEn": "TOPPOWER(Nanjing Extension Microelectronics)",
   "componentModelEn": "TP4056-42-ESOP8",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8553218739542769664",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553218739534381056-C16581-front.jpg?x-oss-date=20261030T120253Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3a8f272b0175f43752e249e13e0026bd64381807234951662257b114065d7d3c",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1809261820_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
-  "dataManualFileAccessId": "8588879072461508608",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588879072448925696-C16581.pdf?response-content-disposition=attachment%3B%20filename%3DC16581.pdf%3B%20filename%2A%3DUTF-8%27%27C16581.pdf&x-oss-date=20261030T120253Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f94196eee7e64e0dd22cb40f60fe093bc799cf8960a0ca3546a48e8fc022ec97",
   "dataManualOfficialLink": "",
   "componentName": "TOP POWER ASIC TP4056-42-ESOP8",
   "minImage": "",
-  "minImageAccessId": "8553218740138766336",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553218740134572032-C16581-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120253Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c30670152044e886a5bcce60cf1d82a39809ba1ac5a8684062555d88d1f985a3",
   "imageList": [
    {
     "productImage": null,
@@ -782,7 +782,7 @@
  "C165948": {
   "componentId": 177331,
   "componentLibraryType": "expand",
-  "stockCount": 301221,
+  "stockCount": 284301,
   "componentTypeEn": "USB Connectors",
   "erpComponentName": "Type-C \u6bcd \u5367\u8d34",
   "componentSource": "shop",
@@ -791,22 +791,22 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.1871
+    "productPrice": 0.1872
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1478
+    "productPrice": 0.1479
    },
    {
     "startNumber": 150,
     "endNumber": 999,
-    "productPrice": 0.1284
+    "productPrice": 0.1285
    },
    {
     "startNumber": 1000,
     "endNumber": 1999,
-    "productPrice": 0.1042
+    "productPrice": 0.1043
    },
    {
     "startNumber": 2000,
@@ -823,37 +823,37 @@
    {
     "startNumber": 150,
     "endNumber": 999,
-    "productPrice": 0.1237
+    "productPrice": 0.1238
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1423
+    "productPrice": 0.1424
    },
    {
     "startNumber": 2000,
     "endNumber": 4999,
-    "productPrice": 0.0958
+    "productPrice": 0.0959
    },
    {
     "startNumber": 5000,
     "endNumber": -1,
-    "productPrice": 0.0931
+    "productPrice": 0.0932
    },
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.1802
+    "productPrice": 0.1803
    },
    {
     "startNumber": 1000,
     "endNumber": 1999,
-    "productPrice": 0.1004
+    "productPrice": 0.1005
    }
   ],
   "firstSortAccessId": "248c42d1f2d246498d91d5c9cad9dd16",
   "secondSortAccessId": "fd5ff95036c34627a2d0f3a2d41b2b51",
-  "canPresaleNumber": 288978,
+  "canPresaleNumber": 271765,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Korean_HropartsElec-TYPE_C_31_M12/C165948",
@@ -873,21 +873,21 @@
   "shopCostPrice": 0.48,
   "preMinPurchaseNum": 49,
   "minPurchaseNum": 1,
-  "initialPrice": 0.1871,
+  "initialPrice": 0.1872,
   "componentCode": "C165948",
   "componentBrandEn": "Korean Hroparts Elec",
   "componentModelEn": "TYPE-C-31-M-12",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8550723686815985664",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550723686811791360-C165948-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120254Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=0e26471b1266b01e2495a1dc2eea2eb26116a8915850a26bb6dbac268fbe8d05",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf",
-  "dataManualFileAccessId": "8550723676069908480",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8550723676065714176-C165948.pdf?response-content-disposition=attachment%3B%20filename%3DC165948.pdf%3B%20filename%2A%3DUTF-8%27%27C165948.pdf&x-oss-date=20261030T120254Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=172323b890f4dae074722ea38a747296002778db84ce47c9736355cfc34eeb6e",
   "dataManualOfficialLink": "",
   "componentName": "Korean Hroparts Elec TYPE-C-31-M-12",
   "minImage": "",
-  "minImageAccessId": "8550723687499522048",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550723687495327744-C165948-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120254Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2122616258f3c5b60bc2a4ca2c992aa1fdd9055e82754f4307902511b540f94b",
   "imageList": [
    {
     "productImage": null,
@@ -987,7 +987,7 @@
  "C173752": {
   "componentId": 185142,
   "componentLibraryType": "expand",
-  "stockCount": 200140,
+  "stockCount": 197909,
   "componentTypeEn": "Wire To Board Connector",
   "erpComponentName": "1x2P \u95f4\u8ddd:2mm \u5f2f\u63d2 \u7cfb\u5217:PH \u3010\u63d2\u4ef6\u3011",
   "componentSource": "shop",
@@ -1028,7 +1028,7 @@
    {
     "startNumber": 1,
     "endNumber": 199,
-    "productPrice": 0.0382
+    "productPrice": 0.0383
    },
    {
     "startNumber": 2000,
@@ -1058,7 +1058,7 @@
   ],
   "firstSortAccessId": "248c42d1f2d246498d91d5c9cad9dd16",
   "secondSortAccessId": "173a9139d1ba47df8739d202796819ee",
-  "canPresaleNumber": 199229,
+  "canPresaleNumber": 197090,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "JST-S2B_PH_K_S_LF_SN/C173752",
@@ -1083,16 +1083,16 @@
   "componentBrandEn": "JST",
   "componentModelEn": "S2B-PH-K-S(LF)(SN)",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8707720439376613376",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8707720439351447552-C173752-front.jpg?x-oss-date=20261030T120255Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=286347dd053da4817ff6a391b5618cb0d4c56cb3b5255debfc2a34aec7a4b5f1",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_JST-S2B-PH-K-S-LF-SN_C173752.pdf",
-  "dataManualFileAccessId": "8587713913773568000",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8587713913765179392-C173752.pdf?response-content-disposition=attachment%3B%20filename%3DC173752.pdf%3B%20filename%2A%3DUTF-8%27%27C173752.pdf&x-oss-date=20261030T120255Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=256dddb5d5d0131bea7073d2f2875b32458f2148e5fac906bb85d454868b6232",
   "dataManualOfficialLink": "",
   "componentName": "JST S2B-PH-K-S(LF)(SN)",
   "minImage": "",
-  "minImageAccessId": "8707720440471597056",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8707720440442236928-C173752-front.jpg?x-oss-date=20261030T120255Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=59f87aa7d6887a59dc59e112566be97b652b770316e6b56d2e4b2d60d3a383d8",
   "imageList": [
    {
     "productImage": null,
@@ -1228,7 +1228,7 @@
  "C19702": {
   "componentId": 20411,
   "componentLibraryType": "base",
-  "stockCount": 12441569,
+  "stockCount": 11873933,
   "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
   "erpComponentName": "10uF \u00b110% 10V",
   "componentSource": "shop",
@@ -1242,7 +1242,7 @@
    {
     "startNumber": 200,
     "endNumber": 599,
-    "productPrice": 0.0163
+    "productPrice": 0.0164
    },
    {
     "startNumber": 600,
@@ -1284,7 +1284,7 @@
    {
     "startNumber": 200,
     "endNumber": 599,
-    "productPrice": 0.0157
+    "productPrice": 0.0158
    },
    {
     "startNumber": 8000,
@@ -1299,7 +1299,7 @@
   ],
   "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
   "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
-  "canPresaleNumber": 10009648,
+  "canPresaleNumber": 9449660,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "20411-CL10A106KP8NNNC/C19702",
@@ -1316,24 +1316,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 4000,
-  "shopCostPrice": 0.05457,
-  "preMinPurchaseNum": 554,
+  "shopCostPrice": 0.0547,
+  "preMinPurchaseNum": 551,
   "minPurchaseNum": 1,
   "initialPrice": 0.0212,
   "componentCode": "C19702",
   "componentBrandEn": "Samsung Electro-Mechanics",
   "componentModelEn": "CL10A106KP8NNNC",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552474599838134272",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552474599829745664-C19702-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120256Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=83be72abcc78674475b99a684485320475bd0b373b7001e2e1c01df55c210bc5",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf",
-  "dataManualFileAccessId": "8579707107920437248",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579707107916242944-C19702.pdf?response-content-disposition=attachment%3B%20filename%3DC19702.pdf%3B%20filename%2A%3DUTF-8%27%27C19702.pdf&x-oss-date=20261030T120256Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2383cde347c969f42114403cf12b160991a93f56e5fbabdbece4d17d51be035c",
   "dataManualOfficialLink": "",
   "componentName": "Samsung Electro-Mechanics CL10A106KP8NNNC",
   "minImage": "",
-  "minImageAccessId": "8552474600408829952",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552474600404635648-C19702-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120256Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d54db53c97847db66ec4620fd30dcf9bdc4e674a351f0175145b862bdcc2ee40",
   "imageList": [
    {
     "productImage": null,
@@ -1398,7 +1398,7 @@
  "C21190": {
   "componentId": 21904,
   "componentLibraryType": "base",
-  "stockCount": 33293173,
+  "stockCount": 31340038,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 1k\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -1469,7 +1469,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 26593651,
+  "canPresaleNumber": 24668769,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "21904-0603WAF1001T5E/C21190",
@@ -1494,16 +1494,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF1001T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552463652621078529",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552463652621078528-C21190-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120257Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=23dc5528126f8ffce1c44ee0815bf330b3c8c2fb7b46ac13abebb6777084f0e4",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf",
-  "dataManualFileAccessId": "8579706098733010944",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706098724622336-C21190.pdf?response-content-disposition=attachment%3B%20filename%3DC21190.pdf%3B%20filename%2A%3DUTF-8%27%27C21190.pdf&x-oss-date=20261030T120257Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=eca01c576d019725981d21830d4c3795bc1048f09d460693ec8c3b612104f4d3",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF1001T5E",
   "minImage": "",
-  "minImageAccessId": "8552463653250494464",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552463653242105856-C21190-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120257Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e46c6d3ad81c973157ade3d44acead9ca5fc905075267f8e4d4a07f0d57aa2d0",
   "imageList": [
    {
     "productImage": null,
@@ -1587,7 +1587,7 @@
  "C22787": {
   "componentId": 23514,
   "componentLibraryType": "base",
-  "stockCount": 2292244,
+  "stockCount": 2135058,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 120\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -1658,7 +1658,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 1880589,
+  "canPresaleNumber": 1720474,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "23514-0603WAF1200T5E/C22787",
@@ -1683,16 +1683,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF1200T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8762227274915418112",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762227274881863680-C22787-front.jpg?x-oss-date=20261030T120258Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c369306bb0cf529f1ec6a6d52bd816c010127dd1dd818e3640743ece78297ba9",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1200T5E_C22787.pdf",
-  "dataManualFileAccessId": "8579706116978507776",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706116974313472-C22787.pdf?response-content-disposition=attachment%3B%20filename%3DC22787.pdf%3B%20filename%2A%3DUTF-8%27%27C22787.pdf&x-oss-date=20261030T120258Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5e33d45b83119b0c22fb8a62f0be14f5cf4177ee7768ada6b43d79e580641da4",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF1200T5E",
   "minImage": "",
-  "minImageAccessId": "8762227275977252864",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762227275947892736-C22787-front.jpg?x-oss-date=20261030T120258Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2a460a6d52dc3f21ba9b30ea1daaf7514b6f4f118dcc95ac31ebc4b07d9e060e",
   "imageList": [
    {
     "productImage": null,
@@ -1776,7 +1776,7 @@
  "C2286": {
   "componentId": 2659,
   "componentLibraryType": "base",
-  "stockCount": 7543937,
+  "stockCount": 7297318,
   "componentTypeEn": "LED Indication - Discrete",
   "erpComponentName": "0603 \u7ea2\u706f \u9ad8\u4eae",
   "componentSource": "shop",
@@ -1847,7 +1847,7 @@
   ],
   "firstSortAccessId": "2a1317eec5064bbb856a96033019985f",
   "secondSortAccessId": "f28f64fde70b4189a16bd6c99251d5c8",
-  "canPresaleNumber": 6859763,
+  "canPresaleNumber": 6611320,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Hubei_KENTOElec-KT0603R/C2286",
@@ -1872,16 +1872,16 @@
   "componentBrandEn": "Hubei KENTO Elec",
   "componentModelEn": "KT-0603R",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8762738298852777984",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762738298827612160-C2286-front.jpg?x-oss-date=20261030T120259Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e31a8bab7f2924614165a1adc886769a51dd9eb6af94a333a62a9fb3868bb986",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf",
-  "dataManualFileAccessId": "8763907065070653440",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8763907065041293312-C2286.pdf?response-content-disposition=attachment%3B%20filename%3DC2286.pdf%3B%20filename%2A%3DUTF-8%27%27C2286.pdf&x-oss-date=20261030T120259Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=8d2265cae7eeb7ff0bdc4beb4507ff92dae0f8d120b0bfd35b21de8508003371",
   "dataManualOfficialLink": "",
   "componentName": "Hubei KENTO Elec KT-0603R",
   "minImage": "",
-  "minImageAccessId": "8762738300010541056",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762738299985375232-C2286-front.jpg?x-oss-date=20261030T120259Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=96c0a0ec92c63ef14b04f387782c01a48748e5231c50ff9b14ec739bb65d1d9e",
   "imageList": [
    {
     "productImage": null,
@@ -1993,7 +1993,7 @@
  "C22935": {
   "componentId": 23662,
   "componentLibraryType": "base",
-  "stockCount": 5358015,
+  "stockCount": 5013165,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 1M\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -2064,7 +2064,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 4597526,
+  "canPresaleNumber": 4238288,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "23662-0603WAF1004T5E/C22935",
@@ -2089,16 +2089,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF1004T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8759920856997085184",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8759920856967725056-C22935-front.jpg?x-oss-date=20261030T120300Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fe1b8de386259d07f5bb5fde2f986ba73227403a39743f51d681b9adbb352906",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010130_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf",
-  "dataManualFileAccessId": "8579706152755920896",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706152747532288-C22935.pdf?response-content-disposition=attachment%3B%20filename%3DC22935.pdf%3B%20filename%2A%3DUTF-8%27%27C22935.pdf&x-oss-date=20261030T120300Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=97438a25edf88771e1b1e1e309f285c8d6d9d6fd902f667c6cc2947b1a879440",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF1004T5E",
   "minImage": "",
-  "minImageAccessId": "8759920859035381760",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8759920859006021632-C22935-front.jpg?x-oss-date=20261030T120300Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=03c2c6ff817bb9fd738141c6daa61abe09bcf4f9f6d2bb2d9ad7bf8896b229f7",
   "imageList": [
    {
     "productImage": null,
@@ -2182,7 +2182,7 @@
  "C2297": {
   "componentId": 2670,
   "componentLibraryType": "base",
-  "stockCount": 2337105,
+  "stockCount": 2257283,
   "componentTypeEn": "LED Indication - Discrete",
   "erpComponentName": "0805 \u7fe0\u7eff \u9ad8\u4eae",
   "componentSource": "shop",
@@ -2253,7 +2253,7 @@
   ],
   "firstSortAccessId": "2a1317eec5064bbb856a96033019985f",
   "secondSortAccessId": "f28f64fde70b4189a16bd6c99251d5c8",
-  "canPresaleNumber": 2090734,
+  "canPresaleNumber": 2009772,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Hubei_KENTOElec-KT0805G/C2297",
@@ -2278,16 +2278,16 @@
   "componentBrandEn": "Hubei KENTO Elec",
   "componentModelEn": "KT-0805G",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8550724255257153536",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550724255252959232-C2297-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120301Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fc913ead851fff6e2c78deed933a2a4f7d15e4cb74a31fc5a445654c77f8653d",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151820_Hubei-KENTO-Elec-KT-0805G_C2297.pdf",
-  "dataManualFileAccessId": "8639582106239348736",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8639582106218377216-C2297.pdf?response-content-disposition=attachment%3B%20filename%3DC2297.pdf%3B%20filename%2A%3DUTF-8%27%27C2297.pdf&x-oss-date=20261030T120301Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=dddc0dfd8d1d4e993339ec8358333c1c2a3c0023aaf63e9506e3c0bd6b5bc182",
   "dataManualOfficialLink": "",
   "componentName": "Hubei KENTO Elec KT-0805G",
   "minImage": "",
-  "minImageAccessId": "8550724256070578176",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550724256062189568-C2297-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120301Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5bb8659ae4ec363646e0ab40c153fab736782b821dbe46ec26a3338bd135f031",
   "imageList": [
    {
     "productImage": null,
@@ -2399,7 +2399,7 @@
  "C23162": {
   "componentId": 23889,
   "componentLibraryType": "base",
-  "stockCount": 16481231,
+  "stockCount": 15678055,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 4.7k\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -2418,7 +2418,7 @@
    {
     "startNumber": 5000,
     "endNumber": 9999,
-    "productPrice": 0.0019
+    "productPrice": 0.002
    },
    {
     "startNumber": 10000,
@@ -2470,7 +2470,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 13212255,
+  "canPresaleNumber": 12409622,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "23889-0603WAF4701T5E/C23162",
@@ -2495,16 +2495,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF4701T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552465574925398016",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552465574921203712-C23162-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=14393c6905d44ec2fad0fdb2aab67e69e61d44596955a38e2913ef3f092a0230",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf",
-  "dataManualFileAccessId": "8579706251506339840",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706251502145536-C23162.pdf?response-content-disposition=attachment%3B%20filename%3DC23162.pdf%3B%20filename%2A%3DUTF-8%27%27C23162.pdf&x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=0598c30d2eaff6624a29378eb34bd5303a763f5651867bf29d69c4b73145b063",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF4701T5E",
   "minImage": "",
-  "minImageAccessId": "8552465575554138112",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552465575545749504-C23162-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=92ebbb1ed09eeaa52e1a5ab24930496ba8482f3553d34079874c712d9dc7c7e9",
   "imageList": [
    {
     "productImage": null,
@@ -2588,7 +2588,7 @@
  "C23186": {
   "componentId": 23913,
   "componentLibraryType": "base",
-  "stockCount": 21786102,
+  "stockCount": 21373289,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 5.1k\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -2659,7 +2659,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 20462014,
+  "canPresaleNumber": 20015506,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "23913-0603WAF5101T5E/C23186",
@@ -2684,16 +2684,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF5101T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552465860683059200",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552465860678864896-C23186-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fafa6e90f0c4e4c541f22bf5031b5096a9e8fe522180d593837680c9850cb0bf",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf",
-  "dataManualFileAccessId": "8579706277024620544",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706277020426240-C23186.pdf?response-content-disposition=attachment%3B%20filename%3DC23186.pdf%3B%20filename%2A%3DUTF-8%27%27C23186.pdf&x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7443af89de5a1e944db72095831054045622786897e2414943876b980a75da4d",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF5101T5E",
   "minImage": "",
-  "minImageAccessId": "8552465861320323072",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552465861316128768-C23186-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120302Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2809d015623b24d315faddeca1d0343025183a2ad2c67e2eccdf37a4329bf1e3",
   "imageList": [
    {
     "productImage": null,
@@ -2777,7 +2777,7 @@
  "C23228": {
   "componentId": 23955,
   "componentLibraryType": "base",
-  "stockCount": 1964184,
+  "stockCount": 1875292,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 680\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -2848,7 +2848,7 @@
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 1757942,
+  "canPresaleNumber": 1669919,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "23955-0603WAF6800T5E/C23228",
@@ -2873,16 +2873,16 @@
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF6800T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552466188069187584",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552466188064993280-C23228-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120303Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b8dd4184dc745ca5b62bd147885cb67ee9fbd109309673d96c1766b7f2f0f90f",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf",
-  "dataManualFileAccessId": "8579706305709604864",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706305705410560-C23228.pdf?response-content-disposition=attachment%3B%20filename%3DC23228.pdf%3B%20filename%2A%3DUTF-8%27%27C23228.pdf&x-oss-date=20261030T120303Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e52619ab9b33485202d25099dec1544d062e8f488d377578ff18afccc6bba1a0",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF6800T5E",
   "minImage": "",
-  "minImageAccessId": "8552466188652601344",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552466188648407040-C23228-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120303Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=bfe41b26a75f78bf83ca035b4fd48d7ac31d3dcd71e163b8b0c87d39f767f201",
   "imageList": [
    {
     "productImage": null,
@@ -2966,7 +2966,7 @@
  "C25803": {
   "componentId": 26546,
   "componentLibraryType": "base",
-  "stockCount": 17484349,
+  "stockCount": 17764268,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 100k\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -2975,39 +2975,7 @@
    {
     "startNumber": 1,
     "endNumber": 999,
-    "productPrice": 0.0031
-   },
-   {
-    "startNumber": 1000,
-    "endNumber": 4999,
-    "productPrice": 0.0024
-   },
-   {
-    "startNumber": 5000,
-    "endNumber": 9999,
-    "productPrice": 0.0021
-   },
-   {
-    "startNumber": 10000,
-    "endNumber": 49999,
-    "productPrice": 0.0017
-   },
-   {
-    "startNumber": 50000,
-    "endNumber": 50199,
-    "productPrice": 0.0016
-   },
-   {
-    "startNumber": 50200,
-    "endNumber": -1,
-    "productPrice": 0.0016
-   }
-  ],
-  "buyComponentPrices": [
-   {
-    "startNumber": 1,
-    "endNumber": 999,
-    "productPrice": 0.003
+    "productPrice": 0.0029
    },
    {
     "startNumber": 1000,
@@ -3022,22 +2990,54 @@
    {
     "startNumber": 10000,
     "endNumber": 49999,
-    "productPrice": 0.0017
-   },
-   {
-    "startNumber": 50200,
-    "endNumber": -1,
-    "productPrice": 0.0015
+    "productPrice": 0.0016
    },
    {
     "startNumber": 50000,
     "endNumber": 50199,
     "productPrice": 0.0015
+   },
+   {
+    "startNumber": 50200,
+    "endNumber": -1,
+    "productPrice": 0.0015
+   }
+  ],
+  "buyComponentPrices": [
+   {
+    "startNumber": 1,
+    "endNumber": 999,
+    "productPrice": 0.0028
+   },
+   {
+    "startNumber": 1000,
+    "endNumber": 4999,
+    "productPrice": 0.0022
+   },
+   {
+    "startNumber": 5000,
+    "endNumber": 9999,
+    "productPrice": 0.0019
+   },
+   {
+    "startNumber": 10000,
+    "endNumber": 49999,
+    "productPrice": 0.0016
+   },
+   {
+    "startNumber": 50200,
+    "endNumber": -1,
+    "productPrice": 0.0014
+   },
+   {
+    "startNumber": 50000,
+    "endNumber": 50199,
+    "productPrice": 0.0014
    }
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 15153510,
+  "canPresaleNumber": 15421062,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "26546-0603WAF1003T5E/C25803",
@@ -3054,24 +3054,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 5000,
-  "shopCostPrice": 0.00694,
-  "preMinPurchaseNum": 3760,
+  "shopCostPrice": 0.00652,
+  "preMinPurchaseNum": 3923,
   "minPurchaseNum": 1,
-  "initialPrice": 0.0031,
+  "initialPrice": 0.0029,
   "componentCode": "C25803",
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF1003T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8552466770251030528",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552466770246836224-C25803-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120304Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1d2acc7ff86f845b5d59924192fd16adf77f644d321fa76fb46ce6f57a416bf6",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf",
-  "dataManualFileAccessId": "8579706350726930432",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706350722736128-C25803.pdf?response-content-disposition=attachment%3B%20filename%3DC25803.pdf%3B%20filename%2A%3DUTF-8%27%27C25803.pdf&x-oss-date=20261030T120304Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1ad7a2db050d6b73d36cc29be67030c7da6d2187f4cc673ac04fb1e8c2d5f10e",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF1003T5E",
   "minImage": "",
-  "minImageAccessId": "8552466770888970240",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552466770884775936-C25803-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120304Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=97a6f46ea991212cfd81cf058884c463605fe1f618a0af65672cf9ecbc90e771",
   "imageList": [
    {
     "productImage": null,
@@ -3155,7 +3155,7 @@
  "C25804": {
   "componentId": 26547,
   "componentLibraryType": "base",
-  "stockCount": 38461017,
+  "stockCount": 40341097,
   "componentTypeEn": "Chip Resistor - Surface Mount",
   "erpComponentName": "\u539a\u819c\u7535\u963b 10k\u03a9 \u00b11% 100mW",
   "componentSource": "shop",
@@ -3164,69 +3164,69 @@
    {
     "startNumber": 1,
     "endNumber": 999,
-    "productPrice": 0.0018
+    "productPrice": 0.0022
    },
    {
     "startNumber": 1000,
     "endNumber": 4999,
-    "productPrice": 0.0015
+    "productPrice": 0.0018
    },
    {
     "startNumber": 5000,
     "endNumber": 9999,
-    "productPrice": 0.0013
+    "productPrice": 0.0016
    },
    {
     "startNumber": 10000,
     "endNumber": 49999,
-    "productPrice": 0.0012
+    "productPrice": 0.0015
    },
    {
     "startNumber": 50000,
     "endNumber": 50199,
-    "productPrice": 0.0011
+    "productPrice": 0.0014
    },
    {
     "startNumber": 50200,
     "endNumber": -1,
-    "productPrice": 0.0011
+    "productPrice": 0.0014
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 1,
     "endNumber": 999,
-    "productPrice": 0.0017
+    "productPrice": 0.0021
    },
    {
     "startNumber": 5000,
     "endNumber": 9999,
-    "productPrice": 0.0013
+    "productPrice": 0.0016
    },
    {
     "startNumber": 1000,
     "endNumber": 4999,
-    "productPrice": 0.0014
+    "productPrice": 0.0017
    },
    {
     "startNumber": 50000,
     "endNumber": 50199,
-    "productPrice": 0.0011
+    "productPrice": 0.0014
    },
    {
     "startNumber": 10000,
     "endNumber": 49999,
-    "productPrice": 0.0012
+    "productPrice": 0.0015
    },
    {
     "startNumber": 50200,
     "endNumber": -1,
-    "productPrice": 0.0011
+    "productPrice": 0.0014
    }
   ],
   "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
   "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
-  "canPresaleNumber": 28211208,
+  "canPresaleNumber": 30071952,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "26547-0603WAF1002T5E/C25804",
@@ -3246,21 +3246,21 @@
   "shopCostPrice": 0.004,
   "preMinPurchaseNum": 5000,
   "minPurchaseNum": 1,
-  "initialPrice": 0.0018,
+  "initialPrice": 0.0022,
   "componentCode": "C25804",
   "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
   "componentModelEn": "0603WAF1002T5E",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8737827043443335168",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8737827043405586432-C25804-front.jpg?x-oss-date=20261030T120305Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3839b8693b2b0a4a3ac41349f182de5a3df52365e64c2856fba27811c39fb28b",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
-  "dataManualFileAccessId": "8579706381320323072",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706381316128768-C25804.pdf?response-content-disposition=attachment%3B%20filename%3DC25804.pdf%3B%20filename%2A%3DUTF-8%27%27C25804.pdf&x-oss-date=20261030T120305Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=822a6ab7614c39f788873c4f3d69bfd383eb2293163cbd152e1bd5443560df4a",
   "dataManualOfficialLink": "",
   "componentName": "UNI-ROYAL 0603WAF1002T5E",
   "minImage": "",
-  "minImageAccessId": "8737827045565792256",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8737827045536432128-C25804-front.jpg?x-oss-date=20261030T120305Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7de4d91f8d3a1189f1ec7b8a16a89cfc503a2ad547986a555330967eed595813",
   "imageList": [
    {
     "productImage": null,
@@ -3341,84 +3341,84 @@
   "rohsFileId": null,
   "rohsUrl": null
  },
- "C2926676": {
-  "componentId": 3250151,
+ "C2764087": {
+  "componentId": 2895574,
   "componentLibraryType": "expand",
-  "stockCount": 5695,
-  "componentTypeEn": "WiFi Modules",
-  "erpComponentName": "\u4e0d\u5e26\u56fa\u4ef6 2.4GHz Wi-Fi\uff08802.11b/g/n\uff09+ \u84dd\u72595\u6a21\u7ec4",
+  "stockCount": 240,
+  "componentTypeEn": "LoRa Modules",
+  "erpComponentName": "LoRa\u6a21\u7ec4 Ra-01SH",
   "componentSource": "shop",
-  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-c3-wroom-02u-n4_C2926676.html",
+  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/lora modules_ai-thinker_ra-01sh_C2764087.html",
   "componentPrices": [
    {
     "startNumber": 1,
     "endNumber": 9,
-    "productPrice": 3.2361
+    "productPrice": 4.5821
    },
    {
     "startNumber": 10,
     "endNumber": 29,
-    "productPrice": 2.8414
+    "productPrice": 3.9528
    },
    {
     "startNumber": 30,
     "endNumber": 99,
-    "productPrice": 2.64
+    "productPrice": 3.3382
    },
    {
     "startNumber": 100,
-    "endNumber": 649,
-    "productPrice": 2.2338
+    "endNumber": 499,
+    "productPrice": 2.9597
    },
    {
-    "startNumber": 650,
-    "endNumber": 1299,
-    "productPrice": 2.1372
+    "startNumber": 500,
+    "endNumber": 799,
+    "productPrice": 2.786
    },
    {
-    "startNumber": 1300,
+    "startNumber": 800,
     "endNumber": -1,
-    "productPrice": 2.0963
+    "productPrice": 2.7073
    }
   ],
   "buyComponentPrices": [
    {
-    "startNumber": 30,
-    "endNumber": 99,
-    "productPrice": 2.5431
+    "startNumber": 500,
+    "endNumber": 799,
+    "productPrice": 2.6837
    },
    {
-    "startNumber": 100,
-    "endNumber": 649,
-    "productPrice": 2.1519
+    "startNumber": 30,
+    "endNumber": 99,
+    "productPrice": 3.2157
    },
    {
     "startNumber": 1,
     "endNumber": 9,
-    "productPrice": 3.1173
+    "productPrice": 4.4139
    },
    {
-    "startNumber": 650,
-    "endNumber": 1299,
-    "productPrice": 2.0588
+    "startNumber": 100,
+    "endNumber": 499,
+    "productPrice": 2.8511
+   },
+   {
+    "startNumber": 800,
+    "endNumber": -1,
+    "productPrice": 2.608
    },
    {
     "startNumber": 10,
     "endNumber": 29,
-    "productPrice": 2.7371
-   },
-   {
-    "startNumber": 1300,
-    "endNumber": -1,
-    "productPrice": 2.0193
+    "productPrice": 3.8077
    }
   ],
   "firstSortAccessId": "3f47180447344e189d9b9aa7555c0cb3",
-  "secondSortAccessId": "c5a9b644133240c89506f8439edd2b11",
-  "canPresaleNumber": 5387,
+  "secondSortAccessId": "de625a45614143c89557d27bf280b629",
+  "canPresaleNumber": 27,
   "componentProductType": 0,
   "mergedComponentCode": null,
-  "urlSuffix": "3250151-ESP32_C3_WROOM_02UN4/C2926676",
+  "urlSuffix": "AiThinker-Ra01SH/C2764087",
   "leastPatchNumber": 0,
   "lossNumber": 0,
   "isBuyComponent": "1",
@@ -3431,25 +3431,25 @@
   "idleFlag": null,
   "estimateDate": null,
   "fullReelPrice": null,
-  "encapsulationNumber": 650,
-  "shopCostPrice": 11.00003,
-  "preMinPurchaseNum": 3,
+  "encapsulationNumber": 800,
+  "shopCostPrice": 14.31077,
+  "preMinPurchaseNum": 2,
   "minPurchaseNum": 1,
-  "initialPrice": 3.2361,
-  "componentCode": "C2926676",
-  "componentBrandEn": "Espressif Systems",
-  "componentModelEn": "ESP32-C3-WROOM-02U-N4",
+  "initialPrice": 4.5821,
+  "componentCode": "C2764087",
+  "componentBrandEn": "Ai-Thinker",
+  "componentModelEn": "Ra-01SH",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8583571560929746944",
-  "productBigImageAccessIdUrl": null,
-  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206021745_Espressif-Systems-ESP32-C3-WROOM-02U-N4_C2926676.pdf",
-  "dataManualFileAccessId": "8588940949984985088",
-  "dataManualFileAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583580534094376960-C2764087/C2764087-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120306Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c0f8ceaa38ef90460f4638cb3bcdd7613ba5f8978454b683da6b7f1932e47841",
+  "dataManualUrl": "https://datasheet.lcsc.com/lcsc/2104011234_Ai-Thinker-Ra-01SH_C2764087.pdf",
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588943201981489152-C2764087.pdf?response-content-disposition=attachment%3B%20filename%3DC2764087.pdf%3B%20filename%2A%3DUTF-8%27%27C2764087.pdf&x-oss-date=20261030T120306Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3c79608b829399cbf147f78b9b294d15ae5901bbbc178aec829a03ee8be27480",
   "dataManualOfficialLink": "",
-  "componentName": "ESPRESSIF ESP32-C3-WROOM-02U-N4",
+  "componentName": "Ai-Thinker Ra-01SH",
   "minImage": "",
-  "minImageAccessId": "8583571561974128640",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583580534958538752-C2764087/C2764087-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120306Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c4ea28b802a7453ec75a2adbf2bb2da4bca0f058400282a9d4ccd3c89a7eafd2",
   "imageList": [
    {
     "productImage": null,
@@ -3475,20 +3475,210 @@
   ],
   "manufacturerBlackFlag": null,
   "componentNameEn": null,
-  "componentSpecificationEn": "SMD-19P",
-  "describe": "-40\u2103~+105\u2103 -98dBm 2.4GHz 20.5dBm 345mA 3V~3.6V 82mA Bluetooth5.0 ESP32-C3 Chip UART\u3001SPI\u3001I2C\u3001I2S\u3001JTAG\u3001USB SMD-19P WiFi Modules ROHS",
+  "componentSpecificationEn": "SMD-16P",
+  "describe": "-140dBm -40\u2103~+85\u2103 140mA 2.7V~3.6V 22dBm 4.2mA FSK\u3001LoRa\u3001GFSK\u3001MSK\u3001GMSK\u3001OOK IPEX interface SPI SMD-16P LoRa Modules ROHS",
+  "attributes": [
+   {
+    "attribute_name_en": "Antenna Type",
+    "attribute_value_name": "IPEX interface"
+   },
+   {
+    "attribute_name_en": "Operating Temperature",
+    "attribute_value_name": "-40\u2103~+85\u2103"
+   },
+   {
+    "attribute_name_en": "Sensitivity",
+    "attribute_value_name": "-140dBm"
+   },
+   {
+    "attribute_name_en": "Output Power",
+    "attribute_value_name": "22dBm"
+   },
+   {
+    "attribute_name_en": "Modulation System",
+    "attribute_value_name": "FSK\u3001LoRa\u3001GFSK\u3001MSK\u3001GMSK\u3001OOK"
+   },
+   {
+    "attribute_name_en": "Voltage - Supply",
+    "attribute_value_name": "2.7V~3.6V"
+   },
+   {
+    "attribute_name_en": "Features",
+    "attribute_value_name": "-"
+   },
+   {
+    "attribute_name_en": "Interface Type",
+    "attribute_value_name": "SPI"
+   },
+   {
+    "attribute_name_en": "Send  Current",
+    "attribute_value_name": "140mA"
+   },
+   {
+    "attribute_name_en": "Receive  Current",
+    "attribute_value_name": "4.2mA"
+   }
+  ],
+  "rankScore": null,
+  "firstSortName": "LoRa Modules",
+  "secondSortName": "IoT/Communication Modules",
+  "componentBrandHigh": null,
+  "remarkHigh": null,
+  "componentModelHigh": null,
+  "componentCodeHigh": "<span class='lucene_highlight_class'>C2764087</span>",
+  "componentSpecificationHigh": null,
+  "rohsFlag": 1,
+  "shopShowPriceFlag": true,
+  "shopShowForeignPriceFlag": true,
+  "shopRealPriceFlag": true,
+  "assemblyComponentFlag": false,
+  "rohsFileId": null,
+  "rohsUrl": null
+ },
+ "C2980296": {
+  "componentId": 3401548,
+  "componentLibraryType": "expand",
+  "stockCount": 3324,
+  "componentTypeEn": "WiFi Modules",
+  "erpComponentName": "\u4e0d\u5e26\u56fa\u4ef6 \u4e0d\u5e26\u56fa\u4ef6 \u901a\u7528\u578bWi-Fi+\u4f4e\u529f\u8017\u84dd\u7259MCU\u6a21\u7ec4",
+  "componentSource": "shop",
+  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/wifi-modules_espressif-systems-esp32-s3-wroom-1u-n4_C2980296.html",
+  "componentPrices": [
+   {
+    "startNumber": 1,
+    "endNumber": 9,
+    "productPrice": 4.5362
+   },
+   {
+    "startNumber": 10,
+    "endNumber": 29,
+    "productPrice": 4.0642
+   },
+   {
+    "startNumber": 30,
+    "endNumber": 99,
+    "productPrice": 3.7823
+   },
+   {
+    "startNumber": 100,
+    "endNumber": 649,
+    "productPrice": 3.4235
+   },
+   {
+    "startNumber": 650,
+    "endNumber": 1299,
+    "productPrice": 3.2661
+   },
+   {
+    "startNumber": 1300,
+    "endNumber": -1,
+    "productPrice": 3.1957
+   }
+  ],
+  "buyComponentPrices": [
+   {
+    "startNumber": 100,
+    "endNumber": 649,
+    "productPrice": 3.2978
+   },
+   {
+    "startNumber": 650,
+    "endNumber": 1299,
+    "productPrice": 3.1463
+   },
+   {
+    "startNumber": 30,
+    "endNumber": 99,
+    "productPrice": 3.6435
+   },
+   {
+    "startNumber": 1,
+    "endNumber": 9,
+    "productPrice": 4.3697
+   },
+   {
+    "startNumber": 10,
+    "endNumber": 29,
+    "productPrice": 3.9151
+   },
+   {
+    "startNumber": 1300,
+    "endNumber": -1,
+    "productPrice": 3.0784
+   }
+  ],
+  "firstSortAccessId": "3f47180447344e189d9b9aa7555c0cb3",
+  "secondSortAccessId": "c5a9b644133240c89506f8439edd2b11",
+  "canPresaleNumber": 2639,
+  "componentProductType": 2,
+  "mergedComponentCode": null,
+  "urlSuffix": "3401548-ESP32_S3_WROOM_1UN4/C2980296",
+  "leastPatchNumber": 0,
+  "lossNumber": 0,
+  "isBuyComponent": "1",
+  "noBuyReason": null,
+  "componentAlternativesCode": null,
+  "replaceUrlSuffix": null,
+  "preferredComponentFlag": false,
+  "allowPostFlag": true,
+  "score": null,
+  "idleFlag": null,
+  "estimateDate": null,
+  "fullReelPrice": null,
+  "encapsulationNumber": 650,
+  "shopCostPrice": 15.5,
+  "preMinPurchaseNum": 2,
+  "minPurchaseNum": 1,
+  "initialPrice": 4.5362,
+  "componentCode": "C2980296",
+  "componentBrandEn": "Espressif Systems",
+  "componentModelEn": "ESP32-S3-WROOM-1U-N4",
+  "componentImageUrl": "",
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583664113264570368-C2980296/C2980296-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120307Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=064d6fc71e7a033ac4f6828f4e1a0893b8dc5d7ad6898307e89963608e9b1e77",
+  "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206281830_Espressif-Systems-ESP32-S3-WROOM-1U-N4_C2980296.pdf",
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589041778074378240-C2980296.pdf?response-content-disposition=attachment%3B%20filename%3DC2980296.pdf%3B%20filename%2A%3DUTF-8%27%27C2980296.pdf&x-oss-date=20261030T120307Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=065a49147a7500553c0b52d39fa59d41676cd6e77cf191e8b6ed8ecd7e03276f",
+  "dataManualOfficialLink": "",
+  "componentName": "ESPRESSIF ESP32-S3-WROOM-1U-N4",
+  "minImage": "",
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583664114149703680-C2980296/C2980296-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120307Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=189f611b85dadeab678bac0c96009e815497e3bf0c901b11ada4c1e118a2bfe5",
+  "imageList": [
+   {
+    "productImage": null,
+    "productImageAccessId": null,
+    "productBigImage": null,
+    "productBigImageAccessId": null,
+    "fileType": null
+   },
+   {
+    "productImage": null,
+    "productImageAccessId": null,
+    "productBigImage": null,
+    "productBigImageAccessId": null,
+    "fileType": null
+   },
+   {
+    "productImage": null,
+    "productImageAccessId": null,
+    "productBigImage": null,
+    "productBigImageAccessId": null,
+    "fileType": null
+   }
+  ],
+  "manufacturerBlackFlag": null,
+  "componentNameEn": null,
+  "componentSpecificationEn": "SMD,19.2x18mm",
+  "describe": "-103.5dBm -40\u2103~+85\u2103 2.4GHz 20.5dBm 355mA 3V~3.6V 95mA Bluetooth5.0 ESP32-S3 UART\u3001SPI\u3001I2C\u3001I2S\u3001USB SMD,19.2x18mm WiFi Modules ROHS",
   "attributes": [
    {
     "attribute_name_en": "Operating Temperature",
     "attribute_value_name": "-40\u2103~+85\u2103"
    },
    {
-    "attribute_name_en": "Antenna Type",
-    "attribute_value_name": "-"
-   },
-   {
     "attribute_name_en": "Sensitivity",
-    "attribute_value_name": "-98dBm"
+    "attribute_value_name": "-103.5dBm"
    },
    {
     "attribute_name_en": "Output Power",
@@ -3503,28 +3693,24 @@
     "attribute_value_name": "2.4GHz"
    },
    {
-    "attribute_name_en": "Features",
-    "attribute_value_name": "-"
-   },
-   {
     "attribute_name_en": "Utilized IC / Part",
-    "attribute_value_name": "ESP32-C3 Chip"
+    "attribute_value_name": "ESP32-S3"
    },
    {
     "attribute_name_en": "Interface Type",
-    "attribute_value_name": "UART\u3001SPI\u3001I2C\u3001I2S\u3001JTAG\u3001USB"
+    "attribute_value_name": "UART\u3001SPI\u3001I2C\u3001I2S\u3001USB"
    },
    {
-    "attribute_name_en": "Receive  Current",
-    "attribute_value_name": "82mA"
+    "attribute_name_en": "Send  Current",
+    "attribute_value_name": "355mA"
    },
    {
     "attribute_name_en": "Wireless Standard",
     "attribute_value_name": "Bluetooth5.0"
    },
    {
-    "attribute_name_en": "Send  Current",
-    "attribute_value_name": "345mA"
+    "attribute_name_en": "Receive  Current",
+    "attribute_value_name": "95mA"
    }
   ],
   "rankScore": null,
@@ -3533,7 +3719,7 @@
   "componentBrandHigh": null,
   "remarkHigh": null,
   "componentModelHigh": null,
-  "componentCodeHigh": "<span class='lucene_highlight_class'>C2926676</span>",
+  "componentCodeHigh": "<span class='lucene_highlight_class'>C2980296</span>",
   "componentSpecificationHigh": null,
   "rohsFlag": 1,
   "shopShowPriceFlag": true,
@@ -3546,7 +3732,7 @@
  "C318884": {
   "componentId": 299976,
   "componentLibraryType": "base",
-  "stockCount": 1163194,
+  "stockCount": 1109049,
   "componentTypeEn": "Tactile Switches",
   "erpComponentName": "5.1*5.1*1.5mm \u7acb\u8d34 \u8f7b\u89e6\u5f00\u5173",
   "componentSource": "shop",
@@ -3617,7 +3803,7 @@
   ],
   "firstSortAccessId": "40dca760dc0b4eeabb9db4593427352f",
   "secondSortAccessId": "a1d999237cf24332971a76b137b80868",
-  "canPresaleNumber": 1089684,
+  "canPresaleNumber": 1036145,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "XKBConnection-TS_1187A_B_AB/C318884",
@@ -3642,16 +3828,16 @@
   "componentBrandEn": "XKB Connection",
   "componentModelEn": "TS-1187A-B-A-B",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8550724283749195776",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550724283745001472-C318884-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120308Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ef785f5bfbd9af05901cab67e0166c80abbf9115af6d07a9721f96f29a85e2b9",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XKB-Connection-TS-1187A-B-A-B_C318884.pdf",
-  "dataManualFileAccessId": "8550724022091735041",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8550724022091735040-C318884.pdf?response-content-disposition=attachment%3B%20filename%3DC318884.pdf%3B%20filename%2A%3DUTF-8%27%27C318884.pdf&x-oss-date=20261030T120308Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=6e3e367e27a062837bf14fa86e56ada1d9eecffa7a2a8fb0a1407bb367f6a047",
   "dataManualOfficialLink": "",
   "componentName": "XKB Connection TS-1187A-B-A-B",
   "minImage": "",
-  "minImageAccessId": "8550724284433002496",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8550724284428808192-C318884-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120308Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=60c11bbf39961095b82899f4869c0b98d861cc1caaf67497ad50aac11e1a18de",
   "imageList": [
    {
     "productImage": null,
@@ -3756,7 +3942,7 @@
  "C32677": {
   "componentId": 33642,
   "componentLibraryType": "base",
-  "stockCount": 152286,
+  "stockCount": 137866,
   "componentTypeEn": "ESD and Surge Protection (TVS/ESD)",
   "erpComponentName": "\u5355\u5411TVS 12V\u622a\u6b62 \u5cf0\u503c\u6d6a\u6d8c\u7535\u6d41\uff1a34A@8/20us 30A@8/20us",
   "componentSource": "shop",
@@ -3765,69 +3951,69 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.3448
+    "productPrice": 0.345
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.273
+    "productPrice": 0.2732
    },
    {
     "startNumber": 150,
     "endNumber": 499,
-    "productPrice": 0.2424
+    "productPrice": 0.2426
    },
    {
     "startNumber": 500,
     "endNumber": 2999,
-    "productPrice": 0.2039
+    "productPrice": 0.2041
    },
    {
     "startNumber": 3000,
     "endNumber": 5999,
-    "productPrice": 0.1869
+    "productPrice": 0.187
    },
    {
     "startNumber": 6000,
     "endNumber": -1,
-    "productPrice": 0.1767
+    "productPrice": 0.1768
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 500,
     "endNumber": 2999,
-    "productPrice": 0.1965
+    "productPrice": 0.1966
    },
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.3321
+    "productPrice": 0.3324
    },
    {
     "startNumber": 6000,
     "endNumber": -1,
-    "productPrice": 0.1702
+    "productPrice": 0.1703
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.263
+    "productPrice": 0.2632
    },
    {
     "startNumber": 150,
     "endNumber": 499,
-    "productPrice": 0.2335
+    "productPrice": 0.2337
    },
    {
     "startNumber": 3000,
     "endNumber": 5999,
-    "productPrice": 0.1801
+    "productPrice": 0.1802
    }
   ],
   "firstSortAccessId": "68f218c9a74e4148a83415d14e926c64",
   "secondSortAccessId": "434702f18e684c28a613a717cb768f2b",
-  "canPresaleNumber": 134008,
+  "canPresaleNumber": 119807,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "ProTekDevices-PSM712_LFT7/C32677",
@@ -3847,21 +4033,21 @@
   "shopCostPrice": 0.86908,
   "preMinPurchaseNum": 27,
   "minPurchaseNum": 1,
-  "initialPrice": 0.3448,
+  "initialPrice": 0.345,
   "componentCode": "C32677",
   "componentBrandEn": "ProTek Devices",
   "componentModelEn": "PSM712-LF-T7",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8553217157354696704",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553217157346308096-C32677-front.jpg?x-oss-date=20261030T120309Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d389fe7332d74902cb08a5f88861585cb6beb9e9579402a3ad70818b4a143091",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811061632_ProTek-Devices-PSM712-LF-T7_C32677.pdf",
-  "dataManualFileAccessId": "8579709112560435200",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579709112556240896-C32677.pdf?response-content-disposition=attachment%3B%20filename%3DC32677.pdf%3B%20filename%2A%3DUTF-8%27%27C32677.pdf&x-oss-date=20261030T120309Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=54005ca375f7dbc18c2695827728d09b7ad64091b18c4bb185ef93226df4c074",
   "dataManualOfficialLink": "",
   "componentName": "PROTEK PSM712-LF-T7",
   "minImage": "",
-  "minImageAccessId": "8553217157933375488",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553217157929181184-C32677-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120309Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a1fa4b88e4c2a329c35196ad8515af39cbf8a5d0812b38a63db2bd559eb1723a",
   "imageList": [
    {
     "productImage": null,
@@ -3961,7 +4147,7 @@
  "C557685": {
   "componentId": 581048,
   "componentLibraryType": "expand",
-  "stockCount": 5184,
+  "stockCount": 5119,
   "componentTypeEn": "Screw Terminal Blocks",
   "erpComponentName": "1x2P 2.54mm \u76f4\u63d2 \u6392\u6570:1 \u6bcf\u6392P\u6570:2 \u3010\u87ba\u9489\u3011",
   "componentSource": "shop",
@@ -3970,44 +4156,44 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.2483
+    "productPrice": 0.2485
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1954
+    "productPrice": 0.1956
    },
    {
     "startNumber": 150,
     "endNumber": 999,
-    "productPrice": 0.1728
+    "productPrice": 0.1729
    },
    {
     "startNumber": 1000,
     "endNumber": 1999,
-    "productPrice": 0.1355
+    "productPrice": 0.1356
    },
    {
     "startNumber": 2000,
     "endNumber": 4999,
-    "productPrice": 0.1229
+    "productPrice": 0.123
    },
    {
     "startNumber": 5000,
     "endNumber": -1,
-    "productPrice": 0.1153
+    "productPrice": 0.1154
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 150,
     "endNumber": 999,
-    "productPrice": 0.1665
+    "productPrice": 0.1666
    },
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.1883
+    "productPrice": 0.1884
    },
    {
     "startNumber": 2000,
@@ -4017,22 +4203,22 @@
    {
     "startNumber": 5000,
     "endNumber": -1,
-    "productPrice": 0.1111
+    "productPrice": 0.1112
    },
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.2392
+    "productPrice": 0.2394
    },
    {
     "startNumber": 1000,
     "endNumber": 1999,
-    "productPrice": 0.1305
+    "productPrice": 0.1306
    }
   ],
   "firstSortAccessId": "248c42d1f2d246498d91d5c9cad9dd16",
   "secondSortAccessId": "e955493f42604e9f87b66e88320df6f6",
-  "canPresaleNumber": 5020,
+  "canPresaleNumber": 4959,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Ningbo_Xinlaiya_Elec-XY308_2_542P/C557685",
@@ -4052,21 +4238,21 @@
   "shopCostPrice": 0.64,
   "preMinPurchaseNum": 37,
   "minPurchaseNum": 1,
-  "initialPrice": 0.2483,
+  "initialPrice": 0.2485,
   "componentCode": "C557685",
   "componentBrandEn": "Ningbo Xinlaiya Elec.",
   "componentModelEn": "XY308-2.54-2P",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8762703541238943744",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762703541205389312-C557685-front.jpg?x-oss-date=20261030T120310Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4c18a1236ce6ecb22cf6867b4f33523d22f2c887c2bb8d9615bd97352ceeeebd",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Ningbo-Xinlaiya-Elec--XY308-2-54-2P_C557685.pdf",
-  "dataManualFileAccessId": "8588888910369447936",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588888910361059328-C557685.pdf?response-content-disposition=attachment%3B%20filename%3DC557685.pdf%3B%20filename%2A%3DUTF-8%27%27C557685.pdf&x-oss-date=20261030T120310Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e6af90525df483ebed0dba920b4bee74604a5bc80aeeec2bf6d3a703f59efb4f",
   "dataManualOfficialLink": "",
   "componentName": "XINLAIYA XY308-2.54-2P",
   "minImage": "",
-  "minImageAccessId": "8762703542316339200",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8762703542286979072-C557685-front.jpg?x-oss-date=20261030T120310Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5e99e9c1043ff00037a288aebf0832f452a25139fe177059304bb95169907beb",
   "imageList": [
    {
     "productImage": null,
@@ -4168,220 +4354,10 @@
   "rohsFileId": null,
   "rohsUrl": null
  },
- "C557686": {
-  "componentId": 581049,
-  "componentLibraryType": "expand",
-  "stockCount": 6112,
-  "componentTypeEn": "Screw Terminal Blocks",
-  "erpComponentName": "1x3P 2.54mm \u76f4\u63d2 \u6392\u6570:1 \u6bcf\u6392P\u6570:3 \u3010\u87ba\u9489\u3011",
-  "componentSource": "shop",
-  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/screw-terminal-blocks_ningbo-xinlaiya-elec-xy308-2-54-3p_C557686.html",
-  "componentPrices": [
-   {
-    "startNumber": 1,
-    "endNumber": 49,
-    "productPrice": 0.3803
-   },
-   {
-    "startNumber": 50,
-    "endNumber": 149,
-    "productPrice": 0.3012
-   },
-   {
-    "startNumber": 150,
-    "endNumber": 799,
-    "productPrice": 0.2672
-   },
-   {
-    "startNumber": 800,
-    "endNumber": 2399,
-    "productPrice": 0.2031
-   },
-   {
-    "startNumber": 2400,
-    "endNumber": 4799,
-    "productPrice": 0.1843
-   },
-   {
-    "startNumber": 4800,
-    "endNumber": -1,
-    "productPrice": 0.173
-   }
-  ],
-  "buyComponentPrices": [
-   {
-    "startNumber": 2400,
-    "endNumber": 4799,
-    "productPrice": 0.1775
-   },
-   {
-    "startNumber": 800,
-    "endNumber": 2399,
-    "productPrice": 0.1957
-   },
-   {
-    "startNumber": 150,
-    "endNumber": 799,
-    "productPrice": 0.2574
-   },
-   {
-    "startNumber": 1,
-    "endNumber": 49,
-    "productPrice": 0.3664
-   },
-   {
-    "startNumber": 4800,
-    "endNumber": -1,
-    "productPrice": 0.1666
-   },
-   {
-    "startNumber": 50,
-    "endNumber": 149,
-    "productPrice": 0.2902
-   }
-  ],
-  "firstSortAccessId": "248c42d1f2d246498d91d5c9cad9dd16",
-  "secondSortAccessId": "e955493f42604e9f87b66e88320df6f6",
-  "canPresaleNumber": 6058,
-  "componentProductType": 0,
-  "mergedComponentCode": null,
-  "urlSuffix": "Ningbo_Xinlaiya_Elec-XY308_2_543P/C557686",
-  "leastPatchNumber": 2,
-  "lossNumber": 0,
-  "isBuyComponent": "1",
-  "noBuyReason": null,
-  "componentAlternativesCode": null,
-  "replaceUrlSuffix": null,
-  "preferredComponentFlag": false,
-  "allowPostFlag": true,
-  "score": null,
-  "idleFlag": null,
-  "estimateDate": null,
-  "fullReelPrice": null,
-  "encapsulationNumber": 800,
-  "shopCostPrice": 0.96,
-  "preMinPurchaseNum": 24,
-  "minPurchaseNum": 1,
-  "initialPrice": 0.3803,
-  "componentCode": "C557686",
-  "componentBrandEn": "Ningbo Xinlaiya Elec.",
-  "componentModelEn": "XY308-2.54-3P",
-  "componentImageUrl": "",
-  "productBigImageAccessId": "8583071339415031808",
-  "productBigImageAccessIdUrl": null,
-  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2005271132_Ningbo-Xinlaiya-Elec--XY308-2-54-3P_C557686.pdf",
-  "dataManualFileAccessId": "8588888910370123776",
-  "dataManualFileAccessIdUrl": null,
-  "dataManualOfficialLink": "",
-  "componentName": "XINLAIYA XY308-2.54-3P",
-  "minImage": "",
-  "minImageAccessId": "8583071340346032128",
-  "minImageAccessIdUrl": null,
-  "imageList": [
-   {
-    "productImage": null,
-    "productImageAccessId": null,
-    "productBigImage": null,
-    "productBigImageAccessId": null,
-    "fileType": null
-   },
-   {
-    "productImage": null,
-    "productImageAccessId": null,
-    "productBigImage": null,
-    "productBigImageAccessId": null,
-    "fileType": null
-   },
-   {
-    "productImage": null,
-    "productImageAccessId": null,
-    "productBigImage": null,
-    "productBigImageAccessId": null,
-    "fileType": null
-   }
-  ],
-  "manufacturerBlackFlag": null,
-  "componentNameEn": null,
-  "componentSpecificationEn": "Plugin,P=2.54mm",
-  "describe": "1 1 150V 18~26 1x3P 2.54mm 3 3P 6A Green M1.6 Through Hole \u63d2\u4ef6,P=2.54mm Screw Terminal Blocks ROHS",
-  "attributes": [
-   {
-    "attribute_name_en": "Operating Temperature",
-    "attribute_value_name": "-"
-   },
-   {
-    "attribute_name_en": "Number of Positions or Pins",
-    "attribute_value_name": "1x3P"
-   },
-   {
-    "attribute_name_en": "Voltage Rating (Max)",
-    "attribute_value_name": "150V"
-   },
-   {
-    "attribute_name_en": "Number of Rows",
-    "attribute_value_name": "1"
-   },
-   {
-    "attribute_name_en": "Color",
-    "attribute_value_name": "Green"
-   },
-   {
-    "attribute_name_en": "Current Rating",
-    "attribute_value_name": "6A"
-   },
-   {
-    "attribute_name_en": "Wire Gauge - AWG",
-    "attribute_value_name": "18~26"
-   },
-   {
-    "attribute_name_en": "Wire Gauge - mm2",
-    "attribute_value_name": "1"
-   },
-   {
-    "attribute_name_en": "Height Above Board",
-    "attribute_value_name": "8.5mm"
-   },
-   {
-    "attribute_name_en": "Mounting Type",
-    "attribute_value_name": "Through Hole"
-   },
-   {
-    "attribute_name_en": "Screw Specification",
-    "attribute_value_name": "M1.6"
-   },
-   {
-    "attribute_name_en": "Number of Pins",
-    "attribute_value_name": "3P"
-   },
-   {
-    "attribute_name_en": "Pitch",
-    "attribute_value_name": "2.54mm"
-   },
-   {
-    "attribute_name_en": "Number of PINs Per Row",
-    "attribute_value_name": "3"
-   }
-  ],
-  "rankScore": null,
-  "firstSortName": "Screw Terminal Blocks",
-  "secondSortName": "Connectors",
-  "componentBrandHigh": null,
-  "remarkHigh": null,
-  "componentModelHigh": null,
-  "componentCodeHigh": "<span class='lucene_highlight_class'>C557686</span>",
-  "componentSpecificationHigh": null,
-  "rohsFlag": 1,
-  "shopShowPriceFlag": true,
-  "shopShowForeignPriceFlag": true,
-  "shopRealPriceFlag": true,
-  "assemblyComponentFlag": false,
-  "rohsFileId": null,
-  "rohsUrl": null
- },
  "C80628": {
   "componentId": 81778,
   "componentLibraryType": "expand",
-  "stockCount": 1351,
+  "stockCount": 1279,
   "componentTypeEn": "Battery Management",
   "erpComponentName": "\u5355\u8282\u9502\u79bb\u5b50/\u805a\u5408\u7269\u7535\u6c60\u4fdd\u62a4\u96c6\u6210\u7535\u8def",
   "componentSource": "shop",
@@ -4395,7 +4371,7 @@
    {
     "startNumber": 50,
     "endNumber": 149,
-    "productPrice": 0.0698
+    "productPrice": 0.0699
    },
    {
     "startNumber": 150,
@@ -4410,12 +4386,12 @@
    {
     "startNumber": 3000,
     "endNumber": 5999,
-    "productPrice": 0.048
+    "productPrice": 0.0481
    },
    {
     "startNumber": 6000,
     "endNumber": -1,
-    "productPrice": 0.0452
+    "productPrice": 0.0453
    }
   ],
   "buyComponentPrices": [
@@ -4432,7 +4408,7 @@
    {
     "startNumber": 500,
     "endNumber": 2999,
-    "productPrice": 0.0516
+    "productPrice": 0.0517
    },
    {
     "startNumber": 150,
@@ -4442,7 +4418,7 @@
    {
     "startNumber": 1,
     "endNumber": 49,
-    "productPrice": 0.0849
+    "productPrice": 0.085
    },
    {
     "startNumber": 50,
@@ -4452,7 +4428,7 @@
   ],
   "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
   "secondSortAccessId": "cca499faefe0487cab22251edb29c551",
-  "canPresaleNumber": 1166,
+  "canPresaleNumber": 806,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "XySemi-XB5353A/C80628",
@@ -4477,16 +4453,16 @@
   "componentBrandEn": "XySemi",
   "componentModelEn": "XB5353A",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8553714345575006208",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553714345570811904-C80628-front.jpg?x-oss-date=20261030T120311Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=649af0b5709661b9acdb975372d9ffba4dc73339cd24a11496771776b278cde4",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151533_XySemi-XB5353A_C80628.pdf",
-  "dataManualFileAccessId": "8586175393036980224",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8586175393028591616-C80628.pdf?response-content-disposition=attachment%3B%20filename%3DC80628.pdf%3B%20filename%2A%3DUTF-8%27%27C80628.pdf&x-oss-date=20261030T120311Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=db0de3c7572ac28f3a32e31d1e16007fc3cdaea2e1bc8c296881a6e939e85c90",
   "dataManualOfficialLink": "",
   "componentName": "XySemi XB5353A",
   "minImage": "",
-  "minImageAccessId": "8553714346233917440",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553714346229723136-C80628-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120311Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=2e15793e1df8ced68f09368d6f5c43c24c15c63f2186bfb3fd68fb571071e550",
   "imageList": [
    {
     "productImage": null,
@@ -4595,84 +4571,84 @@
   "rohsFileId": null,
   "rohsUrl": null
  },
- "C82942": {
-  "componentId": 84106,
+ "C841192": {
+  "componentId": 897967,
   "componentLibraryType": "expand",
-  "stockCount": 287132,
+  "stockCount": 36389,
   "componentTypeEn": "Voltage Regulators - Linear, Low Drop Out (LDO) Regulators",
-  "erpComponentName": "3.3V 500mA 6V",
+  "erpComponentName": "3.3V 600mA 5.5V",
   "componentSource": "shop",
-  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_microne-nanjing-micro-one-elec-me6211c33m5g-n_C82942.html",
+  "lcscGoodsUrl": "https://www.lcsc.com/product-detail/voltage-regulators-linear-low-drop-out-ldo-regulators_richtek-tech-rt9080-33gj5_C841192.html",
   "componentPrices": [
    {
     "startNumber": 1,
-    "endNumber": 99,
-    "productPrice": 0.0636
+    "endNumber": 49,
+    "productPrice": 0.1198
    },
    {
-    "startNumber": 100,
-    "endNumber": 299,
-    "productPrice": 0.0516
+    "startNumber": 50,
+    "endNumber": 149,
+    "productPrice": 0.0976
    },
    {
-    "startNumber": 300,
+    "startNumber": 150,
+    "endNumber": 499,
+    "productPrice": 0.0864
+   },
+   {
+    "startNumber": 500,
     "endNumber": 2999,
-    "productPrice": 0.0454
+    "productPrice": 0.0779
    },
    {
     "startNumber": 3000,
     "endNumber": 5999,
-    "productPrice": 0.0403
+    "productPrice": 0.0608
    },
    {
     "startNumber": 6000,
-    "endNumber": 8999,
-    "productPrice": 0.0385
-   },
-   {
-    "startNumber": 9000,
     "endNumber": -1,
-    "productPrice": 0.0374
+    "productPrice": 0.0576
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 3000,
     "endNumber": 5999,
-    "productPrice": 0.0389
+    "productPrice": 0.0586
    },
    {
     "startNumber": 6000,
-    "endNumber": 8999,
-    "productPrice": 0.0371
+    "endNumber": -1,
+    "productPrice": 0.0555
    },
    {
-    "startNumber": 9000,
-    "endNumber": -1,
-    "productPrice": 0.036
+    "startNumber": 500,
+    "endNumber": 2999,
+    "productPrice": 0.075
+   },
+   {
+    "startNumber": 150,
+    "endNumber": 499,
+    "productPrice": 0.0832
    },
    {
     "startNumber": 1,
-    "endNumber": 99,
-    "productPrice": 0.0613
+    "endNumber": 49,
+    "productPrice": 0.1154
    },
    {
-    "startNumber": 300,
-    "endNumber": 2999,
-    "productPrice": 0.0437
-   },
-   {
-    "startNumber": 100,
-    "endNumber": 299,
-    "productPrice": 0.0497
+    "startNumber": 50,
+    "endNumber": 149,
+    "productPrice": 0.094
    }
   ],
   "firstSortAccessId": "a7ca7be1124b46818df6480f00698e25",
   "secondSortAccessId": "0bc894ef3cfe4df6b5376bcb5a199f74",
-  "canPresaleNumber": 279261,
+  "canPresaleNumber": 34732,
   "componentProductType": 0,
   "mergedComponentCode": null,
-  "urlSuffix": "84106-ME6211C33M5GN/C82942",
+  "urlSuffix": "RichtekTech-RT908033GJ5/C841192",
   "leastPatchNumber": 5,
   "lossNumber": 2,
   "isBuyComponent": "1",
@@ -4686,24 +4662,24 @@
   "estimateDate": null,
   "fullReelPrice": null,
   "encapsulationNumber": 3000,
-  "shopCostPrice": 0.17441,
-  "preMinPurchaseNum": 175,
+  "shopCostPrice": 0.28366,
+  "preMinPurchaseNum": 93,
   "minPurchaseNum": 1,
-  "initialPrice": 0.0636,
-  "componentCode": "C82942",
-  "componentBrandEn": "MICRONE(Nanjing Micro One Elec)",
-  "componentModelEn": "ME6211C33M5G-N",
+  "initialPrice": 0.1198,
+  "componentCode": "C841192",
+  "componentBrandEn": "Richtek Tech",
+  "componentModelEn": "RT9080-33GJ5",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8578683576327454720",
-  "productBigImageAccessIdUrl": null,
-  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811131510_MICRONE-Nanjing-Micro-One-Elec-ME6211C33M5G-N_C82942.pdf",
-  "dataManualFileAccessId": "8790677068269010944",
-  "dataManualFileAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583286677578665984-C841192/C841192-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120312Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=dec480782358ab9b2f076abdf2e1de08d3e9a9a8405092bfa57bcb8612179e00",
+  "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2009192305_Richtek-Tech-RT9080-33GJ5_C841192.pdf",
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588893292884316160-C841192.pdf?response-content-disposition=attachment%3B%20filename%3DC841192.pdf%3B%20filename%2A%3DUTF-8%27%27C841192.pdf&x-oss-date=20261030T120312Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=670795da8c7d1946ab975d5f6a0238dcd8d12c4c6202066bf4006ae8ecf94a66",
   "dataManualOfficialLink": "",
-  "componentName": "MICRONE ME6211C33M5G-N",
+  "componentName": "RICHTEK RT9080-33GJ5",
   "minImage": "",
-  "minImageAccessId": "8578683584470630400",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583286678421180416-C841192/C841192-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20261030T120312Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f6a97bfcac8abb16def949a8c157a80421e7ddd6e0250d5a9c856e04e39eb30e",
   "imageList": [
    {
     "productImage": null,
@@ -4736,36 +4712,36 @@
   ],
   "manufacturerBlackFlag": null,
   "componentNameEn": null,
-  "componentSpecificationEn": "SOT-23-5",
-  "describe": "-40\u2103~+150\u2103 1 120mV@(100mA) 3.3V 500mA 50uVrms 60uA 6V 70dB@(1kHz) Fixed Over Current Protection\u3001Enable\u3001Short Circuit Protection Positive SOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
+  "componentSpecificationEn": "TSOT-23-5",
+  "describe": "-40\u2103~+125\u2103@(Tj) 1 2uA 3.3V 360mV@(600mA) 42uVrms 5.5V 600mA 75dB@(1kHz) Fixed Over Current Protection\u3001Over Temperature Protection\u3001Enable Positive TSOT-23-5 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",
   "attributes": [
    {
     "attribute_name_en": "Power Supply Rejection Ratio (PSRR)",
-    "attribute_value_name": "70dB@(1kHz)"
-   },
-   {
-    "attribute_name_en": "Operating Temperature",
-    "attribute_value_name": "-40\u2103~+150\u2103"
+    "attribute_value_name": "75dB@(1kHz)"
    },
    {
     "attribute_name_en": "standby current",
-    "attribute_value_name": "60uA"
+    "attribute_value_name": "2uA"
+   },
+   {
+    "attribute_name_en": "Operating Temperature",
+    "attribute_value_name": "-40\u2103~+125\u2103@(Tj)"
    },
    {
     "attribute_name_en": "Noise",
-    "attribute_value_name": "50uVrms"
-   },
-   {
-    "attribute_name_en": "Voltage - Supply",
-    "attribute_value_name": "6V"
+    "attribute_value_name": "42uVrms"
    },
    {
     "attribute_name_en": "Output Type",
     "attribute_value_name": "Fixed"
    },
    {
+    "attribute_name_en": "Voltage - Supply",
+    "attribute_value_name": "5.5V"
+   },
+   {
     "attribute_name_en": "Output Current",
-    "attribute_value_name": "500mA"
+    "attribute_value_name": "600mA"
    },
    {
     "attribute_name_en": "Output Configuration",
@@ -4773,7 +4749,7 @@
    },
    {
     "attribute_name_en": "Features",
-    "attribute_value_name": "Over Current Protection\u3001Short Circuit Protection\u3001Enable control"
+    "attribute_value_name": "Over Current Protection\u3001Short Circuit Protection\u3001Thermal shutdown\u3001Enable control"
    },
    {
     "attribute_name_en": "Output Voltage",
@@ -4781,7 +4757,7 @@
    },
    {
     "attribute_name_en": "Voltage Dropout",
-    "attribute_value_name": "120mV@(100mA)"
+    "attribute_value_name": "360mV@(600mA)"
    },
    {
     "attribute_name_en": "Number of Outputs",
@@ -4794,7 +4770,7 @@
   "componentBrandHigh": null,
   "remarkHigh": null,
   "componentModelHigh": null,
-  "componentCodeHigh": "<span class='lucene_highlight_class'>C82942</span>",
+  "componentCodeHigh": "<span class='lucene_highlight_class'>C841192</span>",
   "componentSpecificationHigh": null,
   "rohsFlag": 1,
   "shopShowPriceFlag": true,
@@ -4807,7 +4783,7 @@
  "C8678": {
   "componentId": 9178,
   "componentLibraryType": "base",
-  "stockCount": 3533464,
+  "stockCount": 3410011,
   "componentTypeEn": "Schottky Diodes",
   "erpComponentName": "SS34",
   "componentSource": "shop",
@@ -4863,7 +4839,7 @@
    {
     "startNumber": 10000,
     "endNumber": 19999,
-    "productPrice": 0.0155
+    "productPrice": 0.0156
    },
    {
     "startNumber": 20000,
@@ -4878,7 +4854,7 @@
   ],
   "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
   "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
-  "canPresaleNumber": 3304466,
+  "canPresaleNumber": 3183764,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "MDD_Microdiode_Semiconductor-SS34/C8678",
@@ -4903,16 +4879,16 @@
   "componentBrandEn": "MDD(Microdiode Semiconductor)",
   "componentModelEn": "SS34",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8764712471288659968",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8764712471263494144-C8678-front.jpg?x-oss-date=20261030T120313Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=64d11a28206afadecce81ffd1614c14e9c3d51ffaf75996d13ff2c5c7b45058f",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS34_C8678.pdf",
-  "dataManualFileAccessId": "8586172667489079296",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8586172667476496384-C8678.pdf?response-content-disposition=attachment%3B%20filename%3DC8678.pdf%3B%20filename%2A%3DUTF-8%27%27C8678.pdf&x-oss-date=20261030T120313Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b08a973e3533ba8690502a1270bbc7dba5528e5edd34981b227e929e3563e9d8",
   "dataManualOfficialLink": "",
   "componentName": "MDD(Microdiode Semiconductor) SS34",
   "minImage": "",
-  "minImageAccessId": "8764712472375119872",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8764712472349954048-C8678-front.jpg?x-oss-date=20261030T120313Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=dc1ad7b858905fab64960bf13bf990c47c76b07e62a3941de4ce8eab836cfabe",
   "imageList": [
    {
     "productImage": null,
@@ -5000,7 +4976,7 @@
  "C8963": {
   "componentId": 9482,
   "componentLibraryType": "base",
-  "stockCount": 358710,
+  "stockCount": 347273,
   "componentTypeEn": "RS-485 / RS-422 ICs",
   "erpComponentName": "SP3485 +3.3V\u4f4e\u529f\u8017\u534a\u53cc\u5de5RS-485\u6536\u53d1\u5668\uff0c\u6570\u636e\u901f\u738710Mbps",
   "componentSource": "shop",
@@ -5009,27 +4985,27 @@
    {
     "startNumber": 1,
     "endNumber": 19,
-    "productPrice": 0.2642
+    "productPrice": 0.2644
    },
    {
     "startNumber": 20,
     "endNumber": 59,
-    "productPrice": 0.2051
+    "productPrice": 0.2052
    },
    {
     "startNumber": 60,
     "endNumber": 199,
-    "productPrice": 0.1763
+    "productPrice": 0.1764
    },
    {
     "startNumber": 200,
     "endNumber": 999,
-    "productPrice": 0.1506
+    "productPrice": 0.1507
    },
    {
     "startNumber": 1000,
     "endNumber": 2499,
-    "productPrice": 0.1435
+    "productPrice": 0.1436
    },
    {
     "startNumber": 2500,
@@ -5041,37 +5017,37 @@
    {
     "startNumber": 2500,
     "endNumber": -1,
-    "productPrice": 0.1341
+    "productPrice": 0.1342
    },
    {
     "startNumber": 1,
     "endNumber": 19,
-    "productPrice": 0.2545
+    "productPrice": 0.2547
    },
    {
     "startNumber": 1000,
     "endNumber": 2499,
-    "productPrice": 0.1382
+    "productPrice": 0.1383
    },
    {
     "startNumber": 20,
     "endNumber": 59,
-    "productPrice": 0.1976
+    "productPrice": 0.1977
    },
    {
     "startNumber": 60,
     "endNumber": 199,
-    "productPrice": 0.1698
+    "productPrice": 0.17
    },
    {
     "startNumber": 200,
     "endNumber": 999,
-    "productPrice": 0.145
+    "productPrice": 0.1451
    }
   ],
   "firstSortAccessId": "2ade39b3eb5f47a0b806a0d0611c9b6c",
   "secondSortAccessId": "b88549a74aaf43b3a7e9ff80932ee728",
-  "canPresaleNumber": 308097,
+  "canPresaleNumber": 296137,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "MaxLinear-SP3485EN_LTR/C8963",
@@ -5091,21 +5067,21 @@
   "shopCostPrice": 0.73068,
   "preMinPurchaseNum": 44,
   "minPurchaseNum": 1,
-  "initialPrice": 0.2642,
+  "initialPrice": 0.2644,
   "componentCode": "C8963",
   "componentBrandEn": "MaxLinear",
   "componentModelEn": "SP3485EN-L/TR",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8553218086376255488",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553218086367866880-C8963-front.jpg?x-oss-date=20261030T120314Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=8ed5e9cad834d7a0e02e92e5324ab3fa010dd0092742abaa87e6a0ad2be36e5f",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MaxLinear-SP3485EN-L-TR_C8963.pdf",
-  "dataManualFileAccessId": "8579709476519542784",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579709476515348480-C8963.pdf?response-content-disposition=attachment%3B%20filename%3DC8963.pdf%3B%20filename%2A%3DUTF-8%27%27C8963.pdf&x-oss-date=20261030T120314Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1932bf210963cbff6c6085e59cec0c95cb9c55323cb9872b1a4abb75cb94894e",
   "dataManualOfficialLink": "",
   "componentName": "MaxLinear SP3485EN-L/TR",
   "minImage": "",
-  "minImageAccessId": "8553218086980640768",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8553218086976446464-C8963-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20261030T120314Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f594765fdb54c1b7cb68c9f503eadc3392e02b35a994e346b63400576ebe9c8e",
   "imageList": [
    {
     "productImage": null,
@@ -5205,7 +5181,7 @@
  "C915914": {
   "componentId": 989796,
   "componentLibraryType": "expand",
-  "stockCount": 6250,
+  "stockCount": 4862,
   "componentTypeEn": "Screw Terminal Blocks",
   "erpComponentName": "1x5P 2.54mm \u76f4\u63d2 \u6392\u6570:1 \u6bcf\u6392P\u6570:5 \u3010\u63d2\u62d4\u3011",
   "componentSource": "shop",
@@ -5214,69 +5190,69 @@
    {
     "startNumber": 1,
     "endNumber": 9,
-    "productPrice": 0.6256
+    "productPrice": 0.6261
    },
    {
     "startNumber": 10,
     "endNumber": 29,
-    "productPrice": 0.5126
+    "productPrice": 0.513
    },
    {
     "startNumber": 30,
     "endNumber": 99,
-    "productPrice": 0.4553
+    "productPrice": 0.4556
    },
    {
     "startNumber": 100,
     "endNumber": 499,
-    "productPrice": 0.3996
+    "productPrice": 0.3999
    },
    {
     "startNumber": 500,
     "endNumber": 999,
-    "productPrice": 0.3538
+    "productPrice": 0.354
    },
    {
     "startNumber": 1000,
     "endNumber": -1,
-    "productPrice": 0.3358
+    "productPrice": 0.336
    }
   ],
   "buyComponentPrices": [
    {
     "startNumber": 1,
     "endNumber": 9,
-    "productPrice": 0.6027
+    "productPrice": 0.6031
    },
    {
     "startNumber": 10,
     "endNumber": 29,
-    "productPrice": 0.4938
+    "productPrice": 0.4942
    },
    {
     "startNumber": 30,
     "endNumber": 99,
-    "productPrice": 0.4386
+    "productPrice": 0.4389
    },
    {
     "startNumber": 100,
     "endNumber": 499,
-    "productPrice": 0.385
+    "productPrice": 0.3852
    },
    {
     "startNumber": 500,
     "endNumber": 999,
-    "productPrice": 0.3408
+    "productPrice": 0.341
    },
    {
     "startNumber": 1000,
     "endNumber": -1,
-    "productPrice": 0.3235
+    "productPrice": 0.3237
    }
   ],
   "firstSortAccessId": "248c42d1f2d246498d91d5c9cad9dd16",
   "secondSortAccessId": "e955493f42604e9f87b66e88320df6f6",
-  "canPresaleNumber": 6120,
+  "canPresaleNumber": 4712,
   "componentProductType": 0,
   "mergedComponentCode": null,
   "urlSuffix": "Ningbo_Xinlaiya_Elec-XY308_2_545P/C915914",
@@ -5296,21 +5272,21 @@
   "shopCostPrice": 1.6,
   "preMinPurchaseNum": 18,
   "minPurchaseNum": 1,
-  "initialPrice": 0.6256,
+  "initialPrice": 0.6261,
   "componentCode": "C915914",
   "componentBrandEn": "Ningbo Xinlaiya Elec.",
   "componentModelEn": "XY308-2.54-5P",
   "componentImageUrl": "",
-  "productBigImageAccessId": "8759521053385474048",
-  "productBigImageAccessIdUrl": null,
+  "productBigImageAccessId": null,
+  "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8759521053356113920-C915914-front.jpg?x-oss-date=20261030T120315Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e38eaa5a8371207d712a61d38647e171b51714c6b69ef2e7596e583bea17d3e2",
   "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2011241008_Ningbo-Xinlaiya-Elec--XY308-2-54-5P_C915914.pdf",
-  "dataManualFileAccessId": "8588893446123347968",
-  "dataManualFileAccessIdUrl": null,
+  "dataManualFileAccessId": null,
+  "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588893446110765056-C915914.pdf?response-content-disposition=attachment%3B%20filename%3DC915914.pdf%3B%20filename%2A%3DUTF-8%27%27C915914.pdf&x-oss-date=20261030T120315Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rmPsiAq6YZ9JK%2Bd2TC01g7PdV5v63vqjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qa4Z1gUx557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWsonyuQTjJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkIxieFk6KWD5sagAFqXnfPccszmKm2r1oWw4GCMZFZTliB%2Fzwjw94YEnLWffdsk%2BSPqtOd1rU5AhDqBmF0IoEkr4eFInkdpcprYxF81AdV%2B1M6ILfsdazZRFEsTl83INnvFPpCw7r3jf2OI5H9WFEz02eq5rTRQ7micWwZypqMRDr3%2Fj3DgpFG44W8byAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYSur4Fy8CPUuBs7Xn1ZUPhDH%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=29088ee845e044e8894d4eecb718bf6feaeebbc71d4f5ab93df6b7bcfcb1cb8e",
   "dataManualOfficialLink": "",
   "componentName": "XINLAIYA XY308-2.54-5P",
   "minImage": "",
-  "minImageAccessId": "8759521054433914880",
-  "minImageAccessIdUrl": null,
+  "minImageAccessId": null,
+  "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8759521054404554752-C915914-front.jpg?x-oss-date=20261030T120315Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rBP%2FzyoKhY%2FIa5YXXUpzIXTfUf2rXGujz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qdEv0gox557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jTQeEnuP%2BDZ%2FNEOvKm14tIm7JZsz45xaVVoUsXWIy3X2pqXh7g3s9Iv5wp90W32nwEhkE5BUxG5X3Krvk5ch3ARqAAUwh2h6JgyoiB2IDcMF7EGFZ9o%2B07iMGj8dxupYN6xGp8%2Fjok43KpwpCepa57q9a7zWN%2Fb5Y5ggW7dMkXF8zJTmrpbNkwsp9axN1Q%2F5NaSS0W%2BpBE7L4%2BaTUF2cJvBlNsNw5v3bxuEOJhdzaQnozUU1g8bvs%2B867zjgBCDcpktm2IAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYttFFMwyKDRcSeC2BAz35pmX%2F20261030%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=42466307ee1d53e242690ccff160f0a74db09477fdb3b48488ef5e975eedc356",
   "imageList": [
    {
     "productImage": null,

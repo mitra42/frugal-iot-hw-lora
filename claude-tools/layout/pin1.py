@@ -1,7 +1,7 @@
 """KiCad python: for checking JLCPCB's assembly preview. Prints each part's centre, rotation, and where pin 1
 (cathode for diodes/LEDs) sits relative to the centre (board view, +x right, +y down), plus the pin-1 net."""
 import pcbnew
-b = pcbnew.LoadBoard('../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'); t = pcbnew.ToMM
+b = pcbnew.LoadBoard('../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'); t = pcbnew.ToMM
 for f in sorted(b.GetFootprints(), key=lambda f: f.GetReference()):
     r = f.GetReference()
     if f.IsDNP() or r[0] == 'H' or r.startswith('JP'): continue

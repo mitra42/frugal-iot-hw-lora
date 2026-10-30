@@ -1,5 +1,5 @@
 import pcbnew
-b = pcbnew.LoadBoard('../../frugal_iot_v02/frugal_iot_v02.kicad_pcb')
+b = pcbnew.LoadBoard('../../frugal_iot_v03/frugal_iot_v03.kicad_pcb')
 links = [t.GetPosition() for t in b.GetTracks() if t.GetClass() == 'PCB_VIA' and t.GetNetname() == 'GND']
 for f in b.GetFootprints():
     for p in f.Pads():
@@ -72,4 +72,4 @@ if '--fix' in sys.argv:
         v = pcbnew.PCB_VIA(b); v.SetPosition(V(int(x), int(y))); v.SetWidth(mm(0.6)); v.SetDrill(mm(0.3))
         v.SetLayerPair(pcbnew.F_Cu, pcbnew.B_Cu); v.SetNet(gnd); b.Add(v)
     print('join vias', [(round(x/1e6-50, 2), round(y/1e6-50, 2)) for x, y in added])
-    pcbnew.SaveBoard('../../frugal_iot_v02/frugal_iot_v02.kicad_pcb', b)
+    pcbnew.SaveBoard('../../frugal_iot_v03/frugal_iot_v03.kicad_pcb', b)

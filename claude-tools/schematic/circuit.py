@@ -1,6 +1,7 @@
-"""Circuit definition for Frugal-IoT V0.2 (source of truth for parts and nets).
+"""Circuit definition for Frugal-IoT V0.3 LoRa (source of truth for parts and nets).
+V0.2 decisions are Dn (../../v0.2-baseline/DECISIONS-V0.2.md); V0.3 decisions are Ln (../../DECISIONS.md).
 Each part: dict(prefix, lib, value, fp, nets{pin:net}, dnp, lcsc, mpn, block, note, ref)
-net 'NC' => no-connect marker. Decisions referenced as Dn are in ../../DECISIONS.md.
+net 'NC' => no-connect marker.
 """
 P = []
 def part(prefix, lib, value, fp, nets, block, dnp=False, lcsc='', mpn='', rot=None, note='', ref=None):
@@ -69,26 +70,30 @@ part('D', 'Device:D_Schottky', 'SS34', SMA, {'2': 'VBUS', '1': 'VSYS'}, B, lcsc=
 PFET('VBUS', 'VSYS', 'VBAT', B)                  # load sharing: cell feeds VSYS when USB is absent
 R('100k', 'VBUS', 'GND', B)
 C('10uF', 'VSYS', 'GND', B)
-part('U', 'Regulator_Linear:ME6211C33M5', 'ME6211C33M5G', 'Package_TO_SOT_SMD:SOT-23-5',
-     {'1': 'VSYS', '3': 'VSYS', '2': 'GND', '4': 'NC', '5': '+3V3'}, B, lcsc='C82942', mpn='ME6211C33M5G-N')
+# RT9080 (L18): 600 mA, 2 uA quiescent; TSOT-23-5 pins as ME6211 (1 VIN, 2 GND, 3 EN, 4 NC, 5 VOUT)
+RT9080 = ('Regulator_Linear:XC6220B331MR', 'RT9080-33GJ5', 'Package_TO_SOT_SMD:TSOT-23-5')
+part('U', RT9080[0], RT9080[1], RT9080[2],
+     {'1': 'VSYS', '3': 'VSYS', '2': 'GND', '4': 'NC', '5': '+3V3'}, B, lcsc='C841192', mpn='RT9080-33GJ5')
 C('10uF', '+3V3', 'GND', B)
 R('1M', 'VBAT', 'VBAT_SENSE', B); R('1M', 'VBAT_SENSE', 'GND', B); C('100nF', 'VBAT_SENSE', 'GND', B)
 PFET('nRAIL_EN', '+3V3', '+3V3_SW', B)           # GPIO5 low = sensors on; pull-up keeps it off at reset
 R('100k', '+3V3', 'nRAIL_EN', B, note='rail off at reset')
 C('1uF', '+3V3_SW', 'GND', B)
 
-# ---------------- MCU ----------------
+# ---------------- MCU: ESP32-S3-WROOM-1U (L1), pin map L3 ----------------
 B = 'mcu'
-part('U', 'RF_Module:ESP32-C3-WROOM-02U', 'ESP32-C3-WROOM-02U-N4', 'RF_Module:ESP32-C3-WROOM-02U',
-     {'1': '+3V3', '2': 'EN', '3': 'GPIO4', '4': 'nRAIL_EN', '5': 'I2C_SDA', '6': 'I2C_SCL', '7': 'STATUS_LED',
-      '8': 'BOOT', '9': 'GND', '10': 'GPIO10', '11': 'RXD0', '12': 'TXD0', '13': 'USB_D_N', '14': 'USB_D_P',
-      '15': 'VBAT_SENSE', '16': 'GPIO2', '17': 'SENS2', '18': 'SENS1', '19': 'GND'},
-     B, lcsc='C2926676', mpn='ESP32-C3-WROOM-02U-N4')
+part('U', 'RF_Module:ESP32-S3-WROOM-1', 'ESP32-S3-WROOM-1U-N4', 'RF_Module:ESP32-S3-WROOM-1U',
+     {'1': 'GND', '2': '+3V3', '3': 'EN', '4': 'GPIO4', '5': 'GPIO5', '6': 'VBAT_SENSE', '7': 'GPIO7',
+      '8': 'nRAIL_EN', '9': 'RS485_DE', '10': 'I2C_SDA', '11': 'I2C_SCL', '12': 'LORA_NSS',
+      '13': 'USB_D_N', '14': 'USB_D_P', '15': 'NC', '16': 'NC', '17': 'LORA_SCK', '18': 'LORA_MOSI',
+      '19': 'LORA_MISO', '20': 'LORA_RST', '21': 'LORA_BUSY', '22': 'LORA_DIO1', '23': 'STATUS_LED',
+      '24': 'GPIO47', '25': 'GPIO48', '26': 'NC', '27': 'BOOT', '28': 'NC', '29': 'NC', '30': 'NC',
+      '31': 'GPIO38', '32': 'GPIO39', '33': 'GPIO40', '34': 'GPIO41', '35': 'GPIO42',
+      '36': 'RXD0', '37': 'TXD0', '38': 'SENS2', '39': 'SENS1', '40': 'GND', '41': 'GND'},
+     B, lcsc='C2980296', mpn='ESP32-S3-WROOM-1U-N4')
 C('10uF', '+3V3', 'GND', B); C('100nF', '+3V3', 'GND', B)
 R('10k', '+3V3', 'EN', B); C('1uF', 'EN', 'GND', B); BUTTON('EN', 'GND', B, 'RESET')
 R('10k', '+3V3', 'BOOT', B); BUTTON('BOOT', 'GND', B, 'BOOT')
-R('10k', '+3V3', 'GPIO2', B, note='GPIO2 strap high')
-R('10k', '+3V3', 'STATUS_LED', B, note='GPIO8 strap high')
 R('1k', '+3V3', 'LED_STAT', B); LED('GREEN', 'LED_STAT', 'STATUS_LED', B)
 part('J', 'Connector:Conn_01x02_Pin', 'EXT LED', HDR.format(n=2), {'1': 'LED_STAT', '2': 'STATUS_LED'}, B,
      dnp=True, ref='J7', note='off-board LED: 1 = anode, 2 = cathode')
@@ -96,29 +101,50 @@ part('J', 'Connector:Conn_01x02_Pin', 'EXT LED', HDR.format(n=2), {'1': 'LED_STA
 # ---------------- Sensor connectors ----------------
 B = 'conn'
 R('4.7k', '+3V3_SW', 'I2C_SDA', B); R('4.7k', '+3V3_SW', 'I2C_SCL', B)
-# Fitted (D31): R18 = SENS1 pull-up (e.g. DS18B20), C12 = SENS2 filter (analog). R19, C11 stay options.
-for s, fit_r, fit_c in (('SENS1', True, False), ('SENS2', False, True)):
-    R('4.7k', '+3V3_SW', s, B, dnp=not fit_r, note='pull-up (e.g. DS18B20)' if fit_r else 'pull-up option (e.g. DS18B20)')
-    C('100nF', s, 'GND', B, dnp=not fit_c, note='filter (analog)' if fit_c else 'filter option (analog)')
-# J2: main sensor connector (fitted) = two 5-way XY308 side by side, pins 1-10 as v0.1 (D4)
+# Fitted (D31): SENS1 pull-up (e.g. DS18B20), SENS2 filter (analog); the other two stay options.
+for s_, fit_r, fit_c in (('SENS1', True, False), ('SENS2', False, True)):
+    R('4.7k', '+3V3_SW', s_, B, dnp=not fit_r, note='pull-up (e.g. DS18B20)' if fit_r else 'pull-up option (e.g. DS18B20)')
+    C('100nF', s_, 'GND', B, dnp=not fit_c, note='filter (analog)' if fit_c else 'filter option (analog)')
+# J2: main sensor connector = two 5-way XY308 side by side, pins 1-10 as v0.1 (D4)
 TERM('J2', 5, ['GND', 'I2C_SDA', 'I2C_SCL', '+3V3_SW', 'GND'], B, 'J2 SENSORS 1-5')
 TERM('J12', 5, ['SENS1', '+3V3_SW', 'GND', 'SENS2', '+3V3_SW'], B, 'J2 SENSORS 6-10')
 # J3: same layout (D5); pins 2-3 = RS485 A/B as delivered (JP2/JP3 bridged 1-2), or UART RX/TX (cut, bridge 2-3)
-TERM('J3', 5, ['GND', 'J3_P2', 'J3_P3', '+3V3_SW', 'GND'], B, 'J3 RS485 1-5')   # fitted with the RS485 option (D29)
-TERM('J13', 5, ['GPIO2', '+3V3_SW', 'GND', 'GPIO4', '+3V3_SW'], B, 'J3 SPARE 6-10')   # fitted (D31)
+TERM('J3', 5, ['GND', 'J3_P2', 'J3_P3', '+3V3_SW', 'GND'], B, 'J3 RS485 1-5')   # Modbus fitted (L9)
+TERM('J13', 5, ['GPIO4', '+3V3_SW', 'GND', 'GPIO5', '+3V3_SW'], B, 'J3 SPARE 6-10')
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'A/RX', SJ3, {'1': 'RS485_A', '2': 'J3_P2', '3': 'RXD0'}, B)
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'B/TX', SJ3, {'1': 'RS485_B', '2': 'J3_P3', '3': 'TXD0'}, B)
-TERM('J5', 3, ['GND', 'GPIO10', '+3V3_SW'], B, 'GPIO10', dnp=True)   # D14
+# J5: spare GPIOs on a row of unfitted 2.54 mm holes mid-board (L10)
+part('J', 'Connector:Conn_01x10_Pin', 'SPARE GPIO', 'Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical',
+     {'1': 'GND', '2': 'GPIO7', '3': 'GPIO38', '4': 'GPIO39', '5': 'GPIO40', '6': 'GPIO41', '7': 'GPIO42',
+      '8': 'GPIO47', '9': 'GPIO48', '10': '+3V3_SW'}, B, dnp=True, ref='J5', note='holes only (L10)')
 
-# ---------------- RS485 option (fitted by default, D29; omit to save cost) ----------------
+# ---------------- RS485 (fitted by default, L9 / D29; omit to save cost) ----------------
 B = 'rs485'
 part('U', 'Interface_UART:SP3485EN', 'SP3485EN', 'Package_SO:SOIC-8_3.9x4.9mm_P1.27mm',
-     {'1': 'RXD0', '2': 'GPIO10', '3': 'GPIO10', '4': 'TXD0', '5': 'GND', '6': 'RS485_A', '7': 'RS485_B',
+     {'1': 'RXD0', '2': 'RS485_DE', '3': 'RS485_DE', '4': 'TXD0', '5': 'GND', '6': 'RS485_A', '7': 'RS485_B',
       '8': '+3V3_SW'}, B, lcsc='C8963', mpn='SP3485EN-L/TR')
 C('100nF', '+3V3_SW', 'GND', B)
-R('10k', 'GPIO10', 'GND', B, note='receive by default')
+R('10k', 'RS485_DE', 'GND', B, note='receive by default')
 R('680R', '+3V3_SW', 'RS485_A', B, note='bias'); R('680R', 'RS485_B', 'GND', B, note='bias')
 R('120R', 'RS485_A', 'RS485_TERM', B)
 part('JP', 'Jumper:SolderJumper_2_Open', 'TERM', SJ, {'1': 'RS485_TERM', '2': 'RS485_B'}, B)
 part('D', 'Diode:SM712_SOT23', 'PSM712', SOT23, {'1': 'RS485_A', '2': 'RS485_B', '3': 'GND'}, B,
      lcsc='C32677', mpn='PSM712-LF-T7')
+
+# ---------------- LoRa radio: Ai-Thinker Ra-01SH, SX1262 (L2, L4) ----------------
+# Pins per Ai-Thinker Ra-01SH specification V1.1 (../../datasheets/). The module's antenna switch is driven
+# by the SX1262's DIO2 inside the module (TXEN is DIO2, RXEN not connected), it has a crystal (DIO3 unused),
+# and an IPEX socket for the antenna, so pad 1 (ANT) is left unconnected.
+B = 'lora'
+part('U', 'frugal:Ra-01SH', 'Ra-01SH', 'frugal:Ai-Thinker-Ra-01SH',
+     {'1': 'NC', '2': 'GND', '3': '+3V3_RF', '4': 'LORA_RST', '5': 'NC', '6': 'LORA_DIO1', '7': 'NC', '8': 'NC',
+      '9': 'GND', '10': 'LORA_BUSY', '11': 'NC', '12': 'LORA_SCK', '13': 'LORA_MISO', '14': 'LORA_MOSI',
+      '15': 'LORA_NSS', '16': 'GND'}, B, lcsc='C2764087', mpn='Ra-01SH')
+C('10uF', '+3V3_RF', 'GND', B); C('100nF', '+3V3_RF', 'GND', B)
+R('10k', '+3V3_RF', 'LORA_NSS', B, note='radio deselected while the ESP32 boots or sleeps')
+R('10k', '+3V3_RF', 'LORA_RST', B, note='radio out of reset while the ESP32 sleeps')
+# The radio's own regulator (L18): isolates it from the ESP32's WiFi load steps; always on (EN = VIN), as
+# LoRaMesher sleeps the radio over SPI and never powers it off.
+part('U', RT9080[0], RT9080[1], RT9080[2],
+     {'1': 'VSYS', '3': 'VSYS', '2': 'GND', '4': 'NC', '5': '+3V3_RF'}, B, lcsc='C841192', mpn='RT9080-33GJ5')
+C('1uF', 'VSYS', 'GND', B, note='U7 input, close to its VIN')

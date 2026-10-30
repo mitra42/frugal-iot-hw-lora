@@ -1,4 +1,4 @@
-"""Placement for Frugal-IoT V0.2. Plain python (no KiCad needed).
+"""Placement for Frugal-IoT V0.3 LoRa. Plain python (no KiCad needed).
 Inputs: fp.json (fpmeasure.py), ../schematic/out/netlist.xml, blocks.json. Output: placement.json, metrics.
 Board: L x 37 mm, origin top-left, y down (KiCad). Rotation in KiCad degrees (CCW on screen).
 Decisions: 37 mm high as v0.1 (D2); J2+J12 on the left edge, J3+J13 on the right edge, wire entries outward;

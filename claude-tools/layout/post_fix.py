@@ -1,7 +1,7 @@
 """KiCad python, one job: (1) delete dangling track stubs (iterated), (2) add GND stitching vias where both
 filled GND pours have solid copper (grid + one per otherwise-unstitched island). Save. Refill in fill.py."""
 import pcbnew, math, json
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB)
 mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 # ---------- collect ----------

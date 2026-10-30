@@ -5,7 +5,7 @@
 # Each step is its own process (pcbnew SWIG landmines); a backup is kept before each mutating step.
 PY=/Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3
 L=$(cd "$(dirname "$0")/../.." && pwd)/claude-tools/layout
-B=$L/../../frugal_iot_v02/frugal_iot_v02.kicad_pcb
+B=$L/../../frugal_iot_v03/frugal_iot_v03.kicad_pcb
 mkdir -p $L/out; rm -f $L/out/post_route.done
 step() { cp $B $L/out/before_$1.kicad_pcb; $PY $2 2>&1 | grep -v -e assert -e traits -e swig; }
 ( cd $L

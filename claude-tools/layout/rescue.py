@@ -2,7 +2,7 @@
 position), (2) rescue GND pads named in DRC unconnected_items: short F.Cu link to an existing GND via/THT pad,
 else a new via. All geometry checked against other-net copper."""
 import pcbnew, json, math, re
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 drc = json.load(open('out/drc.json'))
 dang = []

@@ -1,7 +1,7 @@
 """KiCad python: add one GND via as close as possible to a GND pad (via may overlap the pad itself),
 checked against all other-net copper on both layers. Usage: via_near.py REF:PAD [REF:PAD ...]"""
 import pcbnew, math, sys
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 CLR, R = mm(0.2), mm(0.3)
 other = []

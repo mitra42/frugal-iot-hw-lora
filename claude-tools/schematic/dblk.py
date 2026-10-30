@@ -1,4 +1,4 @@
-"""Drawing blocks for Frugal-IoT V0.2 (schlib). Parts and nets come from circuit.py via dbase."""
+"""Drawing blocks for Frugal-IoT V0.3 LoRa (schlib). Parts and nets come from circuit.py via dbase."""
 import dbase as B
 from dbase import tag as dbtag, pwr_pin, side, put, put_pin, pin, port, drop, term, hang, rise, series, diode_r, at
 
@@ -53,8 +53,8 @@ def usb(x, y):
         put('J6', cx + 10.16, vb[1] + 20.32)
         term('J6', '1', 'VBUS', 15.24)
         term('J6', '2', 'GND', 5.08)
-        S.note("USB-C sink, 5 V only: CC1/CC2 5.1k to GND. D+/D- go straight to the C3's native USB\n"
-               "(GPIO19/GPIO18): no USB-UART chip and no ESD chip (D9).\n"
+        S.note("USB-C sink, 5 V only: CC1/CC2 5.1k to GND. D+/D- go straight to the S3's native USB\n"
+               "(GPIO20/GPIO19): no USB-UART chip and no ESD chip (D9).\n"
                "J6: XY308-2P screw terminal for external 5 V, e.g. a solar panel (D10; fitted from D34).",
                x - 5.08, y + 33.02, 1.0)
 
@@ -189,18 +189,12 @@ def syspwr(x, y):
         S.wire(gn, at(gn, 0, 5.08)); S.label('nRAIL_EN', gn[0], gn[1] + 5.08, angle=270)
         S.note("D3 + Q1: with USB present VSYS comes through D3 and Q1 is off; without it Q1 turns on\n"
                "and the cell feeds VSYS. The charger never carries the load.\n"
-               "U3 ME6211C33 (D7): 500 mA, ~60 uA quiescent. VBAT_SENSE = VBAT / 2 (1M/1M, ~2 uA).\n"
-               "Q2: nRAIL_EN (GPIO5) LOW = +3V3_SW on. R10 holds the rail off through reset and boot.",
+               "U3 RT9080 (L18): 600 mA, 2 uA quiescent. VBAT_SENSE = VBAT / 2 (1M/1M, ~2 uA).\n"
+               "Q2: nRAIL_EN (GPIO15) LOW = +3V3_SW on. R10 holds the rail off through reset and boot.",
                x - 5.08, y + 58.42, 1.0)
 
 
 # ------------------------------------------------------------------ module
-LEFT = [('2', 'EN'), ('18', 'SENS1'), ('17', 'SENS2'), ('16', 'GPIO2'), ('15', 'VBAT_SENSE'), ('3', 'GPIO4'),
-        ('4', 'nRAIL_EN'), ('5', 'I2C_SDA'), ('6', 'I2C_SCL'), ('7', 'STATUS_LED'), ('8', 'BOOT'),
-        ('10', 'GPIO10'), ('13', 'USB_D_N'), ('14', 'USB_D_P')]
-RIGHT = [('11', 'RXD0'), ('12', 'TXD0')]
-
-
 def pullup_sw(rref, swref, net, x, y):
     """+3V3 -> R -> node(label) -> switch -> GND, drawn as one vertical column."""
     S = B.S
@@ -213,33 +207,42 @@ def pullup_sw(rref, swref, net, x, y):
     S.wire(n, at(n, -5.08)); S.label(net, n[0] - 5.08, n[1], angle=180)
 
 
+def signals(ref, skip=()):
+    """Stub every signal pin of `ref` to its net label (or a no-connect), from circuit.py."""
+    S = B.S
+    for (r, k) in B.NO_CONNECT:
+        if r == ref and k not in skip: S.nc(ref, k)
+    for net, nodes in B.NETS.items():
+        if net in B.RAIL: continue
+        for r, k in nodes:
+            if r == ref and k not in skip: term(ref, k, net, 5.08)
+
+
 def module(x, y):
     S = B.S
-    with S.block("ESP32-C3-WROOM-02U MODULE"):
+    with S.block("ESP32-S3-WROOM-1U MODULE"):
         put('U4', x, y)
-        for p, net in LEFT: term('U4', p, net, 5.08)
-        for p, net in RIGHT: term('U4', p, net, 5.08)
-        v = pin('U4', '1')
-        m = at(v, 0, -15.24); t = at(v, 0, -17.78)
+        signals('U4')
+        v = pin('U4', '2')
+        m = at(v, 0, -17.78); t = at(v, 0, -20.32)
         S.wire(v, m, t); port('+3V3', *t)
         S.wire(m, at(m, 10.16), at(m, 17.78))
         hang('C8', at(m, 10.16), 'GND'); hang('C9', at(m, 17.78), 'GND')
-        term('U4', '9', 'GND')                      # pins 9 and 19 (pad) share one point
-        sx = x - 101.6
+        term('U4', '1', 'GND')                      # pins 1, 40 and 41 (pad) share one point
+        sx = x - 81.28
         # reset: pull-up + RC + button
         n = (sx, y - 25.4)
         rise('R11', n, '+3V3', bottom_pin='2')
         S.wire(n, at(n, 7.62)); hang('C10', at(n, 7.62), 'GND')
         put_pin('SW1', '1', at(n, 0, 2.54), rot=270); S.wire(n, pin('SW1', '1')); term('SW1', '2', 'GND')
         S.wire(n, at(n, -5.08)); S.label('EN', n[0] - 5.08, n[1], angle=180)
-        # BOOT on GPIO9
+        # BOOT on GPIO0
         pullup_sw('R12', 'SW2', 'BOOT', sx, y + 2.54)
-        # status LED on GPIO8 (strap: R14 keeps it high at reset), J7 for an off-board LED
+        # status LED on GPIO21 (active low; not a strapping pin), J7 for an off-board LED
         n = (sx + 20.32, y + 2.54)
-        rise('R14', n, '+3V3', bottom_pin='2')
         a = at(n, 10.16, -20.32)
         S.wire(a, at(a, 0, -2.54)); port('+3V3', a[0], a[1] - 2.54)
-        put_pin('R15', '1', a); r2 = pin('R15', '2')
+        put_pin('R13', '1', a); r2 = pin('R13', '2')
         put_pin('D4', '2', at(r2, 0, 2.54), rot=90)
         assert pin('D4', '1')[1] > r2[1]
         S.wire(r2, pin('D4', '2'))
@@ -249,14 +252,13 @@ def module(x, y):
         put_pin('J7', '1', at(r2, 20.32), mirror='y')
         S.wire(r2, pin('J7', '1'))
         term('J7', '2', 'STATUS_LED', 2.54)
-        # GPIO2 strap pull-up
-        lab_up('R13', (sx + 66.04, y + 2.54), 'GPIO2', '+3V3')
-        S.note("GPIO map (D3): USB 18/19, UART0 20/21 -> J3, I2C 6/7, sensors 0/1 (ADC), VBAT_SENSE 3,\n"
-               "nRAIL_EN 5, LED 8, BOOT 9, spares 2/4 -> J3, 10 -> J5 (RS485 DE when fitted).\n"
-               "Straps: GPIO2, GPIO8 and GPIO9 must be high at reset (R13, R14, R12).\n"
-               "J7 (not fitted): off-board LED, pin 1 = anode, pin 2 = cathode, shares R15.\n"
-               "C8/C9 close to module pin 1. U.FL antenna: module end at the board edge.",
-               x - 101.6, y + 38.1, 1.0)
+        S.note("GPIO map (L3): sensors 1/2 (ADC1) -> J2, spares 4/5 (ADC1) -> J13, VBAT_SENSE 6, I2C 17/18,\n"
+               "LoRa NSS/SCK/MOSI/MISO 8-11, RST 12, BUSY 13, DIO1 14 (as Heltec V3/V4), nRAIL_EN 15,\n"
+               "RS485 DE 16, UART0 43/44 -> RS485 or J3, USB 19/20, LED 21, BOOT 0.\n"
+               "Spares 7, 38-42, 47, 48 -> J5 holes (L10). Not connected: straps 3, 45, 46 (internal defaults)\n"
+               "and 35-37. J7 (not fitted): off-board LED, pin 1 = anode, pin 2 = cathode, shares R13.\n"
+               "C8/C9 close to module pin 2. U.FL antenna: module end at the board edge, away from the LoRa antenna (L5).",
+               x - 81.28, y + 45.72, 1.0)
 
 
 # ------------------------------------------------------------------ connectors
@@ -264,13 +266,13 @@ RL = {'GND': 12.7, '+3V3_SW': 22.86}   # rail stub lengths: keep power symbols c
 
 def conn(x, y):
     S = B.S
-    with S.block("SENSOR CONNECTORS J2, J3, J13 (FITTED) AND J5 (NOT FITTED)"):
+    with S.block("SENSOR CONNECTORS J2, J3 (FITTED) AND SPARE GPIO HOLES J5"):
         # I2C pull-ups (on +3V3_SW: nothing back-powers sensors when the rail is off)
-        lab_up('R16', (x, y), 'I2C_SDA', '+3V3_SW')
-        lab_up('R17', (x + 12.7, y), 'I2C_SCL', '+3V3_SW')
+        lab_up('R14', (x, y), 'I2C_SDA', '+3V3_SW')
+        lab_up('R15', (x + 12.7, y), 'I2C_SCL', '+3V3_SW')
         # sensor input options (not fitted)
-        lab_up('R18', (x, y + 30.48), 'SENS1', '+3V3_SW')
-        lab_up('R19', (x + 12.7, y + 30.48), 'SENS2', '+3V3_SW')
+        lab_up('R16', (x, y + 30.48), 'SENS1', '+3V3_SW')
+        lab_up('R17', (x + 12.7, y + 30.48), 'SENS2', '+3V3_SW')
         lab_down('C11', (x + 25.4, y + 33.02), 'SENS1', 'GND')
         lab_down('C12', (x + 38.1, y + 33.02), 'SENS2', 'GND')
         # J2 = J2A (pins 1-5) + J2B (pins 6-10)
@@ -278,7 +280,7 @@ def conn(x, y):
         nets = {'J2': ['GND', 'I2C_SDA', 'I2C_SCL', '+3V3_SW', 'GND'],
                 'J12': ['SENS1', '+3V3_SW', 'GND', 'SENS2', '+3V3_SW'],
                 'J3': ['GND', 'J3_P2', 'J3_P3', '+3V3_SW', 'GND'],
-                'J13': ['GPIO2', '+3V3_SW', 'GND', 'GPIO4', '+3V3_SW']}
+                'J13': ['GPIO4', '+3V3_SW', 'GND', 'GPIO5', '+3V3_SW']}
         for i, ref in enumerate(('J2', 'J12')):
             put(ref, jx, y - 2.54 + 17.78 * i)
             for k, net in enumerate(nets[ref]):
@@ -291,15 +293,16 @@ def conn(x, y):
         for i, (ref, a, c, b) in enumerate((('JP2', 'RS485_A', 'J3_P2', 'RXD0'), ('JP3', 'RS485_B', 'J3_P3', 'TXD0'))):
             put(ref, jx + 7.62 + 30.48 * i, y + 50.8)
             term(ref, '1', a, 5.08); term(ref, '3', b, 5.08); term(ref, '2', c, 2.54)
-        # J5: GPIO10 spare position
-        put('J5', jx + 45.72, y + 63.5)
-        term('J5', '1', 'GND', RL['GND']); term('J5', '2', 'GPIO10', 2.54); term('J5', '3', '+3V3_SW', RL['+3V3_SW'])
-        S.note("J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted:\n"
-               "  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO2  7 3V3_SW  8 GND  9 S2/GPIO4  10 3V3_SW\n"
+        # J5: spare GPIOs on unfitted holes (L10)
+        put('J5', jx + 91.44, y + 12.7)
+        signals('J5')
+        term('J5', '1', 'GND', RL['GND']); term('J5', '10', '+3V3_SW', RL['+3V3_SW'])
+        S.note("J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2, J3: GPIO4/GPIO5):\n"
+               "  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO4  7 3V3_SW  8 GND  9 S2/GPIO5  10 3V3_SW\n"
                "Each is two XY308-2.54-5P blocks side by side (no 10-way part at JLCPCB): J2+J12, J3+J13.\n"
                "JP2/JP3: J3 pins 2-3 = RS485 A/B as delivered; cut 1-2 and bridge 2-3 for UART0 RX/TX (U5 must then be left off) (D29).\n"
-               "J5 (not fitted): GND / GPIO10 / 3V3_SW (D14). R18 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R19, C11 not fitted.\n"
-               "Firmware: switch +3V3_SW on (GPIO5 low) before any I2C or sensor access.",
+               "J5: holes only, no connector (L10): spare GPIO 7, 38-42, 47, 48 with GND and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\n"
+               "Firmware: switch +3V3_SW on (GPIO15 low) before any I2C or sensor access.",
                x - 5.08, y + 76.2, 1.0)
 
 
@@ -312,7 +315,7 @@ def rs485(x, y):
         p2, p3 = pin('U5', '2'), pin('U5', '3')
         j2, j3 = at(p2, -2.54), at(p3, -2.54)
         S.wire(p2, j2); S.wire(p3, j3); S.wire(j2, j3)
-        S.wire(j3, at(j3, -5.08)); S.label('GPIO10', j3[0] - 5.08, j3[1], angle=180)
+        S.wire(j3, at(j3, -5.08)); S.label('RS485_DE', j3[0] - 5.08, j3[1], angle=180)
         v = pin('U5', '8')
         m = at(v, 0, -7.62); t = at(v, 0, -10.16)
         S.wire(v, m, t); port('+3V3_SW', *t)
@@ -321,18 +324,53 @@ def rs485(x, y):
         term('U5', '6', 'RS485_A', 5.08); term('U5', '7', 'RS485_B', 5.08)
         # DE/RE pull-down, bias, termination, surge protection
         bx = x + 40.64
-        lab_down('R20', (x - 30.48, y + 25.4), 'GPIO10', 'GND')
-        lab_up('R21', (bx, y), 'RS485_A', '+3V3_SW')
-        lab_down('R22', (bx + 12.7, y + 2.54), 'RS485_B', 'GND')
+        lab_down('R18', (x - 30.48, y + 25.4), 'RS485_DE', 'GND')
+        lab_up('R19', (bx, y), 'RS485_A', '+3V3_SW')
+        lab_down('R20', (bx + 12.7, y + 2.54), 'RS485_B', 'GND')
         st = (bx - 5.08, y + 25.4)
         S.wire(at(st, -5.08), st); S.label('RS485_A', st[0] - 5.08, st[1], angle=180)
-        e = series('R23', st)
+        e = series('R21', st)
         S.wire(e, at(e, 2.54))
         series('JP4', at(e, 2.54), first='1', rot=0)
         term('JP4', '2', 'RS485_B', 5.08)
         put('D5', bx + 30.48, y + 7.62)
         term('D5', '1', 'RS485_A', 5.08); term('D5', '2', 'RS485_B', 5.08); term('D5', '3', 'GND')
         S.note("Fitted by default: J3 pin 2 = A, pin 3 = B via JP2/JP3 (D29). A board without Modbus can leave out\n"
-               "U5, C13, R20-R23, D5 and J3 (see COST-ESTIMATE.txt). GPIO10 = DE/RE (high = transmit, R20 = receive).\n"
+               "U5, C13, R18-R21, D5 and J3 (see COST-ESTIMATE.txt). GPIO16 = DE/RE (high = transmit, R18 = receive).\n"
                "JP4 bridged = 120R termination. RS485 sensors need their own 5-24 V supply (external).",
                x - 30.48, y + 35.56, 1.0)
+
+
+# ------------------------------------------------------------------ LoRa radio
+def lora(x, y):
+    S = B.S
+    with S.block("LORA RADIO: AI-THINKER RA-01SH (SX1262)"):
+        put('U6', x, y)
+        signals('U6')
+        v = pin('U6', '3')
+        m = at(v, 0, -15.24); t = at(v, 0, -17.78)
+        S.wire(v, m, t); port('+3V3_RF', *t)
+        S.wire(m, at(m, 10.16), at(m, 17.78))
+        hang('C14', at(m, 10.16), 'GND'); hang('C15', at(m, 17.78), 'GND')
+        term('U6', '2', 'GND')                      # pins 2, 9 and 16 share one point
+        lab_up('R22', (x - 40.64, y + 10.16), 'LORA_NSS', '+3V3_RF')
+        lab_up('R23', (x - 27.94, y + 10.16), 'LORA_RST', '+3V3_RF')
+        # the radio's own regulator U7 (L18), drawn left of the pull-ups
+        lx, ly = x - 104.14, y - 7.62
+        a = (lx, ly)
+        drop('VSYS', a, 2.54)
+        hang('C16', at(a, 5.08), 'GND'); S.wire(a, at(a, 5.08))
+        put_pin('U7', '1', at(a, 15.24))
+        S.wire(at(a, 5.08), pin('U7', '1'))
+        en = pin('U7', '3')
+        S.wire(en, (en[0] - 2.54, en[1]), (en[0] - 2.54, ly))
+        term('U7', '2', 'GND'); S.nc('U7', '4')
+        vo = pin('U7', '5')
+        S.wire(vo, at(vo, 7.62)); drop('+3V3_RF', at(vo, 7.62), 2.54)
+        S.note("Ra-01SH (L2): SX1262 with crystal, 803-930 MHz, IPEX socket for the antenna (pad 1 ANT unused).\n"
+               "The module drives its own RF switch from DIO2 (TXEN = DIO2 inside; RXEN not connected), so\n"
+               "TXEN, RXEN, DIO2 and DIO3 are left open. Own always-on regulator U7 (+3V3_RF, L18): isolates the\n"
+               "radio from WiFi load steps; LoRaMesher sleeps it over SPI, never by power. C14/C15 at pin 3, C16 at U7.\n"
+               "R22 keeps the radio deselected and R23 keeps it out of reset while the ESP32 boots or sleeps.\n"
+               "Firmware: LoRaMesher/RadioLib defaults fit (DC-DC regulator, no TCXO, DIO2 as RF switch) (L6).",
+               x - 104.14, y + 35.56, 1.0)

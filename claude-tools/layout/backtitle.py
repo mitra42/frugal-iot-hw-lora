@@ -1,8 +1,8 @@
 """KiCad python: board title on the BACK silkscreen (the back carries no parts, so it can be large and is
 never crowded out by the front's labels - D32). Removes any earlier front-side title."""
 import pcbnew, sys
-TEXT = sys.argv[1] if len(sys.argv) > 1 else 'Frugal-IoT V0.2'
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+TEXT = sys.argv[1] if len(sys.argv) > 1 else 'Frugal-IoT V0.3 LoRa'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 e = b.GetBoardEdgesBoundingBox(); cx, cy = (e.GetX() + e.GetRight()) // 2, (e.GetY() + e.GetBottom()) // 2
 old = [d for d in b.GetDrawings() if d.GetClass() == 'PCB_TEXT' and d.GetText() == TEXT]

@@ -5,7 +5,7 @@ sys.path.insert(0, HERE)
 import circuit
 
 RAIL = {'GND': 'GND', '+3V3': '+3V3', 'VBUS': 'VBUS',
-        'VSYS': 'frugal:VSYS', 'VBAT': 'frugal:VBAT', '+3V3_SW': 'frugal:+3V3_SW'}
+        'VSYS': 'frugal:VSYS', 'VBAT': 'frugal:VBAT', '+3V3_SW': 'frugal:+3V3_SW', '+3V3_RF': 'frugal:+3V3_RF'}
 
 # ---- spec, from circuit.py (the single source of truth) ----
 PARTS, NETS, NO_CONNECT = {}, {}, []

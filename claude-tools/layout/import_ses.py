@@ -1,6 +1,6 @@
 """KiCad python: import out/routed.ses into the board (which already holds the GND fan-out), save."""
 import pcbnew, json
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB)
 ok = pcbnew.ImportSpecctraSES(b, 'out/routed.ses')
 stats = {'import_ok': bool(ok)}

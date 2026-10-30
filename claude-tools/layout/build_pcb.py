@@ -1,9 +1,9 @@
-"""Run with KiCad's python on the Mac (one job per process). Builds ../../frugal_iot_v02/frugal_iot_v02.kicad_pcb
+"""Run with KiCad's python on the Mac (one job per process). Builds ../../frugal_iot_v03/frugal_iot_v03.kicad_pcb
 from ../schematic/out/netlist.xml + placement.json: outline, 4x M2 holes, footprints linked to symbols, pad nets.
 Writes out/padcheck.json (pad positions read back from pcbnew) BEFORE saving."""
 import json, xml.etree.ElementTree as ET, pcbnew
 LIB = '/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints'
-PRJ = '../../frugal_iot_v02'
+PRJ = '../../frugal_iot_v03'
 OX, OY = 50.0, 50.0                          # board origin on the page
 mm = pcbnew.FromMM
 pl = json.load(open('placement.json')); W, H = pl['W'], pl['H']
@@ -69,6 +69,6 @@ for fp, c in placed:                         # nets AFTER board.Add(fp)
             except Exception as e:
                 print('field', c['ref'], k, e)
 json.dump(check, open('out/padcheck.json', 'w'))
-out = f'{PRJ}/frugal_iot_v02.kicad_pcb'
+out = f'{PRJ}/frugal_iot_v03.kicad_pcb'
 pcbnew.SaveBoard(out, b)
 print('saved', out, len(placed), 'footprints')

@@ -1,6 +1,6 @@
 """Write net classes + board rules into the V0.2 .kicad_pro (JLCPCB 2-layer capable)."""
 import json
-p = '../../frugal_iot_v02/frugal_iot_v02.kicad_pro'
+p = '../../frugal_iot_v03/frugal_iot_v03.kicad_pro'
 d = json.load(open(p))
 def cls(name, clr, w, via=0.6, drill=0.3, dpw=0.2, dpg=0.25, prio=0):
     return {"name": name, "clearance": clr, "track_width": w, "via_diameter": via, "via_drill": drill,

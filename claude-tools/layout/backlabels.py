@@ -2,8 +2,8 @@
 without the docs (Mitra, D33): G = GND, V = 3V3_SW, SDA/SCL, A/B (RS485), a bare number = that GPIO,
 +/- with SOLAR (J6) and CELL (J4), and an LED symbol (anode -> cathode) at J7. Re-runnable."""
 import pcbnew
-PCB = '../../frugal_iot_v02/frugal_iot_v02.kicad_pcb'
-TITLE = 'Frugal-IoT V0.2'
+PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
+TITLE = 'Frugal-IoT V0.3 LoRa'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 NET = {'GND': 'G', '+3V3_SW': 'V', '/I2C_SDA': 'SDA', '/I2C_SCL': 'SCL', '/J3_P2': 'A', '/J3_P3': 'B',
        '/SENS1': '0', '/SENS2': '1', '/GPIO2': '2', '/GPIO4': '4', '/GPIO10': '10'}

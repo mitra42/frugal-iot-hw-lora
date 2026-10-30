@@ -1,6 +1,6 @@
 """KiCad python: list GND pads sitting in small detached F.Cu/B.Cu pour islands (< 15 mm2) -> stdout 'REF:PAD,...'"""
 import pcbnew
-b = pcbnew.LoadBoard('../../frugal_iot_v02/frugal_iot_v02.kicad_pcb')
+b = pcbnew.LoadBoard('../../frugal_iot_v03/frugal_iot_v03.kicad_pcb')
 small = []
 for z in b.Zones():
     if z.GetNetname() != 'GND': continue

@@ -1,0 +1,4 @@
+.DS_Store
+.schgen-backup/
+__pycache__/
+claude-tools/schematic/out/ref/
