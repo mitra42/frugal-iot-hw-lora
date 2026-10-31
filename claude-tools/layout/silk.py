@@ -81,11 +81,16 @@ def tight(q, ang):
     return (cx - h, q.GetY(), cx + h, q.GetBottom())
 def area(f):
     x0, y0, x1, y1 = cy[f.GetReference()]; return (x1 - x0) * (y1 - y0)
+def lbl(f):
+    """The text that labels a part: its reference, except test points, which show their rail (L20)."""
+    if f.GetReference().startswith('TP'):
+        f.Reference().SetVisible(False); return f.Value()
+    return f.Reference()
 def run(order):
     global AMB
     placed.clear(); fab = []; n = 0; pos = {}
     for f in order:
-        r = f.Reference()
+        r = lbl(f)
         if f.GetReference().startswith('H'): r.SetVisible(False); f.Value().SetVisible(False); continue
         r.SetLayer(pcbnew.F_SilkS); r.SetVisible(True)
         r.SetTextSize(V(mm(0.8), mm(0.8))); r.SetTextThickness(mm(0.12)); r.SetKeepUpright(True)
@@ -115,7 +120,7 @@ for attempt in range(5):                        # the hardest refs go first on t
     first = first + [r for r in fab if r not in first]
 n, fab, pos = best_run
 for f in fps:
-    ref = f.GetReference(); r = f.Reference()
+    ref = f.GetReference(); r = lbl(f)
     if ref.startswith('H'): continue
     if ref in pos:
         x, y, ang = pos[ref]; r.SetLayer(pcbnew.F_SilkS); r.SetTextAngleDegrees(ang); r.SetPosition(V(int(x), int(y)))

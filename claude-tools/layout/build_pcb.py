@@ -24,7 +24,7 @@ r = pcbnew.PCB_SHAPE(b); r.SetShape(pcbnew.SHAPE_T_RECT); r.SetStart(V(0, 0)); r
 r.SetLayer(pcbnew.Edge_Cuts); r.SetWidth(mm(0.1)); b.Add(r)
 def load(fpname):
     lib, name = fpname.split(':')
-    d = f'{PRJ}/irrigation.pretty' if lib == 'irrigation' else f'{LIB}/{lib}.pretty'
+    d = f'{PRJ}/frugal.pretty' if lib == 'frugal' else f'{LIB}/{lib}.pretty'
     fp = pcbnew.FootprintLoad(d, name); fp.SetFPID(pcbnew.LIB_ID(lib, name)); return fp
 placed = []
 for c in comps:

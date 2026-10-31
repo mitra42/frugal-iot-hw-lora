@@ -4,8 +4,8 @@ e.g. a solar panel) and J4 (cell), one sign above each pad (D32). Run silk.py af
 import pcbnew
 PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
-FIT = {'J13', 'R18', 'C12', 'J4', 'J6'}   # J4, J6 fitted from D34
-NOTE = {'R18': 'pull-up (e.g. DS18B20)', 'C12': 'filter (analog)'}   # as circuit.py
+FIT = set()                                 # V0.2's fitting changes (D31, D34) are in V0.3's schematic already
+NOTE = {}
 fp = {f.GetReference(): f for f in b.GetFootprints()}
 # read everything first (pcbnew SWIG: no reads after mutating the board)
 pads = lambda r: {p.GetNumber(): p.GetPosition() for p in fp[r].Pads()}
@@ -25,6 +25,6 @@ def text(s, x, y, h):
     t.SetTextSize(V(mm(h), mm(h))); t.SetTextThickness(mm(max(0.15, h * 0.17))); t.SetPosition(V(int(x), int(y))); b.Add(t)
 # J6 (external 5 V): above each pad, clear of the block's outline
 text('+', p6['1'].x, top, 1.4); text('-', p6['2'].x, top, 1.4)
-# J4 (cell): either side of the pin row, outboard of the pads
-text('-', p4['1'].x - mm(3.3), p4['1'].y, 1.4); text('+', p4['2'].x + mm(3.3), p4['2'].y, 1.4)
+# J4 (cell): above each pad (V0.3: the sides are crowded by U2 and the radio)
+text('-', p4['1'].x, p4['1'].y - mm(2.0), 1.4); text('+', p4['2'].x, p4['2'].y - mm(2.0), 1.4)
 pcbnew.SaveBoard(PCB, b); print('ok')

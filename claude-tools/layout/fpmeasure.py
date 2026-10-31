@@ -10,7 +10,7 @@ for c in nl.iter('comp'):
     dnp = any(p.get('name') == 'dnp' for p in c.iter('property'))
     if fpn not in cache:
         lib, name = fpn.split(':')
-        d = '../../frugal_iot_v03/irrigation.pretty' if lib == 'irrigation' else f'{LIB}/{lib}.pretty'
+        d = '../../frugal_iot_v03/frugal.pretty' if lib == 'frugal' else f'{LIB}/{lib}.pretty'
         fp = pcbnew.FootprintLoad(d, name)
         cy = fp.GetCourtyard(pcbnew.F_CrtYd)
         if cy.OutlineCount():

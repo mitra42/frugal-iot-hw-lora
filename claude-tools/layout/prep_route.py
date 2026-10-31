@@ -23,7 +23,7 @@ for f in b.GetFootprints():
             w, h = box[2] - box[0], box[3] - box[1]
             if ref == 'U1' and p.GetNumber() == '9':
                 ep.append((ref, p.GetNumber(), tomm(pc.x), tomm(pc.y), w, h))
-            elif ref == 'U4' and p.GetNumber() == '19':
+            elif ref == 'U4' and p.GetNumber() == '41':
                 pass     # module EP: the footprint's own thermal vias (drill raised to 0.3 in build_pcb)
             else:
                 gpads.append((ref, p.GetNumber(), tomm(pc.x), tomm(pc.y), w, h, fx, fy, len(gl)))
@@ -77,6 +77,18 @@ for x, y in epv: add_via(x, y)
 for x0, y0, x1, y1 in tracks:
     t = pcbnew.PCB_TRACK(b); t.SetStart(pcbnew.VECTOR2I(mm(x0), mm(y0))); t.SetEnd(pcbnew.VECTOR2I(mm(x1), mm(y1)))
     t.SetWidth(mm(TRK)); t.SetLayer(pcbnew.F_Cu); t.SetNet(gnd); b.Add(t)
+# no tracks or vias within 0.35 mm of the board edge (L19): four rule-area strips, exported to the router as
+# keepouts (JLCPCB needs >= 0.3 mm copper-to-edge; Freerouting otherwise hugs the outline)
+KO = 0.35
+def keepout(x0, y0, x1, y1):
+    z = pcbnew.ZONE(b); z.SetIsRuleArea(True); z.SetDoNotAllowTracks(True); z.SetDoNotAllowVias(True)
+    z.SetDoNotAllowPads(False); z.SetDoNotAllowFootprints(False); z.SetDoNotAllowZoneFills(False)
+    ls = pcbnew.LSET(); ls.AddLayer(pcbnew.F_Cu); ls.AddLayer(pcbnew.B_Cu); z.SetLayerSet(ls)
+    o = z.Outline(); o.NewOutline()
+    for x, y in ((x0, y0), (x1, y0), (x1, y1), (x0, y1)): o.Append(mm(x), mm(y))
+    b.Add(z)
+for r in ((EX0, EY0, EX1, EY0 + KO), (EX0, EY1 - KO, EX1, EY1), (EX0, EY0, EX0 + KO, EY1), (EX1 - KO, EY0, EX1, EY1)):
+    keepout(*r)
 json.dump(dict(fanout=len(vias), ep_vias=len(epv), skipped=skipped), open('out/prep.json', 'w'), indent=1)
 pcbnew.SaveBoard(PCB, b)
 ok = pcbnew.ExportSpecctraDSN(b, 'out/board.dsn')

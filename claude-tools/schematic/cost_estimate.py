@@ -86,8 +86,9 @@ LEGEND = """Columns (part table):
   $@N     buy@N x unit price at that quantity's price tier.
 """
 NOTES = """Notes:
-  * Bare PCB is a placeholder until layout: the irrigation board's JLCPCB quote (100 x 80 mm), an upper bound
-    for this 37 mm-high board. Replace with the real quote after layout.
+  * Bare PCB is still a placeholder: the irrigation board's JLCPCB quote (100 x 80 mm), an upper bound for this
+    84 x 37 mm board. Replace with the real quote when ordering.
+  * Test points TP1-TP7 are bare copper pads: no part, no cost.
   * Shipping, tax and import duty not included.
   * JLCPCB's FAQ says Economic PCBA above 30 pieces needs panelising; the panel fee ($8.21) is included
     in the 100-board column.

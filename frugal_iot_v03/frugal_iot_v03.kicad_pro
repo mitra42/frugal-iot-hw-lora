@@ -264,7 +264,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "frugal_iot_v02.kicad_pro",
+    "filename": "frugal_iot_v03.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -378,6 +378,10 @@
       },
       {
         "netclass": "PowerFine",
+        "pattern": "+3V3_RF"
+      },
+      {
+        "netclass": "PowerFine",
         "pattern": "VBUS"
       },
       {
@@ -402,8 +406,8 @@
     "legacy_lib_list": [],
     "top_level_sheets": [
       {
-        "filename": "frugal_iot_v02.kicad_sch",
-        "name": "frugal_iot_v02",
+        "filename": "frugal_iot_v03.kicad_sch",
+        "name": "frugal_iot_v03",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ]

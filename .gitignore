@@ -2,3 +2,4 @@
 .schgen-backup/
 __pycache__/
 claude-tools/schematic/out/ref/
+claude-tools/*/out/

@@ -9,7 +9,7 @@ mkdir -p $L/out; rm -f $L/out/pipeline.done; LOG=$L/out/pipeline.log
     cd $T && $PY buildlib.py && bash run_draw.sh && grep -E "VERIFY|ERC" out/draw.log && bash run_kicad.sh; shift
   fi
   cd $L && $PY fpmeasure.py 2>&1 | grep -v assert
-  /usr/bin/python3 place.py "${1:-64}"
+  /usr/bin/python3 place.py "${1:-84}" "${2:-0.7}"
   $PY build_pcb.py 2>&1 | grep -v -e assert -e traits
   /usr/bin/python3 netclasses.py
   bash drc.sh

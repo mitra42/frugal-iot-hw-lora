@@ -1,7 +1,7 @@
 # Frugal-IoT V0.3 (LoRa) — requirements and decision log
 
-Status: **schematic drawn, for review (30 Oct 2026)** — `SCHEMATIC.pdf`, `BOM.csv`, `COST-ESTIMATE.txt`; no layout
-yet; one open question (Q3, power). The KiCad project (`frugal_iot_v03/`, renamed from
+Status: **laid out and routed, for review (31 Oct 2026)** — 84 × 37 mm, DRC clean (0 unconnected, schematic parity 0);
+`SCHEMATIC.pdf`, `PCB-LAYOUT.pdf`, `BOM.csv`, `COST-ESTIMATE.txt`, JLCPCB files in `fabrication/`; one open question (Q3, power). The KiCad project (`frugal_iot_v03/`, renamed from
 V0.2's) and `claude-tools/` started as V0.2's; V0.2's own files and decision log are in
 `v0.2-baseline/`. Decisions are numbered L1, L2… so they can't be confused with V0.2's D-numbers. Everything
 in V0.2 (`v0.2-baseline/DECISIONS-V0.2.md`) carries over unless a decision here changes it.
@@ -51,24 +51,25 @@ most at high spreading factors and narrow bandwidths (Frugal-IoT uses SF7 / 125 
 - Stock of both modules is thin: fine for 10 boards; pre-order through JLCPCB for 100s.
 
 **L3 — S3 pin map** (radio on the same GPIOs as the Heltec V3/V4, so their firmware setup carries over;
-analog inputs on ADC1, which works while WiFi is on; strapping pins 0, 3, 45, 46 avoided):
+analog inputs on ADC1, which works while WiFi is on; strapping pins 0, 3, 45, 46 avoided). As revised for the
+layout in L19:
 
 | GPIO | use |
 |---|---|
 | 0 | BOOT button |
-| 1, 2 | Sensor 1, sensor 2 (ADC1) → J2 pins 6, 9 |
-| 4, 5 | Spares (ADC1) → J13 pins 6, 9 |
+| 1, 2 | Spares (ADC1) → J13 pins 6, 9 |
+| 4, 5 | Sensor 1, sensor 2 (ADC1) → J2 pins 6, 9 |
 | 6 | Battery sense (ADC1) |
-| 7 | Spare (ADC1) → unfitted pad (L10) |
 | 8, 9, 10, 11 | LoRa NSS, SCK, MOSI, MISO |
 | 12, 13, 14 | LoRa RESET, BUSY, DIO1 |
 | 15 | nRAIL_EN (3V3_SW, active low) |
-| 16 | RS485 DE/RE |
 | 17, 18 | I2C SDA, SCL → J2 pins 2, 3 |
 | 19, 20 | USB D−/D+ |
 | 21 | Status LED (active low) |
+| 38 | RS485 DE/RE |
 | 43, 44 | UART0 TX/RX → RS485 or J3 pins 2–3 |
-| 38–42, 47, 48 | Spare → unfitted pads (L10) |
+| 36, 39, 41, 42, 47, 48 | Spare → J5 holes (L10) |
+| 3, 7, 16, 35, 37, 40, 45, 46 | Not connected |
 
 **L4 — Radio powered from an always-on supply, not 3V3_SW** (its own regulator since L18): the SX1262 sleeps at under 2 µA, and the mesh
 needs it to wake on its own schedule. Its 120 mA transmit peak is within the ME6211's 500 mA. Local
@@ -129,13 +130,13 @@ inner pad ends, and Ai-Thinker says PCB pads may extend outward but not inward. 
 defaults apply (3.3 V flash, normal boot). V0.2's strap pull-ups on GPIO2 and GPIO8 are gone (C3-only), so the
 status LED (GPIO21) needs no pull-up. GPIO35–37 left unconnected.
 
-**L16 — Net and reference changes from V0.2:** RS485 DE/RE is GPIO16 (net `RS485_DE`, was `GPIO10`); J13 carries
-GPIO4/GPIO5 (were GPIO2/GPIO4); J5 is now the 10-hole spare row (L10) instead of V0.2's 3-pad GPIO10 position.
+**L16 — Net and reference changes from V0.2:** RS485 DE/RE is GPIO38 (net `RS485_DE`, was `GPIO10`); J13 carries
+GPIO1/GPIO2 (L19); J5 is now the 10-hole spare row (L10) instead of V0.2's 3-pad GPIO10 position.
 Resistors after R12 renumbered (two strap resistors removed): LED R13; I2C pull-ups R14/R15; sensor options
 R16/R17; RS485 R18–R21; LoRa pull-ups R22/R23. New: U6 (radio), C14/C15; U7 + C16 (radio regulator, L18).
 
-**L17 — Cost from the schematic** (`COST-ESTIMATE.txt`, prices 30 Oct 2026): ≈ $17.31 per board for 10,
-≈ $11.57 for 100 (with L18), bare PCB still a placeholder — as estimated in L8. Antennas extra.
+**L17 — Cost from the schematic** (`COST-ESTIMATE.txt`, prices 31 Oct 2026): ≈ $17.31 per board for 10,
+≈ $11.58 for 100 (with L18; test points cost nothing), bare PCB still a placeholder — as estimated in L8. Antennas extra.
 
 **L18 — Two RT9080-33GJ5 regulators replace the ME6211** (C841192, Richtek, TSOT-23-5; Mitra agreed 30 Oct): U3
 for the ESP32, sensors and RS485 (+3V3), U7 for the radio alone (+3V3_RF). Compared with reference designs:
@@ -156,6 +157,36 @@ RT9080 (enable on by default, an unfitted resistor for GPIO control).
   board keeps working until the cell is roughly 3.2–3.3 V under load, by which point a LiPo has only a few
   percent left. A buck-boost converter would reach the last few percent but costs more and idles at tens of µA.
 - Not changed in V0.2 or the irrigation board, which still use the ME6211; the same swap would save ~58 µA there.
+
+## Layout (31 Oct 2026)
+
+**L19 — Placement and pin-map changes made for routing** (Mitra agreed 31 Oct; first attempt at 84 mm left 20+
+connections the router couldn't make, so these were found by trial):
+- ESP32 module top-left, U.FL at its top end; Ra-01SH below-right of it, rotated 180° so its SPI pads face the
+  module's LoRa pins. Its IPEX ends up near the middle of the bottom edge, ~30 mm from the ESP32's U.FL rather
+  than at opposite ends (L5): fine with cables to panel-mounted antennas.
+- GPIOs moved so each signal leaves the module on the side facing where it goes (the LoRa pins are unchanged):
+  sensors 1/2 = GPIO4/5 (left side, towards J2), J13 spares = GPIO1/2 (right side, towards J3/J13), RS485 DE =
+  GPIO38, J5 spares = 36, 37, 39–42, 47, 48 (GPIO36/37 are free on the N4 module, which has no octal PSRAM).
+  GPIO7 and GPIO16 are now unused.
+- J5 is a 2 × 5 block of holes (2.54 mm) on the bottom edge rather than a 1 × 10 row.
+- J4 (cell) moved to the bottom edge beside the charger; J6 (5 V in) beside the USB-C, which carries the same net.
+- A 0.35 mm no-track strip along every board edge (rule areas), so the router can't hug the outline.
+- J6 (5 V in) moved beside the USB-C (same net); J5 moved to the top edge beside the module's spare-GPIO pins.
+- Result: 84 × 37 mm (Mitra: as short as possible; a first try at 92 mm routed more easily). DRC: 0 unconnected,
+  schematic parity 0; the 48 notes left are the accepted ones from V0.2 (butting terminal blocks, connector
+  silkscreen at the board edge, the module footprint's widened thermal-via drills).
+- J5 holes 4 and 6 are unconnected: GPIO37 and GPIO40 could not be routed to them at 84 mm, so J5 carries six
+  spare GPIOs (36, 39, 41, 42, 47, 48) with GND and 3V3_SW. Labelled "NC" on the back.
+- Routing: Freerouting 2.1.0, each run's result fed back in as the start of the next (`route/merge.py`,
+  `route/loop.sh`), then the last three connections by a small grid router (`route/astar.py`) and a clean-up
+  (`patch_v03.py`, `prune.py`). LORA_MOSI has one via under the module (tented, clear of its pads).
+
+**L20 — Test points on every supply rail** (Mitra, 31 Oct): TP1–TP7 on VBUS, VBAT, VSYS, +3V3, +3V3_SW, +3V3_RF
+and GND. Bare 1.5 mm SMD pads on the top copper (KiCad TestPoint_Pad_D1.5mm): no part, no cost, not in the BOM or
+pick-and-place file. Each is labelled on the silkscreen with its rail name instead of its reference; they sit
+together in the power area between the module and the charger. A probe tip or a grabber hook lands on them; a wire can be
+soldered on.
 
 ## Open questions
 

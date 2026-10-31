@@ -1,4 +1,4 @@
-"""Write net classes + board rules into the V0.2 .kicad_pro (JLCPCB 2-layer capable)."""
+"""Write net classes + board rules into the V0.3 .kicad_pro (JLCPCB 2-layer capable)."""
 import json
 p = '../../frugal_iot_v03/frugal_iot_v03.kicad_pro'
 d = json.load(open(p))
@@ -15,7 +15,7 @@ d['net_settings'] = {
     "net_colors": None,
     "netclass_assignments": None,
     "netclass_patterns": [{"netclass": "Power", "pattern": n} for n in ['GND', 'VBAT', '/VSYS', '/CELL_NEG']] +
-        [{"netclass": "PowerFine", "pattern": n} for n in ['+3V3', '+3V3_SW', 'VBUS']] +
+        [{"netclass": "PowerFine", "pattern": n} for n in ['+3V3', '+3V3_SW', '+3V3_RF', 'VBUS']] +
         [{"netclass": "USB", "pattern": "/USB_*"}]}
 bd = d.setdefault('board', {}).setdefault('design_settings', {})
 bd.setdefault('rules', {}).update({"min_clearance": 0.15, "min_track_width": 0.15, "min_via_diameter": 0.5,

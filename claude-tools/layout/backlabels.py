@@ -1,12 +1,14 @@
 """KiCad python: name every connector pin on the BACK silkscreen, beside its pad, so a board can be wired
-without the docs (Mitra, D33): G = GND, V = 3V3_SW, SDA/SCL, A/B (RS485), a bare number = that GPIO,
+without the docs (Mitra, D33): G = GND, V = 3V3_SW, SDA/SCL, A/B (RS485), a bare number = that GPIO, NC = not connected,
 +/- with SOLAR (J6) and CELL (J4), and an LED symbol (anode -> cathode) at J7. Re-runnable."""
 import pcbnew
 PCB = '../../frugal_iot_v03/frugal_iot_v03.kicad_pcb'
 TITLE = 'Frugal-IoT V0.3 LoRa'
 b = pcbnew.LoadBoard(PCB); mm = pcbnew.FromMM; V = pcbnew.VECTOR2I
 NET = {'GND': 'G', '+3V3_SW': 'V', '/I2C_SDA': 'SDA', '/I2C_SCL': 'SCL', '/J3_P2': 'A', '/J3_P3': 'B',
-       '/SENS1': '0', '/SENS2': '1', '/GPIO2': '2', '/GPIO4': '4', '/GPIO10': '10'}
+       '/SENS1': '4', '/SENS2': '5', '/GPIO1': '1', '/GPIO2': '2', '/GPIO36': '36', '/GPIO39': '39',
+       '/GPIO41': '41', '/GPIO42': '42', '/GPIO47': '47', '/GPIO48': '48'}
+lab = lambda net: NET.get(net, 'NC')
 # ---- read everything first (pcbnew SWIG: no reads after mutating the board) ----
 fps = {f.GetReference(): f for f in b.GetFootprints()}
 def pads(ref): return [(p.GetNumber(), p.GetPosition().x, p.GetPosition().y, p.GetNetname()) for p in fps[ref].Pads()]
@@ -21,7 +23,7 @@ def text(s, x, y, h=1.0, near=None):
     t.SetTextSize(V(mm(h), mm(h))); t.SetTextThickness(mm(max(0.15, h * 0.16)))
     t.SetPosition(V(int(x), int(y))); w = t.GetBoundingBox().GetWidth()
     if near:
-        px, side = near; t.SetPosition(V(int(px + side * (mm(1.25) + w / 2)), int(y)))
+        px, side = near; t.SetPosition(V(int(px + side * (mm(1.5) + w / 2)), int(y)))   # clear of the square pin-1 pad
     b.Add(t); return t
 def line(x0, y0, x1, y1, w=0.15):
     s = pcbnew.PCB_SHAPE(b); s.SetShape(pcbnew.SHAPE_T_SEGMENT); s.SetLayer(pcbnew.B_SilkS)
@@ -30,9 +32,12 @@ def line(x0, y0, x1, y1, w=0.15):
 for ref in ('J2', 'J12', 'J3', 'J13'):
     for num, x, y, net in P[ref]:
         side = 1 if x < CX else -1
-        text(NET[net], x, y, near=(x, side))
-# J5 (top edge): label below each pad
-for num, x, y, net in P['J5']: text(NET[net], x, y + mm(1.9))
+        text(lab(net), x, y, near=(x, side))
+# J5 (2 x 5 holes at the top edge, L10/L19): two label lines under each column, in the same order as the
+# holes - first line = the hole nearer the board edge, second line = the inner hole
+ys = sorted({y for _, _, y, _ in P['J5']}); inner = ys[-1]
+for num, x, y, net in P['J5']:
+    text(lab(net), x, inner + mm(1.9) + (mm(1.25) if y == inner else 0), 0.9)
 # J6 (bottom edge, external 5 V / solar) and J4 (cell): polarity above each pad, name above that
 for ref, name, plus in (('J6', 'SOLAR', 'VBUS'), ('J4', 'CELL', 'VBAT')):
     xs = []

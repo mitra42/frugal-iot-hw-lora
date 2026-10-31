@@ -80,16 +80,20 @@ PFET('nRAIL_EN', '+3V3', '+3V3_SW', B)           # GPIO5 low = sensors on; pull-
 R('100k', '+3V3', 'nRAIL_EN', B, note='rail off at reset')
 C('1uF', '+3V3_SW', 'GND', B)
 
-# ---------------- MCU: ESP32-S3-WROOM-1U (L1), pin map L3 ----------------
+# Test points on every supply rail (L20): bare 1.5 mm SMD pads, not in the BOM or pick-and-place
+for net in ('VBUS', 'VBAT', 'VSYS', '+3V3', '+3V3_SW', '+3V3_RF', 'GND'):
+    part('TP', 'Connector:TestPoint', net, 'TestPoint:TestPoint_Pad_D1.5mm', {'1': net}, B)
+
+# ---------------- MCU: ESP32-S3-WROOM-1U (L1), pin map L3 as revised for layout (L19) ----------------
 B = 'mcu'
 part('U', 'RF_Module:ESP32-S3-WROOM-1', 'ESP32-S3-WROOM-1U-N4', 'RF_Module:ESP32-S3-WROOM-1U',
-     {'1': 'GND', '2': '+3V3', '3': 'EN', '4': 'GPIO4', '5': 'GPIO5', '6': 'VBAT_SENSE', '7': 'GPIO7',
-      '8': 'nRAIL_EN', '9': 'RS485_DE', '10': 'I2C_SDA', '11': 'I2C_SCL', '12': 'LORA_NSS',
+     {'1': 'GND', '2': '+3V3', '3': 'EN', '4': 'SENS1', '5': 'SENS2', '6': 'VBAT_SENSE', '7': 'NC',
+      '8': 'nRAIL_EN', '9': 'NC', '10': 'I2C_SDA', '11': 'I2C_SCL', '12': 'LORA_NSS',
       '13': 'USB_D_N', '14': 'USB_D_P', '15': 'NC', '16': 'NC', '17': 'LORA_SCK', '18': 'LORA_MOSI',
       '19': 'LORA_MISO', '20': 'LORA_RST', '21': 'LORA_BUSY', '22': 'LORA_DIO1', '23': 'STATUS_LED',
-      '24': 'GPIO47', '25': 'GPIO48', '26': 'NC', '27': 'BOOT', '28': 'NC', '29': 'NC', '30': 'NC',
-      '31': 'GPIO38', '32': 'GPIO39', '33': 'GPIO40', '34': 'GPIO41', '35': 'GPIO42',
-      '36': 'RXD0', '37': 'TXD0', '38': 'SENS2', '39': 'SENS1', '40': 'GND', '41': 'GND'},
+      '24': 'GPIO47', '25': 'GPIO48', '26': 'NC', '27': 'BOOT', '28': 'NC', '29': 'GPIO36', '30': 'NC',
+      '31': 'RS485_DE', '32': 'GPIO39', '33': 'NC', '34': 'GPIO41', '35': 'GPIO42',
+      '36': 'RXD0', '37': 'TXD0', '38': 'GPIO2', '39': 'GPIO1', '40': 'GND', '41': 'GND'},
      B, lcsc='C2980296', mpn='ESP32-S3-WROOM-1U-N4')
 C('10uF', '+3V3', 'GND', B); C('100nF', '+3V3', 'GND', B)
 R('10k', '+3V3', 'EN', B); C('1uF', 'EN', 'GND', B); BUTTON('EN', 'GND', B, 'RESET')
@@ -110,13 +114,14 @@ TERM('J2', 5, ['GND', 'I2C_SDA', 'I2C_SCL', '+3V3_SW', 'GND'], B, 'J2 SENSORS 1-
 TERM('J12', 5, ['SENS1', '+3V3_SW', 'GND', 'SENS2', '+3V3_SW'], B, 'J2 SENSORS 6-10')
 # J3: same layout (D5); pins 2-3 = RS485 A/B as delivered (JP2/JP3 bridged 1-2), or UART RX/TX (cut, bridge 2-3)
 TERM('J3', 5, ['GND', 'J3_P2', 'J3_P3', '+3V3_SW', 'GND'], B, 'J3 RS485 1-5')   # Modbus fitted (L9)
-TERM('J13', 5, ['GPIO4', '+3V3_SW', 'GND', 'GPIO5', '+3V3_SW'], B, 'J3 SPARE 6-10')
+TERM('J13', 5, ['GPIO1', '+3V3_SW', 'GND', 'GPIO2', '+3V3_SW'], B, 'J3 SPARE 6-10')
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'A/RX', SJ3, {'1': 'RS485_A', '2': 'J3_P2', '3': 'RXD0'}, B)
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'B/TX', SJ3, {'1': 'RS485_B', '2': 'J3_P3', '3': 'TXD0'}, B)
-# J5: spare GPIOs on a row of unfitted 2.54 mm holes mid-board (L10)
-part('J', 'Connector:Conn_01x10_Pin', 'SPARE GPIO', 'Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical',
-     {'1': 'GND', '2': 'GPIO7', '3': 'GPIO38', '4': 'GPIO39', '5': 'GPIO40', '6': 'GPIO41', '7': 'GPIO42',
-      '8': 'GPIO47', '9': 'GPIO48', '10': '+3V3_SW'}, B, dnp=True, ref='J5', note='holes only (L10)')
+# J5: spare GPIOs on a 2 x 5 block of unfitted 2.54 mm holes (L10; 2 x 5 rather than a row, for layout, L19).
+# Holes 4 and 6 are unconnected: the router could not reach them (L19).
+part('J', 'Connector_Generic:Conn_02x05_Odd_Even', 'SPARE GPIO', 'Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical',
+     {'1': 'GND', '2': '+3V3_SW', '3': 'GPIO36', '4': 'NC', '5': 'GPIO39', '6': 'NC', '7': 'GPIO41',
+      '8': 'GPIO42', '9': 'GPIO47', '10': 'GPIO48'}, B, dnp=True, ref='J5', note='holes only (L10)')
 
 # ---------------- RS485 (fitted by default, L9 / D29; omit to save cost) ----------------
 B = 'rs485'

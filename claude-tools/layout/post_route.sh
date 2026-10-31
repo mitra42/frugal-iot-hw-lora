@@ -9,7 +9,7 @@ B=$L/../../frugal_iot_v03/frugal_iot_v03.kicad_pcb
 mkdir -p $L/out; rm -f $L/out/post_route.done
 step() { cp $B $L/out/before_$1.kicad_pcb; $PY $2 2>&1 | grep -v -e assert -e traits -e swig; }
 ( cd $L
-  step import import_ses.py
+  [ -z "$NOIMPORT" ] && step import import_ses.py
   step pour pour.py
   step stitch post_fix.py;  $PY fill.py >/dev/null 2>&1; bash drc.sh
   step islands fix2.py;     $PY fill.py >/dev/null 2>&1; bash drc.sh

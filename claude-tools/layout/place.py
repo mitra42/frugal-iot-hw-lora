@@ -1,12 +1,13 @@
 """Placement for Frugal-IoT V0.3 LoRa. Plain python (no KiCad needed).
 Inputs: fp.json (fpmeasure.py), ../schematic/out/netlist.xml, blocks.json. Output: placement.json, metrics.
-Board: L x 37 mm, origin top-left, y down (KiCad). Rotation in KiCad degrees (CCW on screen).
-Decisions: 37 mm high as v0.1 (D2); J2+J12 on the left edge, J3+J13 on the right edge, wire entries outward;
-USB-C, J6 (aux 5 V holes) and J4 (cell) on the bottom edge; J5 on the top edge; 4x M2 holes at the corners;
-all SMD on the top side."""
+Board: W x 37 mm, origin top-left, y down (KiCad). Rotation in KiCad degrees (CCW on screen).
+Decisions: 37 mm high (R6); J2+J12 on the left edge, J3+J13 on the right edge, wire entries outward (as V0.2);
+ESP32-S3 module top-left (U.FL at its top end); Ra-01SH below-right of it, rotated 180 so its SPI pads face
+the module (L19); USB-C, J4 (cell) and J6 (5 V) on the bottom edge; J5 spare-GPIO holes placed by the
+packer (L10); 4x M2 holes at the corners; all SMD on the top side."""
 import json, math, sys, xml.etree.ElementTree as ET
 from collections import defaultdict
-W = float(sys.argv[1]) if len(sys.argv) > 1 else 64.0
+W = float(sys.argv[1]) if len(sys.argv) > 1 else 88.0
 H = 37.0
 FP = json.load(open('fp.json'))
 NL = ET.parse('../schematic/out/netlist.xml').getroot()
@@ -37,35 +38,43 @@ PX = 3.95                                       # pin row 3.95 mm in: body front
 Y0 = H / 2 - 11.43                              # centres the 10-way pair vertically
 P['J2'] = (PX, Y0, -90); P['J12'] = (PX, Y0 + 12.7, -90)
 P['J3'] = (W - PX, Y0 + 22.86, 90); P['J13'] = (W - PX, Y0 + 10.16, 90)
-# Module along the top, pins at its ends; U.FL socket on the module itself
-XU = 27.0
-P['U4'] = (XU, 8.3, 0)
-# Bottom edge: USB-C mouth (local +y) down, below the module's USB pins; J6 holes beside it; J4 cell connector
-P['J1'] = (XU + 11.5, H - 3.65, 0)
-P['J6'] = (XU + 19.7, H - 3.95, 0)
-P['J4'] = (13.5, H - 6.5, 0)
-# Top edge, right: J5 (GND / GPIO10 / 3V3_SW), entry up
-P['J5'] = (W - 10.6, 3.95, 180)
+# ESP32-S3 module top-left (U.FL at its top end): left pins face J2/J12, right pins face east, LoRa pins (bottom
+# row) face down; Ra-01SH below-right of it, rotated 180 so its SPI pads face the module (L19)
+P['U4'] = (19.0, 10.6, 0)
+P['U6'] = (41.0, H - 0.6 - 9.04, 180)
+# Bottom edge: J4 cell, USB-C under the module's USB pins, J6 right of the radio
+P['J4'] = (54.0, H - 6.5, 0)       # cell connector beside the charger (L19)
+P['J1'] = (22.0, H - 3.65, 0)
+P['J6'] = (10.4, H - 3.95, 0)        # 5 V in beside the USB-C (same net)
+P['J5'] = (31.4, 5.0, 90)            # 2 x 5 spare-GPIO holes, top edge beside the module's spare pins (L10)
+# Buttons along the top edge, clear of the module's east-going pins
+P['SW1'] = (W - 34.0, 3.6, 0)
+P['SW2'] = (W - 24.0, 3.6, 0)
 
 BLK = json.load(open('blocks.json'))
-for r in ('J2', 'J12', 'J3', 'J13', 'U4', 'J1', 'J6', 'J4', 'J5'): BLK.pop(r, None)
+for r in ('J2', 'J12', 'J3', 'J13', 'U4', 'U6', 'J1', 'J6', 'J4', 'J5', 'SW1', 'SW2'): BLK.pop(r, None)
 R = lambda x0, y0, x1, y1: (x0, y0, x1, y1)
 REGION = {
-    'mcu':   R(8.0, 0.0, 46.0, 21.0),
-    'usb':   R(30.0, 24.0, 52.0, H),
-    'chg':   R(8.0, 19.0, 34.0, H),
-    'pwr':   R(8.0, 13.0, 48.0, 33.0),
+    'mcu':   R(8.0, 0.0, 44.0, 30.0),
+    'lora':  R(30.0, 14.0, 64.0, H),
+    'usb':   R(8.0, 22.0, 32.0, H),
+    'pwr':   R(34.0, 0.0, W - 8.0, 22.0),
+    'chg':   R(50.0, 12.0, W - 8.0, H),
+    'rs485': R(W - 32.0, 10.0, W - 8.0, H),
     'conn':  R(8.0, 0.0, W - 8.0, H),
-    'rs485': R(44.0, 8.0, W - 8.0, H),
 }
 NEAR = {'C1': ('U1', '4'), 'C2': ('U1', '5'), 'C3': ('U2', '3'), 'C4': ('U3', '1'), 'C5': ('U3', '5'),
-        'C7': ('Q2', '3'), 'C8': ('U4', '1'), 'C9': ('U4', '1'), 'C10': ('U4', '2'), 'C13': ('U5', '8'),
+        'C7': ('Q2', '3'), 'C8': ('U4', '2'), 'C9': ('U4', '2'), 'C10': ('U4', '3'), 'C13': ('U5', '8'),
         'R1': ('J1', 'A5'), 'R2': ('J1', 'B5'), 'R3': ('U1', '2'), 'R4': ('U1', '2'), 'JP1': ('R4', '2'),
-        'R11': ('U4', '2'), 'R12': ('U4', '8'), 'R13': ('U4', '16'), 'R14': ('U4', '7'),
-        'R16': ('U4', '5'), 'R17': ('U4', '6'), 'C6': ('R9', '1'), 'R10': ('Q2', '1'),
-        'JP2': ('J3', '2'), 'JP3': ('J3', '3')}
+        'R11': ('U4', '3'), 'R12': ('U4', '27'), 'R13': ('U4', '23'), 'C6': ('R9', '1'), 'R10': ('Q2', '1'),
+        'JP2': ('J3', '2'), 'JP3': ('J3', '3'), 'C14': ('U6', '3'), 'C15': ('U6', '3'), 'R22': ('U6', '15'),
+        'R23': ('U6', '4'), 'U7': ('U6', '3'), 'C16': ('U7', '1'), 'R16': ('J12', '1'), 'C12': ('J12', '4'),
+        'R14': ('U4', '10'), 'R15': ('U4', '11'), 'R8': ('J4', '2')}
 NEAR_W = 6.0
-ORDER = ['mcu', 'usb', 'chg', 'pwr', 'rs485', 'conn']
+# Routing channels kept clear of packed parts (L19): under the module (its LoRa pins run to the radio), and
+# beside its right-hand pins (they escape east)
+KEEP = [(9.0, 21.0, 32.0, 24.5), (29.0, 7.0, 34.0, 20.0)]
+ORDER = ['mcu', 'lora', 'usb', 'pwr', 'chg', 'rs485', 'conn']
 GAP = float(sys.argv[2]) if len(sys.argv) > 2 else 0.7   # courtyard spacing: room for refdes labels (D30)
 def free(rr, placed_rects, region):
     if rr[0] < max(EDGE, region[0]) or rr[1] < max(EDGE, region[1]) or rr[2] > min(W - EDGE, region[2]) \
@@ -73,6 +82,8 @@ def free(rr, placed_rects, region):
     for hx, hy in HOLES.values():
         cx = min(max(hx, rr[0]), rr[2]); cy = min(max(hy, rr[1]), rr[3])
         if math.hypot(cx - hx, cy - hy) < HOLE_R: return False
+    for k in KEEP:
+        if rr[0] < k[2] and k[0] < rr[2] and rr[1] < k[3] and k[1] < rr[3]: return False
     for q in placed_rects:
         if rr[0] < q[2] + GAP and q[0] < rr[2] + GAP and rr[1] < q[3] + GAP and q[1] < rr[3] + GAP: return False
     return True
@@ -106,7 +117,7 @@ def place_one(ref, region):
         tx, ty = (region[0] + region[2]) / 2, (region[1] + region[3]) / 2
     tx = min(max(tx, region[0]), region[2]); ty = min(max(ty, region[1]), region[3])
     cands = []; first = None; step = 0.25
-    for ring in range(0, 160):
+    for ring in range(0, 400):
         rad = ring * step
         if first is not None and rad > first + 3.0: break
         n = max(1, int(2 * math.pi * rad / step))

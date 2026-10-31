@@ -9,8 +9,8 @@ Columns (part table):
 
 Refs                       Value                  LCSC       Type    /brd buy@10    $@10 buy@100   $@100
 C1,C2,C4,C5,C8,C14         10uF                   C19702     Basic      6     70    1.48     610    8.66
-C3,C6,C9,C12,C13,C15       100nF                  C14663     Basic      6     70    0.60     610    4.09
-C7,C10,C16                 1uF                    C15849     Basic      3     40    0.56     310    4.31
+C3,C6,C9,C12,C13,C15       100nF                  C14663     Basic      6     70    0.60     610    5.25
+C7,C10,C16                 1uF                    C15849     Basic      3     40    0.56     310    4.37
 D1                         KT-0603R               C2286      Basic      1     20    0.15     110    0.85
 D2,D4                      KT-0805G               C2297      Basic      2     30    0.49     210    3.44
 D3                         SS34                   C8678      Basic      1     18    0.63     108    3.79
@@ -45,10 +45,10 @@ Through-hole joints (manual)                       $7.52                  $42.94
 Feeder loading                                    $24.56                  $24.56
 X-ray (module)                                     $0.00                   $0.00
 Fixture + packing                                  $0.00                   $0.00
-Components                                       $122.60                 $968.73
+Components                                       $122.61                 $969.95
 Bare PCB (placeholder, see notes)                   $5.00                  $69.90
-TOTAL (excl. shipping)                           $173.05                $1156.66
-Per board                                         $17.31                  $11.57
+TOTAL (excl. shipping)                           $173.06                $1157.88
+Per board                                         $17.31                  $11.58
 
 Same, per board:
 Setup + stencil + confirm                          $1.02                   $0.18
@@ -57,13 +57,14 @@ Through-hole joints (manual)                       $0.75                   $0.43
 Feeder loading                                     $2.46                   $0.25
 X-ray (module)                                     $0.00                   $0.00
 Fixture + packing                                  $0.00                   $0.00
-Components                                        $12.26                   $9.69
+Components                                        $12.26                   $9.70
 Bare PCB (placeholder, see notes)                   $0.50                   $0.70
-Per board                                         $17.31                  $11.57
+Per board                                         $17.31                  $11.58
 
 Notes:
-  * Bare PCB is a placeholder until layout: the irrigation board's JLCPCB quote (100 x 80 mm), an upper bound
-    for this 37 mm-high board. Replace with the real quote after layout.
+  * Bare PCB is still a placeholder: the irrigation board's JLCPCB quote (100 x 80 mm), an upper bound for this
+    84 x 37 mm board. Replace with the real quote when ordering.
+  * Test points TP1-TP7 are bare copper pads: no part, no cost.
   * Shipping, tax and import duty not included.
   * JLCPCB's FAQ says Economic PCBA above 30 pieces needs panelising; the panel fee ($8.21) is included
     in the 100-board column.

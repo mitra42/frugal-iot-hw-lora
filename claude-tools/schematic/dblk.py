@@ -187,10 +187,18 @@ def syspwr(x, y):
         S.wire(g, gn)
         rise('R10', gn, '+3V3', bottom_pin='2')
         S.wire(gn, at(gn, 0, 5.08)); S.label('nRAIL_EN', gn[0], gn[1] + 5.08, angle=270)
+        # test points (L20): one per supply rail, plus GND for the probe's ground
+        for i in range(7):
+            ref = f'TP{i + 1}'
+            net = B.PARTS[ref]['value']
+            # pad drawn below its rail (rail symbol upright); the GND pad hangs above its ground symbol
+            put_pin(ref, '1', (x + 76.2 + 10.16 * i, y + 43.18), rot=0 if net == 'GND' else 180)
+            term(ref, '1', net, 2.54)
         S.note("D3 + Q1: with USB present VSYS comes through D3 and Q1 is off; without it Q1 turns on\n"
                "and the cell feeds VSYS. The charger never carries the load.\n"
                "U3 RT9080 (L18): 600 mA, 2 uA quiescent. VBAT_SENSE = VBAT / 2 (1M/1M, ~2 uA).\n"
-               "Q2: nRAIL_EN (GPIO15) LOW = +3V3_SW on. R10 holds the rail off through reset and boot.",
+               "Q2: nRAIL_EN (GPIO15) LOW = +3V3_SW on. R10 holds the rail off through reset and boot.\n"
+               "TP1-TP7: probe pads on VBUS, VBAT, VSYS, +3V3, +3V3_SW, +3V3_RF and GND (L20).",
                x - 5.08, y + 58.42, 1.0)
 
 
@@ -252,11 +260,11 @@ def module(x, y):
         put_pin('J7', '1', at(r2, 20.32), mirror='y')
         S.wire(r2, pin('J7', '1'))
         term('J7', '2', 'STATUS_LED', 2.54)
-        S.note("GPIO map (L3): sensors 1/2 (ADC1) -> J2, spares 4/5 (ADC1) -> J13, VBAT_SENSE 6, I2C 17/18,\n"
+        S.note("GPIO map (L3, L19): sensors 4/5 (ADC1) -> J2, spares 1/2 (ADC1) -> J13, VBAT_SENSE 6, I2C 17/18,\n"
                "LoRa NSS/SCK/MOSI/MISO 8-11, RST 12, BUSY 13, DIO1 14 (as Heltec V3/V4), nRAIL_EN 15,\n"
-               "RS485 DE 16, UART0 43/44 -> RS485 or J3, USB 19/20, LED 21, BOOT 0.\n"
-               "Spares 7, 38-42, 47, 48 -> J5 holes (L10). Not connected: straps 3, 45, 46 (internal defaults)\n"
-               "and 35-37. J7 (not fitted): off-board LED, pin 1 = anode, pin 2 = cathode, shares R13.\n"
+               "RS485 DE 38, UART0 43/44 -> RS485 or J3, USB 19/20, LED 21, BOOT 0.\n"
+               "Spares 36, 39, 41, 42, 47, 48 -> J5 holes (L10, L19). Not connected: straps 3, 45, 46 (internal defaults)\n"
+               "and 7, 16, 35, 37, 40. J7 (not fitted): off-board LED, pin 1 = anode, pin 2 = cathode, shares R13.\n"
                "C8/C9 close to module pin 2. U.FL antenna: module end at the board edge, away from the LoRa antenna (L5).",
                x - 81.28, y + 45.72, 1.0)
 
@@ -280,7 +288,7 @@ def conn(x, y):
         nets = {'J2': ['GND', 'I2C_SDA', 'I2C_SCL', '+3V3_SW', 'GND'],
                 'J12': ['SENS1', '+3V3_SW', 'GND', 'SENS2', '+3V3_SW'],
                 'J3': ['GND', 'J3_P2', 'J3_P3', '+3V3_SW', 'GND'],
-                'J13': ['GPIO4', '+3V3_SW', 'GND', 'GPIO5', '+3V3_SW']}
+                'J13': ['GPIO1', '+3V3_SW', 'GND', 'GPIO2', '+3V3_SW']}
         for i, ref in enumerate(('J2', 'J12')):
             put(ref, jx, y - 2.54 + 17.78 * i)
             for k, net in enumerate(nets[ref]):
@@ -296,12 +304,12 @@ def conn(x, y):
         # J5: spare GPIOs on unfitted holes (L10)
         put('J5', jx + 91.44, y + 12.7)
         signals('J5')
-        term('J5', '1', 'GND', RL['GND']); term('J5', '10', '+3V3_SW', RL['+3V3_SW'])
-        S.note("J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2, J3: GPIO4/GPIO5):\n"
-               "  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO4  7 3V3_SW  8 GND  9 S2/GPIO5  10 3V3_SW\n"
+        term('J5', '1', 'GND', RL['GND']); term('J5', '2', '+3V3_SW', RL['+3V3_SW'])
+        S.note("J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2 = GPIO4/5, J3: GPIO1/2):\n"
+               "  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO1  7 3V3_SW  8 GND  9 S2/GPIO2  10 3V3_SW\n"
                "Each is two XY308-2.54-5P blocks side by side (no 10-way part at JLCPCB): J2+J12, J3+J13.\n"
                "JP2/JP3: J3 pins 2-3 = RS485 A/B as delivered; cut 1-2 and bridge 2-3 for UART0 RX/TX (U5 must then be left off) (D29).\n"
-               "J5: holes only, no connector (L10): spare GPIO 7, 38-42, 47, 48 with GND and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\n"
+               "J5: holes only, no connector (L10): spare GPIO 36, 39, 41, 42, 47, 48 with GND; holes 4 and 6 unconnected and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\n"
                "Firmware: switch +3V3_SW on (GPIO15 low) before any I2C or sensor access.",
                x - 5.08, y + 76.2, 1.0)
 
@@ -336,7 +344,7 @@ def rs485(x, y):
         put('D5', bx + 30.48, y + 7.62)
         term('D5', '1', 'RS485_A', 5.08); term('D5', '2', 'RS485_B', 5.08); term('D5', '3', 'GND')
         S.note("Fitted by default: J3 pin 2 = A, pin 3 = B via JP2/JP3 (D29). A board without Modbus can leave out\n"
-               "U5, C13, R18-R21, D5 and J3 (see COST-ESTIMATE.txt). GPIO16 = DE/RE (high = transmit, R18 = receive).\n"
+               "U5, C13, R18-R21, D5 and J3 (see COST-ESTIMATE.txt). GPIO38 = DE/RE (high = transmit, R18 = receive).\n"
                "JP4 bridged = 120R termination. RS485 sensors need their own 5-24 V supply (external).",
                x - 30.48, y + 35.56, 1.0)
 
