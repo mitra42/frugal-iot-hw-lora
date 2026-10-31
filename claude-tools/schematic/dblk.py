@@ -304,12 +304,12 @@ def conn(x, y):
         # J5: spare GPIOs on unfitted holes (L10)
         put('J5', jx + 91.44, y + 12.7)
         signals('J5')
-        term('J5', '1', 'GND', RL['GND']); term('J5', '2', '+3V3_SW', RL['+3V3_SW'])
+        term('J5', '1', 'GND', RL['GND']); term('J5', '2', '+3V3_SW', RL['+3V3_SW']); term('J5', '6', '+3V3_SW', RL['+3V3_SW'])
         S.note("J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2 = GPIO4/5, J3: GPIO1/2):\n"
                "  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO1  7 3V3_SW  8 GND  9 S2/GPIO2  10 3V3_SW\n"
                "Each is two XY308-2.54-5P blocks side by side (no 10-way part at JLCPCB): J2+J12, J3+J13.\n"
                "JP2/JP3: J3 pins 2-3 = RS485 A/B as delivered; cut 1-2 and bridge 2-3 for UART0 RX/TX (U5 must then be left off) (D29).\n"
-               "J5: holes only, no connector (L10): spare GPIO 36, 39, 41, 42, 47, 48 with GND; holes 4 and 6 unconnected and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\n"
+               "J5: holes only, no connector (L10): spare GPIO 36, 39, 41, 42, 47, 48, GND on 1, 3V3_SW on 2 and 6, 4 not connected and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\n"
                "Firmware: switch +3V3_SW on (GPIO15 low) before any I2C or sensor access.",
                x - 5.08, y + 76.2, 1.0)
 

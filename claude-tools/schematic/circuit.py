@@ -118,9 +118,10 @@ TERM('J13', 5, ['GPIO1', '+3V3_SW', 'GND', 'GPIO2', '+3V3_SW'], B, 'J3 SPARE 6-1
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'A/RX', SJ3, {'1': 'RS485_A', '2': 'J3_P2', '3': 'RXD0'}, B)
 part('JP', 'Jumper:SolderJumper_3_Bridged12', 'B/TX', SJ3, {'1': 'RS485_B', '2': 'J3_P3', '3': 'TXD0'}, B)
 # J5: spare GPIOs on a 2 x 5 block of unfitted 2.54 mm holes (L10; 2 x 5 rather than a row, for layout, L19).
-# Holes 4 and 6 are unconnected: the router could not reach them (L19).
+# Hole 6 is a second 3V3_SW; hole 4 is unconnected (boxed in by tracks): GPIO37/40 could not be routed to
+# either (L19, Mitra 31 Oct).
 part('J', 'Connector_Generic:Conn_02x05_Odd_Even', 'SPARE GPIO', 'Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical',
-     {'1': 'GND', '2': '+3V3_SW', '3': 'GPIO36', '4': 'NC', '5': 'GPIO39', '6': 'NC', '7': 'GPIO41',
+     {'1': 'GND', '2': '+3V3_SW', '3': 'GPIO36', '4': 'NC', '5': 'GPIO39', '6': '+3V3_SW', '7': 'GPIO41',
       '8': 'GPIO42', '9': 'GPIO47', '10': 'GPIO48'}, B, dnp=True, ref='J5', note='holes only (L10)')
 
 # ---------------- RS485 (fitted by default, L9 / D29; omit to save cost) ----------------

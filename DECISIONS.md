@@ -176,8 +176,9 @@ connections the router couldn't make, so these were found by trial):
 - Result: 84 × 37 mm (Mitra: as short as possible; a first try at 92 mm routed more easily). DRC: 0 unconnected,
   schematic parity 0; the 48 notes left are the accepted ones from V0.2 (butting terminal blocks, connector
   silkscreen at the board edge, the module footprint's widened thermal-via drills).
-- J5 holes 4 and 6 are unconnected: GPIO37 and GPIO40 could not be routed to them at 84 mm, so J5 carries six
-  spare GPIOs (36, 39, 41, 42, 47, 48) with GND and 3V3_SW. Labelled "NC" on the back.
+- GPIO37 and GPIO40 could not be routed to J5 holes 4 and 6 at 84 mm, so J5 carries six spare GPIOs (36, 39, 41,
+  42, 47, 48). Hole 6 is a second 3V3_SW (Mitra, 31 Oct). Hole 4 is unconnected and labelled "NC" on the back:
+  tracks box it in on both layers, so a second GND there would need re-routing (Mitra chose to leave it).
 - Routing: Freerouting 2.1.0, each run's result fed back in as the start of the next (`route/merge.py`,
   `route/loop.sh`), then the last three connections by a small grid router (`route/astar.py`) and a clean-up
   (`patch_v03.py`, `prune.py`). LORA_MOSI has one via under the module (tented, clear of its pads).

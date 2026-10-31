@@ -7159,19 +7159,6 @@
 		(uuid "1ac3ac83-3137-5992-a08a-5d8c45e6b4fd")
 	)
 	(rectangle
-		(start 245.11 151.765)
-		(end 479.1819 262.45)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 132 132 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "42020f51-f4ff-5d46-a68e-ea28c1847d90")
-	)
-	(rectangle
 		(start 187.9491 18.05)
 		(end 334.58 134.0858)
 		(stroke
@@ -7224,6 +7211,19 @@
 		(uuid "d208b810-898c-593b-824e-99e156fdefa5")
 	)
 	(rectangle
+		(start 245.11 151.765)
+		(end 478.1659 262.45)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 132 132 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e8a7c50b-0174-5626-a331-48aca71302de")
+	)
+	(rectangle
 		(start 239.9457 286.385)
 		(end 411.2016 378.02)
 		(stroke
@@ -7235,6 +7235,17 @@
 			(type none)
 		)
 		(uuid "f64a4365-fe98-5a6d-ac52-56078d1be9c4")
+	)
+	(text "J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2 = GPIO4/5, J3: GPIO1/2):\n  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO1  7 3V3_SW  8 GND  9 S2/GPIO2  10 3V3_SW\nEach is two XY308-2.54-5P blocks side by side (no 10-way part at JLCPCB): J2+J12, J3+J13.\nJP2/JP3: J3 pins 2-3 = RS485 A/B as delivered; cut 1-2 and bridge 2-3 for UART0 RX/TX (U5 must then be left off) (D29).\nJ5: holes only, no connector (L10): spare GPIO 36, 39, 41, 42, 47, 48, GND on 1, 3V3_SW on 2 and 6, 4 not connected and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\nFirmware: switch +3V3_SW on (GPIO15 low) before any I2C or sensor access."
+		(exclude_from_sim no)
+		(at 250.19 248.92 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "02b91012-346b-5286-a664-ee039290e27d")
 	)
 	(text "USB-C sink, 5 V only: CC1/CC2 5.1k to GND. D+/D- go straight to the S3's native USB\n(GPIO20/GPIO19): no USB-UART chip and no ESD chip (D9).\nJ6: XY308-2P screw terminal for external 5 V, e.g. a solar panel (D10; fitted from D34)."
 		(exclude_from_sim no)
@@ -7350,17 +7361,6 @@
 			(justify left)
 		)
 		(uuid "baec95c8-e66d-52af-9271-608c081e3dce")
-	)
-	(text "J2 (main) and J3 share one layout, pins 1-10 (D4, D5); J2, J12, J3 and J13 all fitted (J2: S1/S2 = GPIO4/5, J3: GPIO1/2):\n  1 GND  2 SDA/A  3 SCL/B  4 3V3_SW  5 GND  6 S1/GPIO1  7 3V3_SW  8 GND  9 S2/GPIO2  10 3V3_SW\nEach is two XY308-2.54-5P blocks side by side (no 10-way part at JLCPCB): J2+J12, J3+J13.\nJP2/JP3: J3 pins 2-3 = RS485 A/B as delivered; cut 1-2 and bridge 2-3 for UART0 RX/TX (U5 must then be left off) (D29).\nJ5: holes only, no connector (L10): spare GPIO 36, 39, 41, 42, 47, 48 with GND; holes 4 and 6 unconnected and 3V3_SW. R16 (SENS1 pull-up) and C12 (SENS2 filter) fitted; R17, C11 not fitted.\nFirmware: switch +3V3_SW on (GPIO15 low) before any I2C or sensor access."
-		(exclude_from_sim no)
-		(at 250.19 248.92 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "cbcf1fde-5d49-5c38-bc09-6c498359e0ab")
 	)
 	(text "SENSOR CONNECTORS J2, J3 (FITTED) AND SPARE GPIO HOLES J5"
 		(exclude_from_sim no)
@@ -7524,6 +7524,12 @@
 		(uuid "8f920dd1-3b14-5ccf-8e08-fb37955686a7")
 	)
 	(junction
+		(at 468.63 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9028ac92-8619-5a38-b8bd-2211abe48f24")
+	)
+	(junction
 		(at 435.61 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7682,10 +7688,6 @@
 	(no_connect
 		(at 88.9 77.47)
 		(uuid "bc108e3d-32e6-5e32-952d-3472d5292271")
-	)
-	(no_connect
-		(at 443.23 184.15)
-		(uuid "c034baff-29c1-5911-af32-219acdd7639e")
 	)
 	(no_connect
 		(at 200.66 209.55)
@@ -8008,6 +8010,16 @@
 			(type solid)
 		)
 		(uuid "1ba912fc-d90b-51aa-aea2-d005f73574b5")
+	)
+	(wire
+		(pts
+			(xy 468.63 179.07) (xy 468.63 176.53)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "1ccb3ef5-3921-5da4-81a0-ec3132903339")
 	)
 	(wire
 		(pts
@@ -8631,16 +8643,6 @@
 	)
 	(wire
 		(pts
-			(xy 443.23 179.07) (xy 466.09 179.07)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "61286e52-5af8-5718-9fcd-feb8955854b8")
-	)
-	(wire
-		(pts
 			(xy 339.09 193.04) (xy 336.55 193.04)
 		)
 		(stroke
@@ -9141,6 +9143,16 @@
 	)
 	(wire
 		(pts
+			(xy 443.23 179.07) (xy 468.63 179.07)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "8dae772d-f59a-5f4e-abe2-d633d495cfc8")
+	)
+	(wire
+		(pts
 			(xy 74.93 184.15) (xy 74.93 186.69)
 		)
 		(stroke
@@ -9451,6 +9463,16 @@
 	)
 	(wire
 		(pts
+			(xy 443.23 184.15) (xy 468.63 184.15)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b0e5aa92-3413-5f96-acc4-81fa580dcf4b")
+	)
+	(wire
+		(pts
 			(xy 127 355.6) (xy 132.08 355.6)
 		)
 		(stroke
@@ -9748,6 +9770,16 @@
 			(type solid)
 		)
 		(uuid "c85d9dce-1623-5ced-9b66-9d6c8e66a114")
+	)
+	(wire
+		(pts
+			(xy 468.63 179.07) (xy 468.63 184.15)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "c90d71f2-1a93-51c9-9baf-ae13a28b1c20")
 	)
 	(wire
 		(pts
@@ -17119,7 +17151,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f362b76-a29d-5460-99c3-b50f4f172266")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR067"
 			(at 311.15 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -17171,12 +17203,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfd2512a-0a80-592f-972f-a52e62693fb6")
+			(uuid "9e2b813c-594a-5b50-b36f-2af7d6cb17dd")
 		)
 		(instances
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
-					(reference "#PWR068")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -17431,80 +17463,6 @@
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "frugal:+3V3_SW")
-		(at 466.09 179.07 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6af22f3b-a32b-510d-8124-692f1a7eae24")
-		(property "Reference" "#PWR067"
-			(at 466.09 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3_SW"
-			(at 469.646 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 466.09 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 466.09 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 466.09 179.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e2b813c-594a-5b50-b36f-2af7d6cb17dd")
-		)
-		(instances
-			(project "frugal_iot_v03"
-				(path "/8020d627-0870-5b68-819a-9ec30f562348"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -17902,7 +17860,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f5f1e18-b4be-5f53-bb96-3aed8975034a")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR068"
 			(at 313.69 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -17954,12 +17912,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec43c44b-9314-59a7-a1c6-158d6b12a9cb")
+			(uuid "cfd2512a-0a80-592f-972f-a52e62693fb6")
 		)
 		(instances
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
-					(reference "#PWR069")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -19665,7 +19623,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92fc9639-592c-5f29-a239-2447e5ddb7ed")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR070"
 			(at 365.76 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -19717,12 +19675,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "11450c2c-b574-505b-b21c-7e2d9756f4b6")
+			(uuid "8e7c3db3-495b-5c17-8608-94b5dfe31e3c")
 		)
 		(instances
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
-					(reference "#PWR071")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -22026,6 +21984,80 @@
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "frugal:+3V3_SW")
+		(at 468.63 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bab3edab-f2b8-5f8c-aae0-3e7394620fe0")
+		(property "Reference" "#PWR071"
+			(at 468.63 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3_SW"
+			(at 468.63 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 468.63 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 468.63 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 468.63 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11450c2c-b574-505b-b21c-7e2d9756f4b6")
+		)
+		(instances
+			(project "frugal_iot_v03"
+				(path "/8020d627-0870-5b68-819a-9ec30f562348"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -25538,7 +25570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f495f560-7ef9-59e5-841d-3ffa0ec67919")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR069"
 			(at 363.22 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -25590,12 +25622,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8e7c3db3-495b-5c17-8608-94b5dfe31e3c")
+			(uuid "ec43c44b-9314-59a7-a1c6-158d6b12a9cb")
 		)
 		(instances
 			(project "frugal_iot_v03"
 				(path "/8020d627-0870-5b68-819a-9ec30f562348"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)

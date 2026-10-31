@@ -20,7 +20,7 @@ This is the [Frugal-IoT V0.2 sensor board](https://github.com/mitra42/frugal-iot
 * Two sensor inputs on J2 (pins 6 & 9, GPIO4 & GPIO5) can be used for analog, OneWire etc, pads to add pull up resistor or smoothing capacitor if required.
 * Two extra sensors on J3 (pins 6 & 9, GPIO1 & GPIO2)
 * RS485(Modbus) on J3 pins 2 & 3, (can be omitted to save ~USD1.00, or the pins used as serial RX/TX instead).
-* Six spare GPIOs on a 2 x 5 block of holes at the top edge, with GND and switched 3.3V, for a header if ever needed.
+* Six spare GPIOs on a 2 x 5 block of holes at the top edge, with GND and two switched 3.3V, for a header if ever needed.
 * Test pads on every supply rail (VBUS, VBAT, VSYS, 3V3, 3V3_SW, 3V3_RF) and GND, labelled on the board.
 * 37mm * 84mm board with connectors mostly at the ends, so that it can fit inside a 40mm pipe as an affordable enclosure.
 
@@ -35,7 +35,7 @@ The board can be flashed with any software, but its designed to work well with [
 * Captive WiFi portal for local configuration
 * Local controls for on-device automation configured through the UX.
 * Multilingual support on both captive portal and UX
-* Automatic Over-The-Air (OTA) updates for unattended devices.
+* Automatic Over-The-Air (OTA) updates for unattended devices (when on WiFi)
 * Power management for really long life for sensors that report at long intervals.
 * mDNS, for device to device signalling when the Internet is down
 * NTP integration for accurate clock
