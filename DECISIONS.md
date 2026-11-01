@@ -189,6 +189,13 @@ pick-and-place file. Each is labelled on the silkscreen with its rail name inste
 together in the power area between the module and the charger. A probe tip or a grabber hook lands on them; a wire can be
 soldered on.
 
+**L21 — Antennas are off-board, chosen per node role** (1 Nov 2026, Mitra asked for guidance): the LoRa antenna
+plugs into the Ra-01SH's U.FL socket (pad 1, ANT, is unconnected on the PCB). Regular nodes: a 2–3 dBi
+band-specific whip on a U.FL-to-SMA bulkhead pigtail through the end cap; an adhesive FPC antenna inside the pipe
+only for short hops. Gateway: an outdoor fibreglass omni (3–6 dBi, N-type) mounted high, with the board next to
+it so the RF cable is short, and TX power reduced where the antenna's gain would exceed the local EIRP limit.
+Details and examples in README "Antennas". Not in `BOM.csv`, which is generated from the schematic.
+
 ## Open questions
 
 **Q3 — Power budget with LoRa (decide later, Mitra).** If a node routes for others, the radio and ESP32 spend
